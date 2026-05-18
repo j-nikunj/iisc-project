@@ -68,6 +68,30 @@ def extract_relations(body: str) -> List[Relation]:
     return relations
 
 
+def strip_relation_block(body: str) -> str:
+    lines = []
+    in_rel = False
+    for line in body.splitlines():
+        line_strip = line.strip()
+        if line_strip.lower() == "relations:":
+            in_rel = True
+            continue
+        if in_rel:
+            if not line_strip:
+                in_rel = False
+                continue
+            if line_strip.endswith(":") and not line_strip.startswith("-"):
+                in_rel = False
+                lines.append(line)
+                continue
+            if RELATION_LINE_RE.match(line):
+                continue
+            continue
+        lines.append(line)
+    content = "\n".join([line for line in lines if line.strip()])
+    return content
+
+
 def load_nodes(root: Path) -> List[Node]:
     nodes: List[Node] = []
     for path in root.rglob("*.md"):
@@ -95,6 +119,7 @@ def serialize_node_text(node: Node) -> str:
         if lat is not None or lon is not None:
             geo_text = f"Geo: lat={lat}, lon={lon}"
     rel_text = "; ".join([f"{r.edge_type} {r.target}" for r in node.relations])
+    content_text = strip_relation_block(node.body)
 
     parts: List[str] = []
     if title:
@@ -109,6 +134,9 @@ def serialize_node_text(node: Node) -> str:
         parts.append(f"Summary: {node.summary}")
     if rel_text:
         parts.append(f"Relations: {rel_text}")
+    if content_text:
+        parts.append("Content:")
+        parts.append(content_text)
     return "\n".join(parts)
 
 

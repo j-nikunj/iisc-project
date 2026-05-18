@@ -5,6 +5,8 @@ from time import perf_counter
 
 import networkx as nx
 
+from semantic_utils import coalesce, load_yaml_config, resolve_config_path
+
 from node_parser import load_nodes
 
 
@@ -54,19 +56,33 @@ def graph_expand(graph: nx.MultiDiGraph, seeds, hops: int, edge_types):
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Generate retrieval evaluation report")
-    parser.add_argument("--root", required=True)
+    parser.add_argument("--config", default="")
+    parser.add_argument("--root", default="")
     parser.add_argument("--examples", required=True)
-    parser.add_argument("--url", default="http://localhost:6333")
-    parser.add_argument("--collection", required=True)
-    parser.add_argument("--model", default="BAAI/bge-small-en-v1.5")
-    parser.add_argument("--top-k", type=int, default=8)
+    parser.add_argument("--url", default="")
+    parser.add_argument("--collection", default="")
+    parser.add_argument("--model", default="")
+    parser.add_argument("--top-k", type=int, default=0)
     parser.add_argument("--hops", type=int, default=1)
     parser.add_argument("--edge", action="append", default=[])
     parser.add_argument("--output", default="reports/eval_report.json")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
-    nodes = load_nodes(Path(args.root))
+    config = load_yaml_config(args.config)
+    qdrant_cfg = config.get("qdrant", {})
+    retrieval_cfg = config.get("retrieval", {})
+    root = coalesce(args.root, config.get("graph_root"))
+    root = resolve_config_path(args.config, root)
+    url = coalesce(args.url, qdrant_cfg.get("url"), "http://localhost:6333")
+    collection = coalesce(args.collection, qdrant_cfg.get("collection"))
+    model_name = coalesce(args.model, config.get("embedding", {}).get("model_name"), "BAAI/bge-small-en-v1.5")
+    top_k = args.top_k or retrieval_cfg.get("top_k", 8)
+    edge_types = set(args.edge or retrieval_cfg.get("edge_types", []))
+    if not root or not collection:
+        raise SystemExit("--root and --collection are required (or provide config.yaml)")
+
+    nodes = load_nodes(Path(root))
     graph = build_graph(nodes)
 
     if args.dry_run:
@@ -80,21 +96,19 @@ def main() -> None:
     from qdrant_client import QdrantClient
     from sentence_transformers import SentenceTransformer
 
-    client = QdrantClient(url=args.url)
-    model = SentenceTransformer(args.model)
+    client = QdrantClient(url=url)
+    model = SentenceTransformer(model_name)
 
     examples = load_examples(Path(args.examples))
-    edge_types = set(args.edge)
-
     report = []
     for example in examples:
         query = example["query"]
         start = perf_counter()
         query_vec = model.encode(query, normalize_embeddings=True)
         results = client.search(
-            collection_name=args.collection,
+            collection_name=collection,
             query_vector=query_vec.tolist(),
-            limit=args.top_k,
+            limit=top_k,
             with_payload=True,
         )
         latency_ms = (perf_counter() - start) * 1000.0
@@ -123,6 +137,13 @@ def main() -> None:
                 "explanation": "graph_expansion",
             })
 
+        expected_titles = set(example.get("expected_nodes", []))
+        vector_titles = {hit["title"] for hit in vector_hits if hit.get("title")}
+        expanded_titles = {node["title"] for node in expanded_nodes if node.get("title")}
+        expected_hits_vector = sorted(expected_titles.intersection(vector_titles))
+        expected_hits_expanded = sorted(expected_titles.intersection(expanded_titles))
+        expected_count = len(expected_titles) or 1
+
         report.append({
             "id": example.get("id"),
             "query": query,
@@ -130,6 +151,10 @@ def main() -> None:
             "vector_hits": vector_hits,
             "graph_expanded_context": expanded_nodes,
             "expected_nodes": example.get("expected_nodes", []),
+            "expected_hits_vector": expected_hits_vector,
+            "expected_hits_expanded": expected_hits_expanded,
+            "expected_coverage_vector": len(expected_hits_vector) / expected_count,
+            "expected_coverage_expanded": len(expected_hits_expanded) / expected_count,
             "notes": example.get("notes", ""),
         })
 

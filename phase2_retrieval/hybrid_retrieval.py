@@ -5,6 +5,7 @@ from typing import List, Set
 import networkx as nx
 
 from node_parser import load_nodes
+from semantic_utils import coalesce, load_yaml_config, resolve_config_path
 
 
 def build_graph(nodes) -> nx.MultiDiGraph:
@@ -64,12 +65,13 @@ def graph_expand(graph: nx.MultiDiGraph, seeds: List[str], hops: int, edge_types
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Hybrid vector + graph retrieval")
-    parser.add_argument("--root", required=True, help="Seed graph root")
-    parser.add_argument("--url", default="http://localhost:6333")
-    parser.add_argument("--collection", required=True)
-    parser.add_argument("--model", default="BAAI/bge-small-en-v1.5")
+    parser.add_argument("--config", default="")
+    parser.add_argument("--root", default="", help="Seed graph root")
+    parser.add_argument("--url", default="")
+    parser.add_argument("--collection", default="")
+    parser.add_argument("--model", default="")
     parser.add_argument("--query", required=True)
-    parser.add_argument("--top-k", type=int, default=8)
+    parser.add_argument("--top-k", type=int, default=0)
     parser.add_argument("--hops", type=int, default=1)
     parser.add_argument("--edge", action="append", default=[])
     parser.add_argument("--node-class", action="append", default=[])
@@ -77,18 +79,34 @@ def main() -> None:
     parser.add_argument("--snapshot", default="")
     args = parser.parse_args()
 
+    config = load_yaml_config(args.config)
+    qdrant_cfg = config.get("qdrant", {})
+    retrieval_cfg = config.get("retrieval", {})
+    root = coalesce(args.root, config.get("graph_root"))
+    root = resolve_config_path(args.config, root)
+    url = coalesce(args.url, qdrant_cfg.get("url"), "http://localhost:6333")
+    collection = coalesce(args.collection, qdrant_cfg.get("collection"))
+    model_name = coalesce(args.model, config.get("embedding", {}).get("model_name"), "BAAI/bge-small-en-v1.5")
+    top_k = args.top_k or retrieval_cfg.get("top_k", 8)
+    hops = args.hops
+    snapshot = args.snapshot or ""
+    edge_types = set(args.edge or retrieval_cfg.get("edge_types", []))
+
+    if not root or not collection:
+        raise SystemExit("--root and --collection are required (or provide config.yaml)")
+
     from qdrant_client import QdrantClient
     from sentence_transformers import SentenceTransformer
 
-    model = SentenceTransformer(args.model)
+    model = SentenceTransformer(model_name)
     query_vec = model.encode(args.query, normalize_embeddings=True)
 
-    client = QdrantClient(url=args.url)
-    q_filter = build_filter(args.node_class, args.tag, args.snapshot)
+    client = QdrantClient(url=url)
+    q_filter = build_filter(args.node_class, args.tag, snapshot)
     results = client.search(
-        collection_name=args.collection,
+        collection_name=collection,
         query_vector=query_vec.tolist(),
-        limit=args.top_k,
+        limit=top_k,
         query_filter=q_filter,
         with_payload=True,
     )
@@ -100,10 +118,9 @@ def main() -> None:
         if node_id:
             seeds.append(node_id)
 
-    nodes = load_nodes(Path(args.root))
+    nodes = load_nodes(Path(root))
     graph = build_graph(nodes)
-    edge_types = set(args.edge)
-    expanded = graph_expand(graph, seeds, args.hops, edge_types)
+    expanded = graph_expand(graph, seeds, hops, edge_types)
 
     print("Vector hits:")
     for res in results:

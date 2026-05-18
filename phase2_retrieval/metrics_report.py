@@ -7,6 +7,7 @@ from time import perf_counter
 import networkx as nx
 
 from node_parser import load_nodes
+from semantic_utils import coalesce, load_yaml_config, resolve_config_path
 
 
 def load_examples(path: Path):
@@ -55,19 +56,33 @@ def graph_expand(graph: nx.MultiDiGraph, seeds, hops: int, edge_types):
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Retrieval metrics report")
-    parser.add_argument("--root", required=True)
+    parser.add_argument("--config", default="")
+    parser.add_argument("--root", default="")
     parser.add_argument("--examples", required=True)
-    parser.add_argument("--url", default="http://localhost:6333")
-    parser.add_argument("--collection", required=True)
-    parser.add_argument("--model", default="BAAI/bge-small-en-v1.5")
-    parser.add_argument("--top-k", type=int, default=8)
+    parser.add_argument("--url", default="")
+    parser.add_argument("--collection", default="")
+    parser.add_argument("--model", default="")
+    parser.add_argument("--top-k", type=int, default=0)
     parser.add_argument("--output", default="metrics_report.json")
     parser.add_argument("--hops", type=int, default=1)
     parser.add_argument("--edge", action="append", default=[])
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
-    nodes = load_nodes(Path(args.root))
+    config = load_yaml_config(args.config)
+    qdrant_cfg = config.get("qdrant", {})
+    retrieval_cfg = config.get("retrieval", {})
+    root = coalesce(args.root, config.get("graph_root"))
+    root = resolve_config_path(args.config, root)
+    url = coalesce(args.url, qdrant_cfg.get("url"), "http://localhost:6333")
+    collection = coalesce(args.collection, qdrant_cfg.get("collection"))
+    model_name = coalesce(args.model, config.get("embedding", {}).get("model_name"), "BAAI/bge-small-en-v1.5")
+    top_k = args.top_k or retrieval_cfg.get("top_k", 8)
+    edge_types = set(args.edge or retrieval_cfg.get("edge_types", []))
+    if not root or not collection:
+        raise SystemExit("--root and --collection are required (or provide config.yaml)")
+
+    nodes = load_nodes(Path(root))
     node_classes = {n.meta.get("id"): n.meta.get("node_class") for n in nodes}
     graph = build_graph(nodes)
 
@@ -82,22 +97,20 @@ def main() -> None:
     from qdrant_client import QdrantClient
     from sentence_transformers import SentenceTransformer
 
-    client = QdrantClient(url=args.url)
-    model = SentenceTransformer(args.model)
+    client = QdrantClient(url=url)
+    model = SentenceTransformer(model_name)
 
     examples = load_examples(Path(args.examples))
     results_out = []
     retrieved_nodes = set()
-    edge_types = set(args.edge)
-
     for example in examples:
         query = example["query"]
         start = perf_counter()
         query_vec = model.encode(query, normalize_embeddings=True)
         results = client.search(
-            collection_name=args.collection,
+            collection_name=collection,
             query_vector=query_vec.tolist(),
-            limit=args.top_k,
+            limit=top_k,
             with_payload=True,
         )
         latency_ms = (perf_counter() - start) * 1000.0
@@ -113,7 +126,7 @@ def main() -> None:
             "id": example.get("id"),
             "query": query,
             "latency_ms": latency_ms,
-            "top_k": args.top_k,
+            "top_k": top_k,
             "top_ids": top_ids,
             "node_class_distribution": dict(class_dist),
             "graph_expansion_size": len(expanded),

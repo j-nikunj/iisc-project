@@ -6,6 +6,8 @@ from typing import Any, Dict, Iterable, List
 from qdrant_client import QdrantClient
 from qdrant_client.http import models as qdrant_models
 
+from semantic_utils import coalesce, load_yaml_config
+
 
 def iter_jsonl(path: Path) -> Iterable[Dict[str, Any]]:
     with path.open("r", encoding="utf-8") as handle:
@@ -18,12 +20,21 @@ def iter_jsonl(path: Path) -> Iterable[Dict[str, Any]]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Build Qdrant index for seed graph nodes")
+    parser.add_argument("--config", default="")
     parser.add_argument("--embeddings", required=True, help="Path to embeddings.jsonl")
-    parser.add_argument("--url", default="http://localhost:6333")
-    parser.add_argument("--collection", required=True)
-    parser.add_argument("--distance", default="Cosine")
+    parser.add_argument("--url", default="")
+    parser.add_argument("--collection", default="")
+    parser.add_argument("--distance", default="")
     parser.add_argument("--recreate", action="store_true")
     args = parser.parse_args()
+
+    config = load_yaml_config(args.config)
+    qdrant_cfg = config.get("qdrant", {})
+    url = coalesce(args.url, qdrant_cfg.get("url"), "http://localhost:6333")
+    collection = coalesce(args.collection, qdrant_cfg.get("collection"))
+    distance = coalesce(args.distance, qdrant_cfg.get("distance"), "cosine")
+    if not collection:
+        raise SystemExit("--collection is required (or provide config.yaml)")
 
     embeddings_path = Path(args.embeddings)
     rows = list(iter_jsonl(embeddings_path))
@@ -31,23 +42,23 @@ def main() -> None:
         raise SystemExit("No embeddings found.")
 
     vector_size = len(rows[0]["vector"])
-    client = QdrantClient(url=args.url)
+    client = QdrantClient(url=url)
 
     if args.recreate:
         client.recreate_collection(
-            collection_name=args.collection,
+            collection_name=collection,
             vectors_config=qdrant_models.VectorParams(
                 size=vector_size,
-                distance=getattr(qdrant_models.Distance, args.distance.upper()),
+                distance=getattr(qdrant_models.Distance, str(distance).upper()),
             ),
         )
     else:
-        if args.collection not in [c.name for c in client.get_collections().collections]:
+        if collection not in [c.name for c in client.get_collections().collections]:
             client.create_collection(
-                collection_name=args.collection,
+                collection_name=collection,
                 vectors_config=qdrant_models.VectorParams(
                     size=vector_size,
-                    distance=getattr(qdrant_models.Distance, args.distance.upper()),
+                    distance=getattr(qdrant_models.Distance, str(distance).upper()),
                 ),
             )
 
@@ -64,8 +75,8 @@ def main() -> None:
             )
         )
 
-    client.upsert(collection_name=args.collection, points=points)
-    print(f"Upserted {len(points)} points into {args.collection}")
+    client.upsert(collection_name=collection, points=points)
+    print(f"Upserted {len(points)} points into {collection}")
 
 
 if __name__ == "__main__":
