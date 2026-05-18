@@ -1,0 +1,6 @@
+sentence-transformers>=2.5.1
+qdrant-client>=1.7.0
+numpy>=1.26
+PyYAML>=6.0
+networkx>=3.2
+tqdm>=4.66

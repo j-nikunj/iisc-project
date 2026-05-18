@@ -1,0 +1,26 @@
+[
+  {
+    "id": "flooding_prone_congestion",
+    "query": "flooding-prone congestion corridors near Whitefield",
+    "expected_nodes": ["Whitefield Underpass Flooding Zone", "Whitefield Main Road"],
+    "notes": "Focus on flooding zones overlapping corridors in the east."
+  },
+  {
+    "id": "multimodal_bottlenecks",
+    "query": "multimodal bottlenecks around Silk Board",
+    "expected_nodes": ["Silk Board Congestion Zone", "Silk Board Junction"],
+    "notes": "Surface congestion zone and junction assets."
+  },
+  {
+    "id": "corridors_dependent_on_bmtc",
+    "query": "corridors dependent on BMTC services",
+    "expected_nodes": ["Outer Ring Road", "Hosur Road", "Bannerghatta Road"],
+    "notes": "Retrieve corridors linked to BMTC-operated services."
+  },
+  {
+    "id": "weak_maintenance_assets",
+    "query": "weakly maintained infrastructure assets",
+    "expected_nodes": ["Hebbal Flyover", "KR Puram Bridge"],
+    "notes": "Use maintenance semantics and asset types."
+  }
+]

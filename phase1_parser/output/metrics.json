@@ -1,0 +1,203 @@
+{
+  "node_count": 67,
+  "edge_count": 152,
+  "node_class_distribution": {
+    "agency": 4,
+    "asset": 7,
+    "congestion_zone": 4,
+    "corridor": 7,
+    "flooding_zone": 3,
+    "funding_mechanism": 3,
+    "infrastructure_failure": 4,
+    "maintenance_event": 4,
+    "mobility_pattern": 4,
+    "operator": 4,
+    "policy": 3,
+    "sensor_system": 3,
+    "stakeholder": 4,
+    "transit_service": 9,
+    "urban_region": 4
+  },
+  "edge_type_distribution": {
+    "MAINTAINS": 9,
+    "OWNS": 2,
+    "LOCATED_IN": 21,
+    "OVERLAPS_WITH": 22,
+    "IMPACTS": 8,
+    "CONNECTS_TO": 16,
+    "CORRELATES_WITH": 7,
+    "CAUSES": 4,
+    "CONSTRAINS": 10,
+    "DEPENDS_ON": 17,
+    "FUNDED_BY": 5,
+    "REGULATED_BY": 8,
+    "OPERATES": 9,
+    "MONITORS": 5,
+    "SERVES": 9
+  },
+  "connected_components": [
+    {
+      "size": 67,
+      "nodes": [
+        "region-hebbal",
+        "funding-state-budget",
+        "zone-silk-board-underpass-flooding",
+        "region-bengaluru-urban",
+        "stakeholder-informal-auto-drivers",
+        "service-bmtc-sarjapur-road",
+        "stakeholder-east-residents",
+        "service-bmtc-bannerghatta-road",
+        "operator-bmrcl-ops",
+        "corridor-blr-bannerghatta-road",
+        "service-bmtc-hosur-road",
+        "funding-farebox",
+        "service-metro-feeder-fm1",
+        "pattern-airport-commute",
+        "funding-multilateral-metro",
+        "sensor-koramangala-flood-gauge",
+        "asset-blr-kr-puram-bridge",
+        "corridor-blr-orr",
+        "service-bmtc-old-madras-road",
+        "service-metro-purple-line",
+        "zone-silk-board-congestion",
+        "zone-orr-bellandur-flooding",
+        "failure-hebbal-bearing-wear",
+        "asset-blr-silk-board-underpass",
+        "operator-ola",
+        "corridor-blr-sarjapur-road",
+        "sensor-silk-board-cctv",
+        "asset-blr-mahadevapura-flyover",
+        "failure-silk-board-spillback",
+        "sensor-orr-anpr",
+        "corridor-blr-whitefield-main-road",
+        "policy-blr-bus-priority",
+        "asset-blr-hebbal-flyover",
+        "pattern-metro-feeder-transfer",
+        "region-orr-it-corridor",
+        "operator-bmtc",
+        "pattern-peak-hour-it-commute",
+        "asset-blr-kr-puram-underpass",
+        "zone-marathahalli-congestion",
+        "operator-auto-union",
+        "maintenance-orr-resurfacing",
+        "asset-blr-baiyappanahalli-depot",
+        "service-vayu-vajra-kia9",
+        "agency-bbmp",
+        "service-metro-green-line",
+        "zone-hebbal-congestion",
+        "failure-orr-pavement-rutting",
+        "corridor-blr-old-madras-road",
+        "policy-karnataka-ev-2021",
+        "maintenance-hebbal-inspection",
+        "stakeholder-it-corridor-commuters",
+        "stakeholder-freight-operators",
+        "region-whitefield",
+        "agency-bmrcl",
+        "maintenance-desilting-pre-monsoon",
+        "failure-koramangala-drainage-overload",
+        "service-bmtc-500d",
+        "zone-kr-puram-congestion",
+        "policy-nutp-2014",
+        "corridor-blr-hosur-road",
+        "zone-whitefield-underpass-flooding",
+        "agency-dult",
+        "maintenance-silk-board-signal-retiming",
+        "asset-blr-silk-board-junction",
+        "agency-btp",
+        "pattern-two-wheeler-last-mile",
+        "corridor-blr-airport-road"
+      ]
+    }
+  ],
+  "orphan_nodes": [],
+  "top_degree_centrality": [
+    [
+      "region-bengaluru-urban",
+      0.3484848484848485
+    ],
+    [
+      "corridor-blr-orr",
+      0.18181818181818182
+    ],
+    [
+      "zone-marathahalli-congestion",
+      0.15151515151515152
+    ],
+    [
+      "service-bmtc-500d",
+      0.15151515151515152
+    ],
+    [
+      "zone-silk-board-congestion",
+      0.13636363636363635
+    ],
+    [
+      "operator-bmtc",
+      0.13636363636363635
+    ],
+    [
+      "agency-bbmp",
+      0.12121212121212122
+    ],
+    [
+      "corridor-blr-airport-road",
+      0.10606060606060606
+    ],
+    [
+      "region-orr-it-corridor",
+      0.10606060606060606
+    ],
+    [
+      "zone-hebbal-congestion",
+      0.09090909090909091
+    ]
+  ],
+  "top_betweenness_centrality": [
+    [
+      "region-bengaluru-urban",
+      0.43298629953540274
+    ],
+    [
+      "service-bmtc-500d",
+      0.14531407077545722
+    ],
+    [
+      "corridor-blr-orr",
+      0.13105168766235956
+    ],
+    [
+      "zone-marathahalli-congestion",
+      0.12368016340044312
+    ],
+    [
+      "operator-bmtc",
+      0.11899441985106322
+    ],
+    [
+      "region-orr-it-corridor",
+      0.11718989483203526
+    ],
+    [
+      "zone-silk-board-congestion",
+      0.07769697344872172
+    ],
+    [
+      "region-whitefield",
+      0.07618421982058345
+    ],
+    [
+      "maintenance-silk-board-signal-retiming",
+      0.07486301942823681
+    ],
+    [
+      "asset-blr-silk-board-junction",
+      0.0653833002746046
+    ]
+  ],
+  "semantic_invalid_edge_count": 0,
+  "cardinality_failure_count": 0,
+  "unsupported_edge_pattern_count": 0,
+  "governance_loop_count": 0,
+  "orphan_semantic_entities": [],
+  "unresolved_infrastructure_dependencies": 0
+}

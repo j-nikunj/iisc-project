@@ -1,0 +1,2633 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {},
+  "nodes": [
+    {
+      "type": "Agency",
+      "node_class": "agency",
+      "id": "agency-btp",
+      "title": "Bangalore Traffic Police",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/agency",
+        "city/bengaluru",
+        "governance/traffic"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\agencies\\Bangalore Traffic Police.md"
+    },
+    {
+      "type": "Agency",
+      "node_class": "agency",
+      "id": "agency-bbmp",
+      "title": "BBMP",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/agency",
+        "city/bengaluru",
+        "governance/municipal"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\agencies\\BBMP.md"
+    },
+    {
+      "type": "Agency",
+      "node_class": "agency",
+      "id": "agency-bmrcl",
+      "title": "BMRCL",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/agency",
+        "city/bengaluru",
+        "governance/state"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\agencies\\BMRCL.md"
+    },
+    {
+      "type": "Agency",
+      "node_class": "agency",
+      "id": "agency-dult",
+      "title": "DULT",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/agency",
+        "city/bengaluru",
+        "governance/state"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\agencies\\DULT.md"
+    },
+    {
+      "type": "Asset",
+      "node_class": "asset",
+      "id": "asset-blr-baiyappanahalli-depot",
+      "title": "Baiyappanahalli Metro Depot",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/asset",
+        "asset/depot",
+        "city/bengaluru",
+        "region/east"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\assets\\Baiyappanahalli Metro Depot.md"
+    },
+    {
+      "type": "Asset",
+      "node_class": "asset",
+      "id": "asset-blr-hebbal-flyover",
+      "title": "Hebbal Flyover",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/asset",
+        "asset/flyover",
+        "city/bengaluru",
+        "region/hebbal"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\assets\\Hebbal Flyover.md"
+    },
+    {
+      "type": "Asset",
+      "node_class": "asset",
+      "id": "asset-blr-kr-puram-bridge",
+      "title": "KR Puram Bridge",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/asset",
+        "asset/bridge",
+        "city/bengaluru",
+        "region/east"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\assets\\KR Puram Bridge.md"
+    },
+    {
+      "type": "Asset",
+      "node_class": "asset",
+      "id": "asset-blr-kr-puram-underpass",
+      "title": "KR Puram Underpass",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/asset",
+        "asset/underpass",
+        "city/bengaluru",
+        "region/east"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\assets\\KR Puram Underpass.md"
+    },
+    {
+      "type": "Asset",
+      "node_class": "asset",
+      "id": "asset-blr-mahadevapura-flyover",
+      "title": "Mahadevapura Flyover",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/asset",
+        "asset/flyover",
+        "city/bengaluru",
+        "region/orr"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\assets\\Mahadevapura Flyover.md"
+    },
+    {
+      "type": "Asset",
+      "node_class": "asset",
+      "id": "asset-blr-silk-board-junction",
+      "title": "Silk Board Junction",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/asset",
+        "asset/junction",
+        "city/bengaluru",
+        "region/south"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\assets\\Silk Board Junction.md"
+    },
+    {
+      "type": "Asset",
+      "node_class": "asset",
+      "id": "asset-blr-silk-board-underpass",
+      "title": "Silk Board Underpass",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/asset",
+        "asset/underpass",
+        "city/bengaluru",
+        "region/south"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\assets\\Silk Board Underpass.md"
+    },
+    {
+      "type": "Congestion Zone",
+      "node_class": "congestion_zone",
+      "id": "zone-hebbal-congestion",
+      "title": "Hebbal Congestion Zone",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/zone",
+        "zone/congestion",
+        "region/hebbal"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\congestion_zones\\Hebbal Congestion Zone.md"
+    },
+    {
+      "type": "Congestion Zone",
+      "node_class": "congestion_zone",
+      "id": "zone-kr-puram-congestion",
+      "title": "KR Puram Congestion Zone",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/zone",
+        "zone/congestion",
+        "region/east"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\congestion_zones\\KR Puram Congestion Zone.md"
+    },
+    {
+      "type": "Congestion Zone",
+      "node_class": "congestion_zone",
+      "id": "zone-marathahalli-congestion",
+      "title": "Marathahalli Congestion Zone",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/zone",
+        "zone/congestion",
+        "region/orr"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\congestion_zones\\Marathahalli Congestion Zone.md"
+    },
+    {
+      "type": "Congestion Zone",
+      "node_class": "congestion_zone",
+      "id": "zone-silk-board-congestion",
+      "title": "Silk Board Congestion Zone",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/zone",
+        "zone/congestion",
+        "region/south"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\congestion_zones\\Silk Board Congestion Zone.md"
+    },
+    {
+      "type": "Corridor",
+      "node_class": "corridor",
+      "id": "corridor-blr-airport-road",
+      "title": "Airport Road (Bellary Road)",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/corridor",
+        "city/bengaluru",
+        "region/north",
+        "transit/served"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\corridors\\Airport Road (Bellary Road).md"
+    },
+    {
+      "type": "Corridor",
+      "node_class": "corridor",
+      "id": "corridor-blr-bannerghatta-road",
+      "title": "Bannerghatta Road",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/corridor",
+        "city/bengaluru",
+        "region/south",
+        "transit/served"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\corridors\\Bannerghatta Road.md"
+    },
+    {
+      "type": "Corridor",
+      "node_class": "corridor",
+      "id": "corridor-blr-hosur-road",
+      "title": "Hosur Road",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/corridor",
+        "city/bengaluru",
+        "region/south",
+        "transit/served"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\corridors\\Hosur Road.md"
+    },
+    {
+      "type": "Corridor",
+      "node_class": "corridor",
+      "id": "corridor-blr-old-madras-road",
+      "title": "Old Madras Road",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/corridor",
+        "city/bengaluru",
+        "region/east",
+        "transit/served"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\corridors\\Old Madras Road.md"
+    },
+    {
+      "type": "Corridor",
+      "node_class": "corridor",
+      "id": "corridor-blr-orr",
+      "title": "Outer Ring Road",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/corridor",
+        "city/bengaluru",
+        "region/orr",
+        "transit/served"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\corridors\\Outer Ring Road.md"
+    },
+    {
+      "type": "Corridor",
+      "node_class": "corridor",
+      "id": "corridor-blr-sarjapur-road",
+      "title": "Sarjapur Road",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/corridor",
+        "city/bengaluru",
+        "region/southeast",
+        "transit/served"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\corridors\\Sarjapur Road.md"
+    },
+    {
+      "type": "Corridor",
+      "node_class": "corridor",
+      "id": "corridor-blr-whitefield-main-road",
+      "title": "Whitefield Main Road",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/corridor",
+        "city/bengaluru",
+        "region/whitefield",
+        "transit/served"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\corridors\\Whitefield Main Road.md"
+    },
+    {
+      "type": "Flooding Zone",
+      "node_class": "flooding_zone",
+      "id": "zone-orr-bellandur-flooding",
+      "title": "ORR-Bellandur Flooding Zone",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/zone",
+        "zone/flooding",
+        "region/orr"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\flooding_zones\\ORR-Bellandur Flooding Zone.md"
+    },
+    {
+      "type": "Flooding Zone",
+      "node_class": "flooding_zone",
+      "id": "zone-silk-board-underpass-flooding",
+      "title": "Silk Board Underpass Flooding Zone",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/zone",
+        "zone/flooding",
+        "region/south"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\flooding_zones\\Silk Board Underpass Flooding Zone.md"
+    },
+    {
+      "type": "Flooding Zone",
+      "node_class": "flooding_zone",
+      "id": "zone-whitefield-underpass-flooding",
+      "title": "Whitefield Underpass Flooding Zone",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/zone",
+        "zone/flooding",
+        "region/whitefield"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\flooding_zones\\Whitefield Underpass Flooding Zone.md"
+    },
+    {
+      "type": "Funding Mechanism",
+      "node_class": "funding_mechanism",
+      "id": "funding-farebox",
+      "title": "Farebox Revenue",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/funding",
+        "funding/farebox"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\funding_mechanisms\\Farebox Revenue.md"
+    },
+    {
+      "type": "Funding Mechanism",
+      "node_class": "funding_mechanism",
+      "id": "funding-multilateral-metro",
+      "title": "Multilateral Loan - Metro",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/funding",
+        "funding/loan"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\funding_mechanisms\\Multilateral Loan - Metro.md"
+    },
+    {
+      "type": "Funding Mechanism",
+      "node_class": "funding_mechanism",
+      "id": "funding-state-budget",
+      "title": "State Budget Grant",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/funding",
+        "funding/budget"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\funding_mechanisms\\State Budget Grant.md"
+    },
+    {
+      "type": "Infrastructure Failure",
+      "node_class": "infrastructure_failure",
+      "id": "failure-hebbal-bearing-wear",
+      "title": "Hebbal Flyover Bearing Wear (Hypothesized)",
+      "city": "Bengaluru",
+      "status": "hypothesized",
+      "tags": [
+        "class/failure",
+        "failure/structural",
+        "region/hebbal"
+      ],
+      "source_confidence": "low",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\infrastructure_failures\\Hebbal Flyover Bearing Wear (Hypothesized).md"
+    },
+    {
+      "type": "Infrastructure Failure",
+      "node_class": "infrastructure_failure",
+      "id": "failure-koramangala-drainage-overload",
+      "title": "Koramangala Valley Drainage Overload",
+      "city": "Bengaluru",
+      "status": "hypothesized",
+      "tags": [
+        "class/failure",
+        "failure/drainage",
+        "region/south"
+      ],
+      "source_confidence": "low",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\infrastructure_failures\\Koramangala Valley Drainage Overload.md"
+    },
+    {
+      "type": "Infrastructure Failure",
+      "node_class": "infrastructure_failure",
+      "id": "failure-orr-pavement-rutting",
+      "title": "ORR Pavement Rutting Pattern",
+      "city": "Bengaluru",
+      "status": "hypothesized",
+      "tags": [
+        "class/failure",
+        "failure/pavement",
+        "region/orr"
+      ],
+      "source_confidence": "low",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\infrastructure_failures\\ORR Pavement Rutting Pattern.md"
+    },
+    {
+      "type": "Infrastructure Failure",
+      "node_class": "infrastructure_failure",
+      "id": "failure-silk-board-spillback",
+      "title": "Silk Board Spillback Failure",
+      "city": "Bengaluru",
+      "status": "hypothesized",
+      "tags": [
+        "class/failure",
+        "failure/capacity",
+        "region/south"
+      ],
+      "source_confidence": "low",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\infrastructure_failures\\Silk Board Spillback Failure.md"
+    },
+    {
+      "type": "Maintenance Event",
+      "node_class": "maintenance_event",
+      "id": "maintenance-hebbal-inspection",
+      "title": "Hebbal Flyover Inspection (Illustrative)",
+      "city": "Bengaluru",
+      "status": "illustrative",
+      "tags": [
+        "class/maintenance_event",
+        "maintenance/inspection",
+        "region/hebbal"
+      ],
+      "source_confidence": "low",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\maintenance_events\\Hebbal Flyover Inspection (Illustrative).md"
+    },
+    {
+      "type": "Maintenance Event",
+      "node_class": "maintenance_event",
+      "id": "maintenance-orr-resurfacing",
+      "title": "ORR Resurfacing Cycle (Illustrative)",
+      "city": "Bengaluru",
+      "status": "illustrative",
+      "tags": [
+        "class/maintenance_event",
+        "maintenance/resurfacing",
+        "region/orr"
+      ],
+      "source_confidence": "low",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\maintenance_events\\ORR Resurfacing Cycle (Illustrative).md"
+    },
+    {
+      "type": "Maintenance Event",
+      "node_class": "maintenance_event",
+      "id": "maintenance-desilting-pre-monsoon",
+      "title": "Pre-monsoon Desilting Drive (Illustrative)",
+      "city": "Bengaluru",
+      "status": "illustrative",
+      "tags": [
+        "class/maintenance_event",
+        "maintenance/desilting",
+        "region/south"
+      ],
+      "source_confidence": "low",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\maintenance_events\\Pre-monsoon Desilting Drive (Illustrative).md"
+    },
+    {
+      "type": "Maintenance Event",
+      "node_class": "maintenance_event",
+      "id": "maintenance-silk-board-signal-retiming",
+      "title": "Silk Board Signal Retiming (Illustrative)",
+      "city": "Bengaluru",
+      "status": "illustrative",
+      "tags": [
+        "class/maintenance_event",
+        "maintenance/signal",
+        "region/south"
+      ],
+      "source_confidence": "low",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\maintenance_events\\Silk Board Signal Retiming (Illustrative).md"
+    },
+    {
+      "type": "Mobility Pattern",
+      "node_class": "mobility_pattern",
+      "id": "pattern-airport-commute",
+      "title": "Airport Commute Pattern",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/pattern",
+        "pattern/commute",
+        "region/north"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\mobility_patterns\\Airport Commute Pattern.md"
+    },
+    {
+      "type": "Mobility Pattern",
+      "node_class": "mobility_pattern",
+      "id": "pattern-metro-feeder-transfer",
+      "title": "Metro Feeder Transfer Pattern",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/pattern",
+        "pattern/transfer",
+        "city/bengaluru"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\mobility_patterns\\Metro Feeder Transfer Pattern.md"
+    },
+    {
+      "type": "Mobility Pattern",
+      "node_class": "mobility_pattern",
+      "id": "pattern-peak-hour-it-commute",
+      "title": "Peak-hour IT Corridor Commute",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/pattern",
+        "pattern/commute",
+        "region/orr"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\mobility_patterns\\Peak-hour IT Corridor Commute.md"
+    },
+    {
+      "type": "Mobility Pattern",
+      "node_class": "mobility_pattern",
+      "id": "pattern-two-wheeler-last-mile",
+      "title": "Two-wheeler Dominant Last-mile",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/pattern",
+        "pattern/lastmile",
+        "city/bengaluru"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\mobility_patterns\\Two-wheeler Dominant Last-mile.md"
+    },
+    {
+      "type": "Operator",
+      "node_class": "operator",
+      "id": "operator-auto-union",
+      "title": "Auto Rickshaw Operators - Bengaluru",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/operator",
+        "operator/informal",
+        "city/bengaluru"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\operators\\Auto Rickshaw Operators - Bengaluru.md"
+    },
+    {
+      "type": "Operator",
+      "node_class": "operator",
+      "id": "operator-bmrcl-ops",
+      "title": "BMRCL Operations",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/operator",
+        "operator/public",
+        "city/bengaluru"
+      ],
+      "source_confidence": "high",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\operators\\BMRCL Operations.md"
+    },
+    {
+      "type": "Operator",
+      "node_class": "operator",
+      "id": "operator-bmtc",
+      "title": "BMTC",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/operator",
+        "operator/public",
+        "city/bengaluru"
+      ],
+      "source_confidence": "high",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\operators\\BMTC.md"
+    },
+    {
+      "type": "Operator",
+      "node_class": "operator",
+      "id": "operator-ola",
+      "title": "Ola Mobility",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/operator",
+        "operator/private",
+        "city/bengaluru"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "aliases": [
+        "Ola"
+      ],
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\operators\\Ola Mobility.md"
+    },
+    {
+      "type": "Policy",
+      "node_class": "policy",
+      "id": "policy-blr-bus-priority",
+      "title": "Bengaluru Bus Priority Policy (Illustrative)",
+      "city": "Bengaluru",
+      "status": "illustrative",
+      "tags": [
+        "class/policy",
+        "scope/city",
+        "status/illustrative"
+      ],
+      "source_confidence": "low",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\policies\\Bengaluru Bus Priority Policy (Illustrative).md"
+    },
+    {
+      "type": "Policy",
+      "node_class": "policy",
+      "id": "policy-karnataka-ev-2021",
+      "title": "Karnataka Electric Vehicle Policy 2021-2026",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/policy",
+        "scope/state"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "aliases": [
+        "Karnataka EV Policy"
+      ],
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\policies\\Karnataka Electric Vehicle Policy 2021-2026.md"
+    },
+    {
+      "type": "Policy",
+      "node_class": "policy",
+      "id": "policy-nutp-2014",
+      "title": "National Urban Transport Policy 2014",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/policy",
+        "scope/national"
+      ],
+      "source_confidence": "high",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\policies\\National Urban Transport Policy 2014.md"
+    },
+    {
+      "type": "Sensor System",
+      "node_class": "sensor_system",
+      "id": "sensor-koramangala-flood-gauge",
+      "title": "Koramangala Flood Gauge (Illustrative)",
+      "city": "Bengaluru",
+      "status": "illustrative",
+      "tags": [
+        "class/sensor",
+        "sensor/flood",
+        "region/south",
+        "status/illustrative"
+      ],
+      "source_confidence": "low",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\sensor_systems\\Koramangala Flood Gauge (Illustrative).md"
+    },
+    {
+      "type": "Sensor System",
+      "node_class": "sensor_system",
+      "id": "sensor-orr-anpr",
+      "title": "ORR ANPR Camera Network (Illustrative)",
+      "city": "Bengaluru",
+      "status": "illustrative",
+      "tags": [
+        "class/sensor",
+        "sensor/anpr",
+        "region/orr",
+        "status/illustrative"
+      ],
+      "source_confidence": "low",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\sensor_systems\\ORR ANPR Camera Network (Illustrative).md"
+    },
+    {
+      "type": "Sensor System",
+      "node_class": "sensor_system",
+      "id": "sensor-silk-board-cctv",
+      "title": "Silk Board CCTV Cluster",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/sensor",
+        "sensor/cctv",
+        "region/south"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\sensor_systems\\Silk Board CCTV Cluster.md"
+    },
+    {
+      "type": "Stakeholder",
+      "node_class": "stakeholder",
+      "id": "stakeholder-east-residents",
+      "title": "East Bengaluru Residents Associations",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/stakeholder",
+        "stakeholder/residents",
+        "region/whitefield"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\stakeholders\\East Bengaluru Residents Associations.md"
+    },
+    {
+      "type": "Stakeholder",
+      "node_class": "stakeholder",
+      "id": "stakeholder-freight-operators",
+      "title": "Freight Operators - Bengaluru",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/stakeholder",
+        "stakeholder/freight",
+        "city/bengaluru"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\stakeholders\\Freight Operators - Bengaluru.md"
+    },
+    {
+      "type": "Stakeholder",
+      "node_class": "stakeholder",
+      "id": "stakeholder-informal-auto-drivers",
+      "title": "Informal Auto Drivers",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/stakeholder",
+        "stakeholder/auto",
+        "city/bengaluru"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\stakeholders\\Informal Auto Drivers.md"
+    },
+    {
+      "type": "Stakeholder",
+      "node_class": "stakeholder",
+      "id": "stakeholder-it-corridor-commuters",
+      "title": "IT Corridor Commuters",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/stakeholder",
+        "stakeholder/commuters",
+        "region/orr"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\stakeholders\\IT Corridor Commuters.md"
+    },
+    {
+      "type": "Transit Service",
+      "node_class": "transit_service",
+      "id": "service-bmtc-500d",
+      "title": "BMTC 500D ORR",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/transit_service",
+        "mode/bus",
+        "region/orr"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\transit_services\\BMTC 500D ORR.md"
+    },
+    {
+      "type": "Transit Service",
+      "node_class": "transit_service",
+      "id": "service-bmtc-bannerghatta-road",
+      "title": "BMTC Bannerghatta Road Corridor Service (Illustrative)",
+      "city": "Bengaluru",
+      "status": "illustrative",
+      "tags": [
+        "class/transit_service",
+        "mode/bus",
+        "city/bengaluru",
+        "status/illustrative",
+        "region/south"
+      ],
+      "source_confidence": "low",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\transit_services\\BMTC Bannerghatta Road Corridor Service (Illustrative).md"
+    },
+    {
+      "type": "Transit Service",
+      "node_class": "transit_service",
+      "id": "service-bmtc-hosur-road",
+      "title": "BMTC Hosur Road Corridor Service (Illustrative)",
+      "city": "Bengaluru",
+      "status": "illustrative",
+      "tags": [
+        "class/transit_service",
+        "mode/bus",
+        "city/bengaluru",
+        "status/illustrative",
+        "region/south"
+      ],
+      "source_confidence": "low",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\transit_services\\BMTC Hosur Road Corridor Service (Illustrative).md"
+    },
+    {
+      "type": "Transit Service",
+      "node_class": "transit_service",
+      "id": "service-bmtc-old-madras-road",
+      "title": "BMTC Old Madras Road Corridor Service (Illustrative)",
+      "city": "Bengaluru",
+      "status": "illustrative",
+      "tags": [
+        "class/transit_service",
+        "mode/bus",
+        "city/bengaluru",
+        "status/illustrative",
+        "region/east"
+      ],
+      "source_confidence": "low",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\transit_services\\BMTC Old Madras Road Corridor Service (Illustrative).md"
+    },
+    {
+      "type": "Transit Service",
+      "node_class": "transit_service",
+      "id": "service-bmtc-sarjapur-road",
+      "title": "BMTC Sarjapur Road Corridor Service (Illustrative)",
+      "city": "Bengaluru",
+      "status": "illustrative",
+      "tags": [
+        "class/transit_service",
+        "mode/bus",
+        "city/bengaluru",
+        "status/illustrative",
+        "region/southeast"
+      ],
+      "source_confidence": "low",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\transit_services\\BMTC Sarjapur Road Corridor Service (Illustrative).md"
+    },
+    {
+      "type": "Transit Service",
+      "node_class": "transit_service",
+      "id": "service-metro-feeder-fm1",
+      "title": "Metro Feeder FM-1 (Illustrative)",
+      "city": "Bengaluru",
+      "status": "illustrative",
+      "tags": [
+        "class/transit_service",
+        "mode/feeder",
+        "status/illustrative"
+      ],
+      "source_confidence": "low",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\transit_services\\Metro Feeder FM-1 (Illustrative).md"
+    },
+    {
+      "type": "Transit Service",
+      "node_class": "transit_service",
+      "id": "service-metro-green-line",
+      "title": "Namma Metro Green Line",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/transit_service",
+        "mode/metro",
+        "city/bengaluru"
+      ],
+      "source_confidence": "high",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\transit_services\\Namma Metro Green Line.md"
+    },
+    {
+      "type": "Transit Service",
+      "node_class": "transit_service",
+      "id": "service-metro-purple-line",
+      "title": "Namma Metro Purple Line",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/transit_service",
+        "mode/metro",
+        "city/bengaluru"
+      ],
+      "source_confidence": "high",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\transit_services\\Namma Metro Purple Line.md"
+    },
+    {
+      "type": "Transit Service",
+      "node_class": "transit_service",
+      "id": "service-vayu-vajra-kia9",
+      "title": "Vayu Vajra KIA-9",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/transit_service",
+        "mode/airport_bus",
+        "region/north"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\transit_services\\Vayu Vajra KIA-9.md"
+    },
+    {
+      "type": "Urban Region",
+      "node_class": "urban_region",
+      "id": "region-bengaluru-urban",
+      "title": "Bengaluru Urban Region",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/region",
+        "region/city"
+      ],
+      "source_confidence": "high",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\urban_regions\\Bengaluru Urban Region.md"
+    },
+    {
+      "type": "Urban Region",
+      "node_class": "urban_region",
+      "id": "region-hebbal",
+      "title": "Hebbal Region",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/region",
+        "region/hebbal"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\urban_regions\\Hebbal Region.md"
+    },
+    {
+      "type": "Urban Region",
+      "node_class": "urban_region",
+      "id": "region-orr-it-corridor",
+      "title": "ORR IT Corridor Region",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/region",
+        "region/orr"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\urban_regions\\ORR IT Corridor Region.md"
+    },
+    {
+      "type": "Urban Region",
+      "node_class": "urban_region",
+      "id": "region-whitefield",
+      "title": "Whitefield Region",
+      "city": "Bengaluru",
+      "status": "active",
+      "tags": [
+        "class/region",
+        "region/whitefield"
+      ],
+      "source_confidence": "medium",
+      "created": "2026-05-18",
+      "updated": "2026-05-18",
+      "graph_snapshot_version": "v1_phase2_ready",
+      "geo": {
+        "lat": null,
+        "lon": null
+      },
+      "aliases": [],
+      "file_path": "D:\\iisc project\\seed_graph\\bengaluru\\urban_regions\\Whitefield Region.md"
+    }
+  ],
+  "edges": [
+    {
+      "edge_type": "MAINTAINS",
+      "raw_target": "Silk Board Signal Retiming (Illustrative)",
+      "source": "agency-btp",
+      "target": "maintenance-silk-board-signal-retiming",
+      "key": 0
+    },
+    {
+      "edge_type": "OWNS",
+      "raw_target": "Silk Board Underpass",
+      "source": "agency-bbmp",
+      "target": "asset-blr-silk-board-underpass",
+      "key": 0
+    },
+    {
+      "edge_type": "MAINTAINS",
+      "raw_target": "Silk Board Underpass",
+      "source": "agency-bbmp",
+      "target": "asset-blr-silk-board-underpass",
+      "key": 1
+    },
+    {
+      "edge_type": "MAINTAINS",
+      "raw_target": "Mahadevapura Flyover",
+      "source": "agency-bbmp",
+      "target": "asset-blr-mahadevapura-flyover",
+      "key": 0
+    },
+    {
+      "edge_type": "MAINTAINS",
+      "raw_target": "Silk Board Junction",
+      "source": "agency-bbmp",
+      "target": "asset-blr-silk-board-junction",
+      "key": 0
+    },
+    {
+      "edge_type": "MAINTAINS",
+      "raw_target": "KR Puram Bridge",
+      "source": "agency-bbmp",
+      "target": "asset-blr-kr-puram-bridge",
+      "key": 0
+    },
+    {
+      "edge_type": "MAINTAINS",
+      "raw_target": "KR Puram Underpass",
+      "source": "agency-bbmp",
+      "target": "asset-blr-kr-puram-underpass",
+      "key": 0
+    },
+    {
+      "edge_type": "MAINTAINS",
+      "raw_target": "Hebbal Flyover",
+      "source": "agency-bbmp",
+      "target": "asset-blr-hebbal-flyover",
+      "key": 0
+    },
+    {
+      "edge_type": "MAINTAINS",
+      "raw_target": "Pre-monsoon Desilting Drive (Illustrative)",
+      "source": "agency-bbmp",
+      "target": "maintenance-desilting-pre-monsoon",
+      "key": 0
+    },
+    {
+      "edge_type": "OWNS",
+      "raw_target": "Baiyappanahalli Metro Depot",
+      "source": "agency-bmrcl",
+      "target": "asset-blr-baiyappanahalli-depot",
+      "key": 0
+    },
+    {
+      "edge_type": "MAINTAINS",
+      "raw_target": "Baiyappanahalli Metro Depot",
+      "source": "agency-bmrcl",
+      "target": "asset-blr-baiyappanahalli-depot",
+      "key": 1
+    },
+    {
+      "edge_type": "LOCATED_IN",
+      "raw_target": "Bengaluru Urban Region",
+      "source": "asset-blr-baiyappanahalli-depot",
+      "target": "region-bengaluru-urban",
+      "key": 0
+    },
+    {
+      "edge_type": "LOCATED_IN",
+      "raw_target": "Hebbal Region",
+      "source": "asset-blr-hebbal-flyover",
+      "target": "region-hebbal",
+      "key": 0
+    },
+    {
+      "edge_type": "OVERLAPS_WITH",
+      "raw_target": "Hebbal Congestion Zone",
+      "source": "asset-blr-hebbal-flyover",
+      "target": "zone-hebbal-congestion",
+      "key": 0
+    },
+    {
+      "edge_type": "LOCATED_IN",
+      "raw_target": "Bengaluru Urban Region",
+      "source": "asset-blr-kr-puram-bridge",
+      "target": "region-bengaluru-urban",
+      "key": 0
+    },
+    {
+      "edge_type": "OVERLAPS_WITH",
+      "raw_target": "KR Puram Congestion Zone",
+      "source": "asset-blr-kr-puram-bridge",
+      "target": "zone-kr-puram-congestion",
+      "key": 0
+    },
+    {
+      "edge_type": "LOCATED_IN",
+      "raw_target": "Bengaluru Urban Region",
+      "source": "asset-blr-kr-puram-underpass",
+      "target": "region-bengaluru-urban",
+      "key": 0
+    },
+    {
+      "edge_type": "OVERLAPS_WITH",
+      "raw_target": "KR Puram Congestion Zone",
+      "source": "asset-blr-kr-puram-underpass",
+      "target": "zone-kr-puram-congestion",
+      "key": 0
+    },
+    {
+      "edge_type": "LOCATED_IN",
+      "raw_target": "ORR IT Corridor Region",
+      "source": "asset-blr-mahadevapura-flyover",
+      "target": "region-orr-it-corridor",
+      "key": 0
+    },
+    {
+      "edge_type": "OVERLAPS_WITH",
+      "raw_target": "Marathahalli Congestion Zone",
+      "source": "asset-blr-mahadevapura-flyover",
+      "target": "zone-marathahalli-congestion",
+      "key": 0
+    },
+    {
+      "edge_type": "LOCATED_IN",
+      "raw_target": "Bengaluru Urban Region",
+      "source": "asset-blr-silk-board-junction",
+      "target": "region-bengaluru-urban",
+      "key": 0
+    },
+    {
+      "edge_type": "OVERLAPS_WITH",
+      "raw_target": "Silk Board Congestion Zone",
+      "source": "asset-blr-silk-board-junction",
+      "target": "zone-silk-board-congestion",
+      "key": 0
+    },
+    {
+      "edge_type": "LOCATED_IN",
+      "raw_target": "Bengaluru Urban Region",
+      "source": "asset-blr-silk-board-underpass",
+      "target": "region-bengaluru-urban",
+      "key": 0
+    },
+    {
+      "edge_type": "OVERLAPS_WITH",
+      "raw_target": "Silk Board Underpass Flooding Zone",
+      "source": "asset-blr-silk-board-underpass",
+      "target": "zone-silk-board-underpass-flooding",
+      "key": 0
+    },
+    {
+      "edge_type": "LOCATED_IN",
+      "raw_target": "Hebbal Region",
+      "source": "zone-hebbal-congestion",
+      "target": "region-hebbal",
+      "key": 0
+    },
+    {
+      "edge_type": "OVERLAPS_WITH",
+      "raw_target": "Airport Road (Bellary Road)",
+      "source": "zone-hebbal-congestion",
+      "target": "corridor-blr-airport-road",
+      "key": 0
+    },
+    {
+      "edge_type": "IMPACTS",
+      "raw_target": "IT Corridor Commuters",
+      "source": "zone-hebbal-congestion",
+      "target": "stakeholder-it-corridor-commuters",
+      "key": 0
+    },
+    {
+      "edge_type": "LOCATED_IN",
+      "raw_target": "Bengaluru Urban Region",
+      "source": "zone-kr-puram-congestion",
+      "target": "region-bengaluru-urban",
+      "key": 0
+    },
+    {
+      "edge_type": "OVERLAPS_WITH",
+      "raw_target": "Old Madras Road",
+      "source": "zone-kr-puram-congestion",
+      "target": "corridor-blr-old-madras-road",
+      "key": 0
+    },
+    {
+      "edge_type": "IMPACTS",
+      "raw_target": "IT Corridor Commuters",
+      "source": "zone-kr-puram-congestion",
+      "target": "stakeholder-it-corridor-commuters",
+      "key": 0
+    },
+    {
+      "edge_type": "LOCATED_IN",
+      "raw_target": "ORR IT Corridor Region",
+      "source": "zone-marathahalli-congestion",
+      "target": "region-orr-it-corridor",
+      "key": 0
+    },
+    {
+      "edge_type": "OVERLAPS_WITH",
+      "raw_target": "Outer Ring Road",
+      "source": "zone-marathahalli-congestion",
+      "target": "corridor-blr-orr",
+      "key": 0
+    },
+    {
+      "edge_type": "IMPACTS",
+      "raw_target": "IT Corridor Commuters",
+      "source": "zone-marathahalli-congestion",
+      "target": "stakeholder-it-corridor-commuters",
+      "key": 0
+    },
+    {
+      "edge_type": "IMPACTS",
+      "raw_target": "Freight Operators - Bengaluru",
+      "source": "zone-marathahalli-congestion",
+      "target": "stakeholder-freight-operators",
+      "key": 0
+    },
+    {
+      "edge_type": "LOCATED_IN",
+      "raw_target": "Bengaluru Urban Region",
+      "source": "zone-silk-board-congestion",
+      "target": "region-bengaluru-urban",
+      "key": 0
+    },
+    {
+      "edge_type": "OVERLAPS_WITH",
+      "raw_target": "Outer Ring Road",
+      "source": "zone-silk-board-congestion",
+      "target": "corridor-blr-orr",
+      "key": 0
+    },
+    {
+      "edge_type": "OVERLAPS_WITH",
+      "raw_target": "Hosur Road",
+      "source": "zone-silk-board-congestion",
+      "target": "corridor-blr-hosur-road",
+      "key": 0
+    },
+    {
+      "edge_type": "IMPACTS",
+      "raw_target": "IT Corridor Commuters",
+      "source": "zone-silk-board-congestion",
+      "target": "stakeholder-it-corridor-commuters",
+      "key": 0
+    },
+    {
+      "edge_type": "CONNECTS_TO",
+      "raw_target": "Hebbal Region",
+      "source": "corridor-blr-airport-road",
+      "target": "region-hebbal",
+      "key": 0
+    },
+    {
+      "edge_type": "OVERLAPS_WITH",
+      "raw_target": "Hebbal Congestion Zone",
+      "source": "corridor-blr-airport-road",
+      "target": "zone-hebbal-congestion",
+      "key": 0
+    },
+    {
+      "edge_type": "LOCATED_IN",
+      "raw_target": "Bengaluru Urban Region",
+      "source": "corridor-blr-airport-road",
+      "target": "region-bengaluru-urban",
+      "key": 0
+    },
+    {
+      "edge_type": "LOCATED_IN",
+      "raw_target": "Bengaluru Urban Region",
+      "source": "corridor-blr-bannerghatta-road",
+      "target": "region-bengaluru-urban",
+      "key": 0
+    },
+    {
+      "edge_type": "OVERLAPS_WITH",
+      "raw_target": "Silk Board Congestion Zone",
+      "source": "corridor-blr-bannerghatta-road",
+      "target": "zone-silk-board-congestion",
+      "key": 0
+    },
+    {
+      "edge_type": "CONNECTS_TO",
+      "raw_target": "Outer Ring Road",
+      "source": "corridor-blr-hosur-road",
+      "target": "corridor-blr-orr",
+      "key": 0
+    },
+    {
+      "edge_type": "OVERLAPS_WITH",
+      "raw_target": "Silk Board Congestion Zone",
+      "source": "corridor-blr-hosur-road",
+      "target": "zone-silk-board-congestion",
+      "key": 0
+    },
+    {
+      "edge_type": "LOCATED_IN",
+      "raw_target": "Bengaluru Urban Region",
+      "source": "corridor-blr-hosur-road",
+      "target": "region-bengaluru-urban",
+      "key": 0
+    },
+    {
+      "edge_type": "CONNECTS_TO",
+      "raw_target": "Outer Ring Road",
+      "source": "corridor-blr-old-madras-road",
+      "target": "corridor-blr-orr",
+      "key": 0
+    },
+    {
+      "edge_type": "OVERLAPS_WITH",
+      "raw_target": "KR Puram Congestion Zone",
+      "source": "corridor-blr-old-madras-road",
+      "target": "zone-kr-puram-congestion",
+      "key": 0
+    },
+    {
+      "edge_type": "LOCATED_IN",
+      "raw_target": "Bengaluru Urban Region",
+      "source": "corridor-blr-old-madras-road",
+      "target": "region-bengaluru-urban",
+      "key": 0
+    },
+    {
+      "edge_type": "CONNECTS_TO",
+      "raw_target": "Hosur Road",
+      "source": "corridor-blr-orr",
+      "target": "corridor-blr-hosur-road",
+      "key": 0
+    },
+    {
+      "edge_type": "CONNECTS_TO",
+      "raw_target": "Old Madras Road",
+      "source": "corridor-blr-orr",
+      "target": "corridor-blr-old-madras-road",
+      "key": 0
+    },
+    {
+      "edge_type": "CONNECTS_TO",
+      "raw_target": "Sarjapur Road",
+      "source": "corridor-blr-orr",
+      "target": "corridor-blr-sarjapur-road",
+      "key": 0
+    },
+    {
+      "edge_type": "LOCATED_IN",
+      "raw_target": "ORR IT Corridor Region",
+      "source": "corridor-blr-orr",
+      "target": "region-orr-it-corridor",
+      "key": 0
+    },
+    {
+      "edge_type": "OVERLAPS_WITH",
+      "raw_target": "Silk Board Congestion Zone",
+      "source": "corridor-blr-orr",
+      "target": "zone-silk-board-congestion",
+      "key": 0
+    },
+    {
+      "edge_type": "OVERLAPS_WITH",
+      "raw_target": "Marathahalli Congestion Zone",
+      "source": "corridor-blr-orr",
+      "target": "zone-marathahalli-congestion",
+      "key": 0
+    },
+    {
+      "edge_type": "CONNECTS_TO",
+      "raw_target": "Outer Ring Road",
+      "source": "corridor-blr-sarjapur-road",
+      "target": "corridor-blr-orr",
+      "key": 0
+    },
+    {
+      "edge_type": "OVERLAPS_WITH",
+      "raw_target": "Marathahalli Congestion Zone",
+      "source": "corridor-blr-sarjapur-road",
+      "target": "zone-marathahalli-congestion",
+      "key": 0
+    },
+    {
+      "edge_type": "LOCATED_IN",
+      "raw_target": "Bengaluru Urban Region",
+      "source": "corridor-blr-sarjapur-road",
+      "target": "region-bengaluru-urban",
+      "key": 0
+    },
+    {
+      "edge_type": "CONNECTS_TO",
+      "raw_target": "Old Madras Road",
+      "source": "corridor-blr-whitefield-main-road",
+      "target": "corridor-blr-old-madras-road",
+      "key": 0
+    },
+    {
+      "edge_type": "LOCATED_IN",
+      "raw_target": "Whitefield Region",
+      "source": "corridor-blr-whitefield-main-road",
+      "target": "region-whitefield",
+      "key": 0
+    },
+    {
+      "edge_type": "OVERLAPS_WITH",
+      "raw_target": "Whitefield Underpass Flooding Zone",
+      "source": "corridor-blr-whitefield-main-road",
+      "target": "zone-whitefield-underpass-flooding",
+      "key": 0
+    },
+    {
+      "edge_type": "LOCATED_IN",
+      "raw_target": "ORR IT Corridor Region",
+      "source": "zone-orr-bellandur-flooding",
+      "target": "region-orr-it-corridor",
+      "key": 0
+    },
+    {
+      "edge_type": "OVERLAPS_WITH",
+      "raw_target": "Outer Ring Road",
+      "source": "zone-orr-bellandur-flooding",
+      "target": "corridor-blr-orr",
+      "key": 0
+    },
+    {
+      "edge_type": "CORRELATES_WITH",
+      "raw_target": "Koramangala Valley Drainage Overload",
+      "source": "zone-orr-bellandur-flooding",
+      "target": "failure-koramangala-drainage-overload",
+      "key": 0
+    },
+    {
+      "edge_type": "LOCATED_IN",
+      "raw_target": "Bengaluru Urban Region",
+      "source": "zone-silk-board-underpass-flooding",
+      "target": "region-bengaluru-urban",
+      "key": 0
+    },
+    {
+      "edge_type": "OVERLAPS_WITH",
+      "raw_target": "Silk Board Underpass",
+      "source": "zone-silk-board-underpass-flooding",
+      "target": "asset-blr-silk-board-underpass",
+      "key": 0
+    },
+    {
+      "edge_type": "CORRELATES_WITH",
+      "raw_target": "Koramangala Valley Drainage Overload",
+      "source": "zone-silk-board-underpass-flooding",
+      "target": "failure-koramangala-drainage-overload",
+      "key": 0
+    },
+    {
+      "edge_type": "LOCATED_IN",
+      "raw_target": "Whitefield Region",
+      "source": "zone-whitefield-underpass-flooding",
+      "target": "region-whitefield",
+      "key": 0
+    },
+    {
+      "edge_type": "OVERLAPS_WITH",
+      "raw_target": "Whitefield Main Road",
+      "source": "zone-whitefield-underpass-flooding",
+      "target": "corridor-blr-whitefield-main-road",
+      "key": 0
+    },
+    {
+      "edge_type": "IMPACTS",
+      "raw_target": "East Bengaluru Residents Associations",
+      "source": "zone-whitefield-underpass-flooding",
+      "target": "stakeholder-east-residents",
+      "key": 0
+    },
+    {
+      "edge_type": "CAUSES",
+      "raw_target": "Hebbal Congestion Zone",
+      "source": "failure-hebbal-bearing-wear",
+      "target": "zone-hebbal-congestion",
+      "key": 0
+    },
+    {
+      "edge_type": "CONSTRAINS",
+      "raw_target": "Airport Road (Bellary Road)",
+      "source": "failure-hebbal-bearing-wear",
+      "target": "corridor-blr-airport-road",
+      "key": 0
+    },
+    {
+      "edge_type": "CAUSES",
+      "raw_target": "ORR-Bellandur Flooding Zone",
+      "source": "failure-koramangala-drainage-overload",
+      "target": "zone-orr-bellandur-flooding",
+      "key": 0
+    },
+    {
+      "edge_type": "CORRELATES_WITH",
+      "raw_target": "Silk Board Underpass Flooding Zone",
+      "source": "failure-koramangala-drainage-overload",
+      "target": "zone-silk-board-underpass-flooding",
+      "key": 0
+    },
+    {
+      "edge_type": "CAUSES",
+      "raw_target": "Marathahalli Congestion Zone",
+      "source": "failure-orr-pavement-rutting",
+      "target": "zone-marathahalli-congestion",
+      "key": 0
+    },
+    {
+      "edge_type": "CONSTRAINS",
+      "raw_target": "BMTC 500D ORR",
+      "source": "failure-orr-pavement-rutting",
+      "target": "service-bmtc-500d",
+      "key": 0
+    },
+    {
+      "edge_type": "CAUSES",
+      "raw_target": "Silk Board Congestion Zone",
+      "source": "failure-silk-board-spillback",
+      "target": "zone-silk-board-congestion",
+      "key": 0
+    },
+    {
+      "edge_type": "IMPACTS",
+      "raw_target": "IT Corridor Commuters",
+      "source": "failure-silk-board-spillback",
+      "target": "stakeholder-it-corridor-commuters",
+      "key": 0
+    },
+    {
+      "edge_type": "DEPENDS_ON",
+      "raw_target": "Hebbal Flyover",
+      "source": "maintenance-hebbal-inspection",
+      "target": "asset-blr-hebbal-flyover",
+      "key": 0
+    },
+    {
+      "edge_type": "CONSTRAINS",
+      "raw_target": "Airport Road (Bellary Road)",
+      "source": "maintenance-hebbal-inspection",
+      "target": "corridor-blr-airport-road",
+      "key": 0
+    },
+    {
+      "edge_type": "DEPENDS_ON",
+      "raw_target": "Outer Ring Road",
+      "source": "maintenance-orr-resurfacing",
+      "target": "corridor-blr-orr",
+      "key": 0
+    },
+    {
+      "edge_type": "CONSTRAINS",
+      "raw_target": "BMTC 500D ORR",
+      "source": "maintenance-orr-resurfacing",
+      "target": "service-bmtc-500d",
+      "key": 0
+    },
+    {
+      "edge_type": "FUNDED_BY",
+      "raw_target": "State Budget Grant",
+      "source": "maintenance-orr-resurfacing",
+      "target": "funding-state-budget",
+      "key": 0
+    },
+    {
+      "edge_type": "DEPENDS_ON",
+      "raw_target": "Silk Board Underpass",
+      "source": "maintenance-desilting-pre-monsoon",
+      "target": "asset-blr-silk-board-underpass",
+      "key": 0
+    },
+    {
+      "edge_type": "CONSTRAINS",
+      "raw_target": "Outer Ring Road",
+      "source": "maintenance-desilting-pre-monsoon",
+      "target": "corridor-blr-orr",
+      "key": 0
+    },
+    {
+      "edge_type": "FUNDED_BY",
+      "raw_target": "State Budget Grant",
+      "source": "maintenance-desilting-pre-monsoon",
+      "target": "funding-state-budget",
+      "key": 0
+    },
+    {
+      "edge_type": "DEPENDS_ON",
+      "raw_target": "Silk Board Junction",
+      "source": "maintenance-silk-board-signal-retiming",
+      "target": "asset-blr-silk-board-junction",
+      "key": 0
+    },
+    {
+      "edge_type": "CONSTRAINS",
+      "raw_target": "BMTC 500D ORR",
+      "source": "maintenance-silk-board-signal-retiming",
+      "target": "service-bmtc-500d",
+      "key": 0
+    },
+    {
+      "edge_type": "DEPENDS_ON",
+      "raw_target": "Airport Road (Bellary Road)",
+      "source": "pattern-airport-commute",
+      "target": "corridor-blr-airport-road",
+      "key": 0
+    },
+    {
+      "edge_type": "CORRELATES_WITH",
+      "raw_target": "Hebbal Congestion Zone",
+      "source": "pattern-airport-commute",
+      "target": "zone-hebbal-congestion",
+      "key": 0
+    },
+    {
+      "edge_type": "DEPENDS_ON",
+      "raw_target": "Vayu Vajra KIA-9",
+      "source": "pattern-airport-commute",
+      "target": "service-vayu-vajra-kia9",
+      "key": 0
+    },
+    {
+      "edge_type": "DEPENDS_ON",
+      "raw_target": "Namma Metro Purple Line",
+      "source": "pattern-metro-feeder-transfer",
+      "target": "service-metro-purple-line",
+      "key": 0
+    },
+    {
+      "edge_type": "DEPENDS_ON",
+      "raw_target": "Metro Feeder FM-1 (Illustrative)",
+      "source": "pattern-metro-feeder-transfer",
+      "target": "service-metro-feeder-fm1",
+      "key": 0
+    },
+    {
+      "edge_type": "CORRELATES_WITH",
+      "raw_target": "Silk Board Congestion Zone",
+      "source": "pattern-peak-hour-it-commute",
+      "target": "zone-silk-board-congestion",
+      "key": 0
+    },
+    {
+      "edge_type": "CORRELATES_WITH",
+      "raw_target": "Marathahalli Congestion Zone",
+      "source": "pattern-peak-hour-it-commute",
+      "target": "zone-marathahalli-congestion",
+      "key": 0
+    },
+    {
+      "edge_type": "DEPENDS_ON",
+      "raw_target": "BMTC 500D ORR",
+      "source": "pattern-peak-hour-it-commute",
+      "target": "service-bmtc-500d",
+      "key": 0
+    },
+    {
+      "edge_type": "CORRELATES_WITH",
+      "raw_target": "Marathahalli Congestion Zone",
+      "source": "pattern-two-wheeler-last-mile",
+      "target": "zone-marathahalli-congestion",
+      "key": 0
+    },
+    {
+      "edge_type": "IMPACTS",
+      "raw_target": "Informal Auto Drivers",
+      "source": "pattern-two-wheeler-last-mile",
+      "target": "stakeholder-informal-auto-drivers",
+      "key": 0
+    },
+    {
+      "edge_type": "REGULATED_BY",
+      "raw_target": "Bangalore Traffic Police",
+      "source": "operator-auto-union",
+      "target": "agency-btp",
+      "key": 0
+    },
+    {
+      "edge_type": "OPERATES",
+      "raw_target": "Namma Metro Purple Line",
+      "source": "operator-bmrcl-ops",
+      "target": "service-metro-purple-line",
+      "key": 0
+    },
+    {
+      "edge_type": "OPERATES",
+      "raw_target": "Namma Metro Green Line",
+      "source": "operator-bmrcl-ops",
+      "target": "service-metro-green-line",
+      "key": 0
+    },
+    {
+      "edge_type": "REGULATED_BY",
+      "raw_target": "BMRCL",
+      "source": "operator-bmrcl-ops",
+      "target": "agency-bmrcl",
+      "key": 0
+    },
+    {
+      "edge_type": "REGULATED_BY",
+      "raw_target": "National Urban Transport Policy 2014",
+      "source": "operator-bmrcl-ops",
+      "target": "policy-nutp-2014",
+      "key": 0
+    },
+    {
+      "edge_type": "OPERATES",
+      "raw_target": "BMTC 500D ORR",
+      "source": "operator-bmtc",
+      "target": "service-bmtc-500d",
+      "key": 0
+    },
+    {
+      "edge_type": "OPERATES",
+      "raw_target": "Vayu Vajra KIA-9",
+      "source": "operator-bmtc",
+      "target": "service-vayu-vajra-kia9",
+      "key": 0
+    },
+    {
+      "edge_type": "OPERATES",
+      "raw_target": "Metro Feeder FM-1 (Illustrative)",
+      "source": "operator-bmtc",
+      "target": "service-metro-feeder-fm1",
+      "key": 0
+    },
+    {
+      "edge_type": "OPERATES",
+      "raw_target": "BMTC Bannerghatta Road Corridor Service (Illustrative)",
+      "source": "operator-bmtc",
+      "target": "service-bmtc-bannerghatta-road",
+      "key": 0
+    },
+    {
+      "edge_type": "OPERATES",
+      "raw_target": "BMTC Hosur Road Corridor Service (Illustrative)",
+      "source": "operator-bmtc",
+      "target": "service-bmtc-hosur-road",
+      "key": 0
+    },
+    {
+      "edge_type": "OPERATES",
+      "raw_target": "BMTC Old Madras Road Corridor Service (Illustrative)",
+      "source": "operator-bmtc",
+      "target": "service-bmtc-old-madras-road",
+      "key": 0
+    },
+    {
+      "edge_type": "OPERATES",
+      "raw_target": "BMTC Sarjapur Road Corridor Service (Illustrative)",
+      "source": "operator-bmtc",
+      "target": "service-bmtc-sarjapur-road",
+      "key": 0
+    },
+    {
+      "edge_type": "REGULATED_BY",
+      "raw_target": "DULT",
+      "source": "operator-bmtc",
+      "target": "agency-dult",
+      "key": 0
+    },
+    {
+      "edge_type": "REGULATED_BY",
+      "raw_target": "National Urban Transport Policy 2014",
+      "source": "operator-bmtc",
+      "target": "policy-nutp-2014",
+      "key": 0
+    },
+    {
+      "edge_type": "REGULATED_BY",
+      "raw_target": "DULT",
+      "source": "operator-ola",
+      "target": "agency-dult",
+      "key": 0
+    },
+    {
+      "edge_type": "REGULATED_BY",
+      "raw_target": "Bangalore Traffic Police",
+      "source": "operator-ola",
+      "target": "agency-btp",
+      "key": 0
+    },
+    {
+      "edge_type": "REGULATED_BY",
+      "raw_target": "Karnataka Electric Vehicle Policy 2021-2026",
+      "source": "operator-ola",
+      "target": "policy-karnataka-ev-2021",
+      "key": 0
+    },
+    {
+      "edge_type": "CONSTRAINS",
+      "raw_target": "Outer Ring Road",
+      "source": "policy-blr-bus-priority",
+      "target": "corridor-blr-orr",
+      "key": 0
+    },
+    {
+      "edge_type": "CONSTRAINS",
+      "raw_target": "BMTC 500D ORR",
+      "source": "policy-blr-bus-priority",
+      "target": "service-bmtc-500d",
+      "key": 0
+    },
+    {
+      "edge_type": "CONSTRAINS",
+      "raw_target": "Ola Mobility",
+      "source": "policy-karnataka-ev-2021",
+      "target": "operator-ola",
+      "key": 0
+    },
+    {
+      "edge_type": "CONSTRAINS",
+      "raw_target": "BMTC 500D ORR",
+      "source": "policy-nutp-2014",
+      "target": "service-bmtc-500d",
+      "key": 0
+    },
+    {
+      "edge_type": "MONITORS",
+      "raw_target": "ORR-Bellandur Flooding Zone",
+      "source": "sensor-koramangala-flood-gauge",
+      "target": "zone-orr-bellandur-flooding",
+      "key": 0
+    },
+    {
+      "edge_type": "MONITORS",
+      "raw_target": "Outer Ring Road",
+      "source": "sensor-orr-anpr",
+      "target": "corridor-blr-orr",
+      "key": 0
+    },
+    {
+      "edge_type": "MONITORS",
+      "raw_target": "Marathahalli Congestion Zone",
+      "source": "sensor-orr-anpr",
+      "target": "zone-marathahalli-congestion",
+      "key": 0
+    },
+    {
+      "edge_type": "MONITORS",
+      "raw_target": "Silk Board Congestion Zone",
+      "source": "sensor-silk-board-cctv",
+      "target": "zone-silk-board-congestion",
+      "key": 0
+    },
+    {
+      "edge_type": "MONITORS",
+      "raw_target": "Silk Board Junction",
+      "source": "sensor-silk-board-cctv",
+      "target": "asset-blr-silk-board-junction",
+      "key": 0
+    },
+    {
+      "edge_type": "DEPENDS_ON",
+      "raw_target": "Outer Ring Road",
+      "source": "service-bmtc-500d",
+      "target": "corridor-blr-orr",
+      "key": 0
+    },
+    {
+      "edge_type": "SERVES",
+      "raw_target": "ORR IT Corridor Region",
+      "source": "service-bmtc-500d",
+      "target": "region-orr-it-corridor",
+      "key": 0
+    },
+    {
+      "edge_type": "FUNDED_BY",
+      "raw_target": "Farebox Revenue",
+      "source": "service-bmtc-500d",
+      "target": "funding-farebox",
+      "key": 0
+    },
+    {
+      "edge_type": "DEPENDS_ON",
+      "raw_target": "Bannerghatta Road",
+      "source": "service-bmtc-bannerghatta-road",
+      "target": "corridor-blr-bannerghatta-road",
+      "key": 0
+    },
+    {
+      "edge_type": "SERVES",
+      "raw_target": "Bengaluru Urban Region",
+      "source": "service-bmtc-bannerghatta-road",
+      "target": "region-bengaluru-urban",
+      "key": 0
+    },
+    {
+      "edge_type": "DEPENDS_ON",
+      "raw_target": "Hosur Road",
+      "source": "service-bmtc-hosur-road",
+      "target": "corridor-blr-hosur-road",
+      "key": 0
+    },
+    {
+      "edge_type": "SERVES",
+      "raw_target": "Bengaluru Urban Region",
+      "source": "service-bmtc-hosur-road",
+      "target": "region-bengaluru-urban",
+      "key": 0
+    },
+    {
+      "edge_type": "DEPENDS_ON",
+      "raw_target": "Old Madras Road",
+      "source": "service-bmtc-old-madras-road",
+      "target": "corridor-blr-old-madras-road",
+      "key": 0
+    },
+    {
+      "edge_type": "SERVES",
+      "raw_target": "Bengaluru Urban Region",
+      "source": "service-bmtc-old-madras-road",
+      "target": "region-bengaluru-urban",
+      "key": 0
+    },
+    {
+      "edge_type": "DEPENDS_ON",
+      "raw_target": "Sarjapur Road",
+      "source": "service-bmtc-sarjapur-road",
+      "target": "corridor-blr-sarjapur-road",
+      "key": 0
+    },
+    {
+      "edge_type": "SERVES",
+      "raw_target": "Bengaluru Urban Region",
+      "source": "service-bmtc-sarjapur-road",
+      "target": "region-bengaluru-urban",
+      "key": 0
+    },
+    {
+      "edge_type": "DEPENDS_ON",
+      "raw_target": "Whitefield Main Road",
+      "source": "service-metro-feeder-fm1",
+      "target": "corridor-blr-whitefield-main-road",
+      "key": 0
+    },
+    {
+      "edge_type": "SERVES",
+      "raw_target": "Whitefield Region",
+      "source": "service-metro-feeder-fm1",
+      "target": "region-whitefield",
+      "key": 0
+    },
+    {
+      "edge_type": "SERVES",
+      "raw_target": "Bengaluru Urban Region",
+      "source": "service-metro-green-line",
+      "target": "region-bengaluru-urban",
+      "key": 0
+    },
+    {
+      "edge_type": "FUNDED_BY",
+      "raw_target": "Multilateral Loan - Metro",
+      "source": "service-metro-green-line",
+      "target": "funding-multilateral-metro",
+      "key": 0
+    },
+    {
+      "edge_type": "DEPENDS_ON",
+      "raw_target": "Baiyappanahalli Metro Depot",
+      "source": "service-metro-purple-line",
+      "target": "asset-blr-baiyappanahalli-depot",
+      "key": 0
+    },
+    {
+      "edge_type": "SERVES",
+      "raw_target": "Bengaluru Urban Region",
+      "source": "service-metro-purple-line",
+      "target": "region-bengaluru-urban",
+      "key": 0
+    },
+    {
+      "edge_type": "FUNDED_BY",
+      "raw_target": "Multilateral Loan - Metro",
+      "source": "service-metro-purple-line",
+      "target": "funding-multilateral-metro",
+      "key": 0
+    },
+    {
+      "edge_type": "DEPENDS_ON",
+      "raw_target": "Airport Road (Bellary Road)",
+      "source": "service-vayu-vajra-kia9",
+      "target": "corridor-blr-airport-road",
+      "key": 0
+    },
+    {
+      "edge_type": "SERVES",
+      "raw_target": "Bengaluru Urban Region",
+      "source": "service-vayu-vajra-kia9",
+      "target": "region-bengaluru-urban",
+      "key": 0
+    },
+    {
+      "edge_type": "CONNECTS_TO",
+      "raw_target": "ORR IT Corridor Region",
+      "source": "region-bengaluru-urban",
+      "target": "region-orr-it-corridor",
+      "key": 0
+    },
+    {
+      "edge_type": "CONNECTS_TO",
+      "raw_target": "Whitefield Region",
+      "source": "region-bengaluru-urban",
+      "target": "region-whitefield",
+      "key": 0
+    },
+    {
+      "edge_type": "CONNECTS_TO",
+      "raw_target": "Hebbal Region",
+      "source": "region-bengaluru-urban",
+      "target": "region-hebbal",
+      "key": 0
+    },
+    {
+      "edge_type": "CONNECTS_TO",
+      "raw_target": "Bengaluru Urban Region",
+      "source": "region-hebbal",
+      "target": "region-bengaluru-urban",
+      "key": 0
+    },
+    {
+      "edge_type": "CONNECTS_TO",
+      "raw_target": "Whitefield Region",
+      "source": "region-orr-it-corridor",
+      "target": "region-whitefield",
+      "key": 0
+    },
+    {
+      "edge_type": "CONNECTS_TO",
+      "raw_target": "Bengaluru Urban Region",
+      "source": "region-orr-it-corridor",
+      "target": "region-bengaluru-urban",
+      "key": 0
+    },
+    {
+      "edge_type": "CONNECTS_TO",
+      "raw_target": "ORR IT Corridor Region",
+      "source": "region-whitefield",
+      "target": "region-orr-it-corridor",
+      "key": 0
+    },
+    {
+      "edge_type": "CONNECTS_TO",
+      "raw_target": "Bengaluru Urban Region",
+      "source": "region-whitefield",
+      "target": "region-bengaluru-urban",
+      "key": 0
+    }
+  ]
+}

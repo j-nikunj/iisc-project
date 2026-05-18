@@ -1,0 +1,19 @@
+graph_root: ../seed_graph/bengaluru
+output_dir: ./output
+reports_dir: ./reports
+
+embedding:
+  model_name: BAAI/bge-small-en-v1.5
+  batch_size: 64
+  normalize: true
+  max_length: 512
+
+qdrant:
+  url: http://localhost:6333
+  collection: bengaluru_seed_v1
+  distance: cosine
+
+retrieval:
+  top_k: 8
+  graph_hops: 1
+  edge_types: [DEPENDS_ON, IMPACTS, OVERLAPS_WITH, CONSTRAINS, MAINTAINS, SERVES]
