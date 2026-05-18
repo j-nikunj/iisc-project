@@ -52,15 +52,16 @@ def main() -> None:
     client = QdrantClient(url=url)
     q_filter = build_filter(args.node_class, args.tag, snapshot)
 
-    results = client.search(
+    results = client.query_points(
         collection_name=collection,
-        query_vector=query_vec.tolist(),
+        query=query_vec.tolist(),
         limit=top_k,
         query_filter=q_filter,
         with_payload=True,
     )
+    points = results.points if hasattr(results, "points") else results
 
-    for res in results:
+    for res in points:
         payload = res.payload or {}
         print(f"{res.score:.4f} | {payload.get('title')} | {payload.get('node_id')}")
 
