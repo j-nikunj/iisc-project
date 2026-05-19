@@ -1,0 +1,86 @@
+{
+  "query": "multimodal transfer bottlenecks near Silk Board junction",
+  "breakdown": {
+    "vector_hits": 8,
+    "graph_expansion": 22,
+    "unique_nodes": 30,
+    "overlap": 0
+  },
+  "node_class_distribution": {
+    "all": {
+      "infrastructure_failure": 2,
+      "congestion_zone": 4,
+      "policy": 2,
+      "corridor": 6,
+      "transit_service": 6,
+      "mobility_pattern": 2,
+      "urban_region": 2,
+      "maintenance_event": 4,
+      "flooding_zone": 1,
+      "sensor_system": 1
+    },
+    "vector_hits": {
+      "corridor": 6,
+      "transit_service": 2
+    },
+    "graph_expansion": {
+      "flooding_zone": 1,
+      "maintenance_event": 4,
+      "mobility_pattern": 2,
+      "transit_service": 4,
+      "policy": 2,
+      "sensor_system": 1,
+      "congestion_zone": 4,
+      "infrastructure_failure": 2,
+      "urban_region": 2
+    }
+  },
+  "edge_type_distribution": {
+    "OVERLAPS_WITH": 5,
+    "CONSTRAINS": 7,
+    "DEPENDS_ON": 7,
+    "MONITORS": 1,
+    "SERVES": 2
+  },
+  "top_traversed_relations": [
+    [
+      "CONSTRAINS",
+      7
+    ],
+    [
+      "DEPENDS_ON",
+      7
+    ],
+    [
+      "OVERLAPS_WITH",
+      5
+    ],
+    [
+      "SERVES",
+      2
+    ],
+    [
+      "MONITORS",
+      1
+    ]
+  ],
+  "expansion_depth": {
+    "metrics": {
+      "min": 1,
+      "max": 1,
+      "avg": 1.0
+    },
+    "histogram": {
+      "1": 22
+    }
+  },
+  "duplicates": {
+    "vector_hits": {},
+    "graph_expansion": {}
+  },
+  "context_size": {
+    "chars": 3657,
+    "words": 408,
+    "lines": 98
+  }
+}

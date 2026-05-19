@@ -1,0 +1,17 @@
+graph_root: ../seed_graph/bengaluru_bridge_experiment_v1
+output_dir: ./output/bridge_experiment/experiment
+reports_dir: ./reports
+
+qdrant:
+  url: http://localhost:6333
+  collection: bengaluru_seed_v1
+
+retrieval:
+  top_k: 8
+  graph_hops: 1
+  edge_types: [DEPENDS_ON, IMPACTS, OVERLAPS_WITH, CONSTRAINS, MAINTAINS, SERVES, MONITORS, CAUSES, CORRELATES_WITH]
+
+context:
+  max_nodes: 40
+  include_relations: true
+  include_content: true

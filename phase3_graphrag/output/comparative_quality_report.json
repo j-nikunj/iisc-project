@@ -1,0 +1,308 @@
+{
+  "queries": [
+    {
+      "slug": "flooding_drainage",
+      "category": "flooding and drainage",
+      "query": "flooding and drainage bottlenecks near Silk Board junction"
+    },
+    {
+      "slug": "multimodal_transport",
+      "category": "multimodal transport",
+      "query": "multimodal transfer bottlenecks near Silk Board junction"
+    },
+    {
+      "slug": "weak_infra_maintenance",
+      "category": "weak infrastructure maintenance",
+      "query": "weak infrastructure maintenance risks on Outer Ring Road corridor"
+    },
+    {
+      "slug": "commuter_impact",
+      "category": "commuter impact",
+      "query": "commuter impact from corridor disruptions near Silk Board"
+    },
+    {
+      "slug": "policy_governance",
+      "category": "policy/governance",
+      "query": "policy and governance constraints on corridor upgrades in Bengaluru"
+    },
+    {
+      "slug": "public_transport_dependency",
+      "category": "public transport dependency",
+      "query": "public transport dependency for commuters near Silk Board"
+    },
+    {
+      "slug": "sensor_monitoring",
+      "category": "sensor/monitoring systems",
+      "query": "sensor and monitoring systems for traffic and drainage near Silk Board"
+    }
+  ],
+  "per_query": [
+    {
+      "slug": "flooding_drainage",
+      "category": "flooding and drainage",
+      "query": "flooding and drainage bottlenecks near Silk Board junction",
+      "metrics": {
+        "vector_hits": 8,
+        "graph_expansion": 6,
+        "unique_nodes": 14,
+        "overlap": 0,
+        "overlap_ratio": 0.0,
+        "node_class_diversity": 8,
+        "relation_diversity": 4,
+        "expansion_depth_avg": 1.0,
+        "redundancy_count": 0,
+        "composite_score": 1.5333
+      },
+      "expansion_only_classes": [
+        "agency",
+        "corridor",
+        "stakeholder"
+      ],
+      "vector_only_classes": [
+        "asset",
+        "congestion_zone",
+        "flooding_zone",
+        "infrastructure_failure"
+      ]
+    },
+    {
+      "slug": "multimodal_transport",
+      "category": "multimodal transport",
+      "query": "multimodal transfer bottlenecks near Silk Board junction",
+      "metrics": {
+        "vector_hits": 8,
+        "graph_expansion": 9,
+        "unique_nodes": 17,
+        "overlap": 0,
+        "overlap_ratio": 0.0,
+        "node_class_diversity": 11,
+        "relation_diversity": 5,
+        "expansion_depth_avg": 1.0,
+        "redundancy_count": 0,
+        "composite_score": 1.9333
+      },
+      "expansion_only_classes": [
+        "agency",
+        "corridor",
+        "flooding_zone",
+        "stakeholder",
+        "transit_service"
+      ],
+      "vector_only_classes": [
+        "asset",
+        "congestion_zone",
+        "infrastructure_failure",
+        "mobility_pattern",
+        "sensor_system"
+      ]
+    },
+    {
+      "slug": "weak_infra_maintenance",
+      "category": "weak infrastructure maintenance",
+      "query": "weak infrastructure maintenance risks on Outer Ring Road corridor",
+      "metrics": {
+        "vector_hits": 8,
+        "graph_expansion": 8,
+        "unique_nodes": 16,
+        "overlap": 0,
+        "overlap_ratio": 0.0,
+        "node_class_diversity": 10,
+        "relation_diversity": 5,
+        "expansion_depth_avg": 1.0,
+        "redundancy_count": 0,
+        "composite_score": 1.8333
+      },
+      "expansion_only_classes": [
+        "agency",
+        "asset",
+        "congestion_zone",
+        "policy",
+        "stakeholder",
+        "transit_service"
+      ],
+      "vector_only_classes": [
+        "flooding_zone",
+        "infrastructure_failure",
+        "maintenance_event"
+      ]
+    },
+    {
+      "slug": "commuter_impact",
+      "category": "commuter impact",
+      "query": "commuter impact from corridor disruptions near Silk Board",
+      "metrics": {
+        "vector_hits": 8,
+        "graph_expansion": 10,
+        "unique_nodes": 18,
+        "overlap": 0,
+        "overlap_ratio": 0.0,
+        "node_class_diversity": 10,
+        "relation_diversity": 4,
+        "expansion_depth_avg": 1.0,
+        "redundancy_count": 0,
+        "composite_score": 1.7333
+      },
+      "expansion_only_classes": [
+        "agency",
+        "corridor",
+        "transit_service"
+      ],
+      "vector_only_classes": [
+        "asset",
+        "flooding_zone",
+        "infrastructure_failure",
+        "mobility_pattern",
+        "stakeholder"
+      ]
+    },
+    {
+      "slug": "policy_governance",
+      "category": "policy/governance",
+      "query": "policy and governance constraints on corridor upgrades in Bengaluru",
+      "metrics": {
+        "vector_hits": 8,
+        "graph_expansion": 13,
+        "unique_nodes": 21,
+        "overlap": 0,
+        "overlap_ratio": 0.0,
+        "node_class_diversity": 10,
+        "relation_diversity": 5,
+        "expansion_depth_avg": 1.0,
+        "redundancy_count": 0,
+        "composite_score": 1.8333
+      },
+      "expansion_only_classes": [
+        "congestion_zone",
+        "flooding_zone",
+        "infrastructure_failure",
+        "maintenance_event",
+        "mobility_pattern",
+        "transit_service"
+      ],
+      "vector_only_classes": [
+        "asset",
+        "corridor",
+        "stakeholder"
+      ]
+    },
+    {
+      "slug": "public_transport_dependency",
+      "category": "public transport dependency",
+      "query": "public transport dependency for commuters near Silk Board",
+      "metrics": {
+        "vector_hits": 8,
+        "graph_expansion": 14,
+        "unique_nodes": 22,
+        "overlap": 0,
+        "overlap_ratio": 0.0,
+        "node_class_diversity": 10,
+        "relation_diversity": 4,
+        "expansion_depth_avg": 1.0,
+        "redundancy_count": 0,
+        "composite_score": 1.7333
+      },
+      "expansion_only_classes": [
+        "agency",
+        "corridor",
+        "flooding_zone",
+        "maintenance_event",
+        "transit_service"
+      ],
+      "vector_only_classes": [
+        "asset",
+        "infrastructure_failure",
+        "mobility_pattern"
+      ]
+    },
+    {
+      "slug": "sensor_monitoring",
+      "category": "sensor/monitoring systems",
+      "query": "sensor and monitoring systems for traffic and drainage near Silk Board",
+      "metrics": {
+        "vector_hits": 8,
+        "graph_expansion": 8,
+        "unique_nodes": 16,
+        "overlap": 0,
+        "overlap_ratio": 0.0,
+        "node_class_diversity": 10,
+        "relation_diversity": 5,
+        "expansion_depth_avg": 1.0,
+        "redundancy_count": 0,
+        "composite_score": 1.8333
+      },
+      "expansion_only_classes": [
+        "agency",
+        "corridor",
+        "stakeholder",
+        "transit_service"
+      ],
+      "vector_only_classes": [
+        "asset",
+        "congestion_zone",
+        "flooding_zone",
+        "infrastructure_failure",
+        "sensor_system"
+      ]
+    }
+  ],
+  "summary": {
+    "strongest_categories": [
+      "multimodal transport",
+      "weak infrastructure maintenance"
+    ],
+    "weakest_categories": [
+      "public transport dependency",
+      "flooding and drainage"
+    ],
+    "graph_expansion_improves": [
+      "flooding and drainage",
+      "multimodal transport",
+      "weak infrastructure maintenance",
+      "commuter impact",
+      "policy/governance",
+      "public transport dependency",
+      "sensor/monitoring systems"
+    ],
+    "graph_expansion_noise": [],
+    "semantic_graph_alignment": [
+      "flooding and drainage",
+      "multimodal transport"
+    ],
+    "semantic_graph_divergence": [
+      "public transport dependency",
+      "sensor/monitoring systems"
+    ],
+    "weak_semantic_anchor_classes": [
+      "policy",
+      "transit_service"
+    ],
+    "over_generic_node_classes": [
+      "agency",
+      "transit_service"
+    ],
+    "rare_relations": [],
+    "common_relations": [
+      [
+        "OVERLAPS_WITH",
+        22
+      ],
+      [
+        "DEPENDS_ON",
+        16
+      ],
+      [
+        "IMPACTS",
+        13
+      ],
+      [
+        "MAINTAINS",
+        10
+      ],
+      [
+        "CONSTRAINS",
+        7
+      ]
+    ],
+    "disconnected_topology_categories": []
+  }
+}

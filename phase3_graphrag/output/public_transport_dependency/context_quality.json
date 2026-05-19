@@ -1,0 +1,82 @@
+{
+  "query": "public transport dependency for commuters near Silk Board",
+  "breakdown": {
+    "vector_hits": 8,
+    "graph_expansion": 14,
+    "unique_nodes": 22,
+    "overlap": 0
+  },
+  "node_class_distribution": {
+    "all": {
+      "corridor": 4,
+      "congestion_zone": 4,
+      "mobility_pattern": 3,
+      "asset": 2,
+      "stakeholder": 2,
+      "transit_service": 2,
+      "maintenance_event": 2,
+      "agency": 1,
+      "infrastructure_failure": 1,
+      "flooding_zone": 1
+    },
+    "vector_hits": {
+      "mobility_pattern": 3,
+      "congestion_zone": 1,
+      "asset": 2,
+      "infrastructure_failure": 1,
+      "stakeholder": 1
+    },
+    "graph_expansion": {
+      "corridor": 4,
+      "agency": 1,
+      "flooding_zone": 1,
+      "stakeholder": 1,
+      "transit_service": 2,
+      "congestion_zone": 3,
+      "maintenance_event": 2
+    }
+  },
+  "edge_type_distribution": {
+    "OVERLAPS_WITH": 4,
+    "MAINTAINS": 1,
+    "IMPACTS": 4,
+    "DEPENDS_ON": 5
+  },
+  "top_traversed_relations": [
+    [
+      "DEPENDS_ON",
+      5
+    ],
+    [
+      "OVERLAPS_WITH",
+      4
+    ],
+    [
+      "IMPACTS",
+      4
+    ],
+    [
+      "MAINTAINS",
+      1
+    ]
+  ],
+  "expansion_depth": {
+    "metrics": {
+      "min": 1,
+      "max": 1,
+      "avg": 1.0
+    },
+    "histogram": {
+      "1": 14
+    }
+  },
+  "duplicates": {
+    "vector_hits": {},
+    "graph_expansion": {}
+  },
+  "context_size": {
+    "chars": 2439,
+    "words": 275,
+    "lines": 74
+  }
+}

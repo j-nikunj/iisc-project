@@ -1,0 +1,100 @@
+{
+  "query": "multimodal transfer bottlenecks near Silk Board junction",
+  "breakdown": {
+    "vector_hits": 8,
+    "graph_expansion": 31,
+    "unique_nodes": 39,
+    "overlap": 0
+  },
+  "node_class_distribution": {
+    "all": {
+      "stakeholder": 2,
+      "congestion_zone": 4,
+      "maintenance_event": 3,
+      "infrastructure_failure": 4,
+      "agency": 2,
+      "sensor_system": 2,
+      "asset": 6,
+      "corridor": 5,
+      "urban_region": 1,
+      "flooding_zone": 2,
+      "policy": 2,
+      "mobility_pattern": 3,
+      "transit_service": 3
+    },
+    "vector_hits": {
+      "maintenance_event": 1,
+      "asset": 2,
+      "congestion_zone": 1,
+      "sensor_system": 2,
+      "infrastructure_failure": 1,
+      "mobility_pattern": 1
+    },
+    "graph_expansion": {
+      "agency": 2,
+      "corridor": 5,
+      "mobility_pattern": 2,
+      "transit_service": 3,
+      "stakeholder": 2,
+      "congestion_zone": 3,
+      "flooding_zone": 2,
+      "urban_region": 1,
+      "asset": 4,
+      "infrastructure_failure": 3,
+      "policy": 2,
+      "maintenance_event": 2
+    }
+  },
+  "edge_type_distribution": {
+    "MAINTAINS": 10,
+    "OVERLAPS_WITH": 11,
+    "CORRELATES_WITH": 11,
+    "DEPENDS_ON": 3,
+    "IMPACTS": 4,
+    "CONSTRAINS": 10,
+    "SERVES": 1,
+    "CAUSES": 1
+  },
+  "top_traversed_relations": [
+    [
+      "OVERLAPS_WITH",
+      11
+    ],
+    [
+      "CORRELATES_WITH",
+      11
+    ],
+    [
+      "MAINTAINS",
+      10
+    ],
+    [
+      "CONSTRAINS",
+      10
+    ],
+    [
+      "IMPACTS",
+      4
+    ]
+  ],
+  "expansion_depth": {
+    "metrics": {
+      "min": 1,
+      "max": 2,
+      "avg": 1.6451612903225807
+    },
+    "histogram": {
+      "1": 11,
+      "2": 20
+    }
+  },
+  "duplicates": {
+    "vector_hits": {},
+    "graph_expansion": {}
+  },
+  "context_size": {
+    "chars": 4410,
+    "words": 495,
+    "lines": 125
+  }
+}

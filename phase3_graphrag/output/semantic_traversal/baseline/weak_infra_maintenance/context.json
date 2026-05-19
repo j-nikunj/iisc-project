@@ -1,0 +1,212 @@
+{
+  "query": "weak infrastructure maintenance risks on Outer Ring Road corridor",
+  "vector_hits": [
+    {
+      "node_id": "failure-orr-pavement-rutting",
+      "title": "ORR Pavement Rutting Pattern",
+      "node_class": "infrastructure_failure",
+      "score": 0.71264386
+    },
+    {
+      "node_id": "maintenance-desilting-pre-monsoon",
+      "title": "Pre-monsoon Desilting Drive (Illustrative)",
+      "node_class": "maintenance_event",
+      "score": 0.6940096
+    },
+    {
+      "node_id": "failure-koramangala-drainage-overload",
+      "title": "Koramangala Valley Drainage Overload",
+      "node_class": "infrastructure_failure",
+      "score": 0.67328906
+    },
+    {
+      "node_id": "failure-hebbal-bearing-wear",
+      "title": "Hebbal Flyover Bearing Wear (Hypothesized)",
+      "node_class": "infrastructure_failure",
+      "score": 0.6731483
+    },
+    {
+      "node_id": "maintenance-orr-resurfacing",
+      "title": "ORR Resurfacing Cycle (Illustrative)",
+      "node_class": "maintenance_event",
+      "score": 0.6702643
+    },
+    {
+      "node_id": "corridor-blr-orr",
+      "title": "Outer Ring Road",
+      "node_class": "corridor",
+      "score": 0.66501564
+    },
+    {
+      "node_id": "zone-orr-bellandur-flooding",
+      "title": "ORR-Bellandur Flooding Zone",
+      "node_class": "flooding_zone",
+      "score": 0.6589767
+    },
+    {
+      "node_id": "failure-silk-board-spillback",
+      "title": "Silk Board Spillback Failure",
+      "node_class": "infrastructure_failure",
+      "score": 0.65546024
+    }
+  ],
+  "graph_expansion": [
+    {
+      "node_id": "asset-blr-silk-board-underpass",
+      "title": "Silk Board Underpass",
+      "node_class": "asset",
+      "path": [
+        {
+          "from": "maintenance-desilting-pre-monsoon",
+          "edge": "DEPENDS_ON",
+          "to": "asset-blr-silk-board-underpass",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "node_id": "zone-silk-board-congestion",
+      "title": "Silk Board Congestion Zone",
+      "node_class": "congestion_zone",
+      "path": [
+        {
+          "from": "corridor-blr-orr",
+          "edge": "OVERLAPS_WITH",
+          "to": "zone-silk-board-congestion",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "node_id": "sensor-koramangala-flood-gauge",
+      "title": "Koramangala Flood Gauge (Illustrative)",
+      "node_class": "sensor_system",
+      "path": [
+        {
+          "from": "sensor-koramangala-flood-gauge",
+          "edge": "MONITORS",
+          "to": "zone-orr-bellandur-flooding",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "service-bmtc-500d",
+      "title": "BMTC 500D ORR",
+      "node_class": "transit_service",
+      "path": [
+        {
+          "from": "failure-orr-pavement-rutting",
+          "edge": "CONSTRAINS",
+          "to": "service-bmtc-500d",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "node_id": "stakeholder-it-corridor-commuters",
+      "title": "IT Corridor Commuters",
+      "node_class": "stakeholder",
+      "path": [
+        {
+          "from": "failure-silk-board-spillback",
+          "edge": "IMPACTS",
+          "to": "stakeholder-it-corridor-commuters",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "node_id": "agency-bbmp",
+      "title": "BBMP",
+      "node_class": "agency",
+      "path": [
+        {
+          "from": "agency-bbmp",
+          "edge": "MAINTAINS",
+          "to": "maintenance-desilting-pre-monsoon",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "corridor-blr-airport-road",
+      "title": "Airport Road (Bellary Road)",
+      "node_class": "corridor",
+      "path": [
+        {
+          "from": "failure-hebbal-bearing-wear",
+          "edge": "CONSTRAINS",
+          "to": "corridor-blr-airport-road",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "node_id": "policy-blr-bus-priority",
+      "title": "Bengaluru Bus Priority Policy (Illustrative)",
+      "node_class": "policy",
+      "path": [
+        {
+          "from": "policy-blr-bus-priority",
+          "edge": "CONSTRAINS",
+          "to": "corridor-blr-orr",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "zone-hebbal-congestion",
+      "title": "Hebbal Congestion Zone",
+      "node_class": "congestion_zone",
+      "path": [
+        {
+          "from": "failure-hebbal-bearing-wear",
+          "edge": "CAUSES",
+          "to": "zone-hebbal-congestion",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "node_id": "zone-marathahalli-congestion",
+      "title": "Marathahalli Congestion Zone",
+      "node_class": "congestion_zone",
+      "path": [
+        {
+          "from": "failure-orr-pavement-rutting",
+          "edge": "CAUSES",
+          "to": "zone-marathahalli-congestion",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "node_id": "sensor-orr-anpr",
+      "title": "ORR ANPR Camera Network (Illustrative)",
+      "node_class": "sensor_system",
+      "path": [
+        {
+          "from": "sensor-orr-anpr",
+          "edge": "MONITORS",
+          "to": "corridor-blr-orr",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "zone-silk-board-underpass-flooding",
+      "title": "Silk Board Underpass Flooding Zone",
+      "node_class": "flooding_zone",
+      "path": [
+        {
+          "from": "failure-koramangala-drainage-overload",
+          "edge": "CORRELATES_WITH",
+          "to": "zone-silk-board-underpass-flooding",
+          "direction": "out"
+        }
+      ]
+    }
+  ],
+  "context_text": "Query: weak infrastructure maintenance risks on Outer Ring Road corridor\n\nVector Hits:\n\n- ORR Pavement Rutting Pattern (failure-orr-pavement-rutting): 0.7126\n- Pre-monsoon Desilting Drive (Illustrative) (maintenance-desilting-pre-monsoon): 0.6940\n- Koramangala Valley Drainage Overload (failure-koramangala-drainage-overload): 0.6733\n- Hebbal Flyover Bearing Wear (Hypothesized) (failure-hebbal-bearing-wear): 0.6731\n- ORR Resurfacing Cycle (Illustrative) (maintenance-orr-resurfacing): 0.6703\n- Outer Ring Road (corridor-blr-orr): 0.6650\n- ORR-Bellandur Flooding Zone (zone-orr-bellandur-flooding): 0.6590\n- Silk Board Spillback Failure (failure-silk-board-spillback): 0.6555\n\nGraph Expansion:\n\n- Silk Board Underpass (asset-blr-silk-board-underpass)\n- Silk Board Congestion Zone (zone-silk-board-congestion)\n- Koramangala Flood Gauge (Illustrative) (sensor-koramangala-flood-gauge)\n- BMTC 500D ORR (service-bmtc-500d)\n- IT Corridor Commuters (stakeholder-it-corridor-commuters)\n- BBMP (agency-bbmp)\n- Airport Road (Bellary Road) (corridor-blr-airport-road)\n- Bengaluru Bus Priority Policy (Illustrative) (policy-blr-bus-priority)\n- Hebbal Congestion Zone (zone-hebbal-congestion)\n- Marathahalli Congestion Zone (zone-marathahalli-congestion)\n- ORR ANPR Camera Network (Illustrative) (sensor-orr-anpr)\n- Silk Board Underpass Flooding Zone (zone-silk-board-underpass-flooding)\n\n## ORR Pavement Rutting Pattern\nClass: infrastructure_failure\n## Pre-monsoon Desilting Drive (Illustrative)\nClass: maintenance_event\n## Koramangala Valley Drainage Overload\nClass: infrastructure_failure\n## Hebbal Flyover Bearing Wear (Hypothesized)\nClass: infrastructure_failure\n## ORR Resurfacing Cycle (Illustrative)\nClass: maintenance_event\n## Outer Ring Road\nClass: corridor\n## ORR-Bellandur Flooding Zone\nClass: flooding_zone\n## Silk Board Spillback Failure\nClass: infrastructure_failure\n## Silk Board Underpass\nClass: asset\n## Silk Board Congestion Zone\nClass: congestion_zone\n## Koramangala Flood Gauge (Illustrative)\nClass: sensor_system\n## BMTC 500D ORR\nClass: transit_service\n## IT Corridor Commuters\nClass: stakeholder\n## BBMP\nClass: agency\n## Airport Road (Bellary Road)\nClass: corridor\n## Bengaluru Bus Priority Policy (Illustrative)\nClass: policy\n## Hebbal Congestion Zone\nClass: congestion_zone\n## Marathahalli Congestion Zone\nClass: congestion_zone\n## ORR ANPR Camera Network (Illustrative)\nClass: sensor_system\n## Silk Board Underpass Flooding Zone\nClass: flooding_zone"
+}

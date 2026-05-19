@@ -1,0 +1,91 @@
+{
+  "query": "commuter impact from corridor disruptions near Silk Board",
+  "breakdown": {
+    "vector_hits": 8,
+    "graph_expansion": 12,
+    "unique_nodes": 20,
+    "overlap": 0
+  },
+  "node_class_distribution": {
+    "all": {
+      "stakeholder": 1,
+      "sensor_system": 1,
+      "agency": 2,
+      "congestion_zone": 4,
+      "corridor": 3,
+      "infrastructure_failure": 2,
+      "mobility_pattern": 1,
+      "asset": 2,
+      "flooding_zone": 1,
+      "maintenance_event": 2,
+      "transit_service": 1
+    },
+    "vector_hits": {
+      "infrastructure_failure": 1,
+      "congestion_zone": 1,
+      "mobility_pattern": 1,
+      "asset": 2,
+      "flooding_zone": 1,
+      "maintenance_event": 1,
+      "stakeholder": 1
+    },
+    "graph_expansion": {
+      "sensor_system": 1,
+      "congestion_zone": 3,
+      "corridor": 3,
+      "agency": 2,
+      "maintenance_event": 1,
+      "infrastructure_failure": 1,
+      "transit_service": 1
+    }
+  },
+  "edge_type_distribution": {
+    "MONITORS": 1,
+    "IMPACTS": 2,
+    "OVERLAPS_WITH": 3,
+    "CORRELATES_WITH": 2,
+    "MAINTAINS": 2,
+    "DEPENDS_ON": 2
+  },
+  "top_traversed_relations": [
+    [
+      "OVERLAPS_WITH",
+      3
+    ],
+    [
+      "IMPACTS",
+      2
+    ],
+    [
+      "CORRELATES_WITH",
+      2
+    ],
+    [
+      "MAINTAINS",
+      2
+    ],
+    [
+      "DEPENDS_ON",
+      2
+    ]
+  ],
+  "expansion_depth": {
+    "metrics": {
+      "min": 1,
+      "max": 1,
+      "avg": 1.0
+    },
+    "histogram": {
+      "1": 12
+    }
+  },
+  "duplicates": {
+    "vector_hits": {},
+    "graph_expansion": {}
+  },
+  "context_size": {
+    "chars": 2246,
+    "words": 255,
+    "lines": 68
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "query": "sensor and monitoring systems for traffic and drainage near Silk Board",
+  "breakdown": {
+    "vector_hits": 8,
+    "graph_expansion": 11,
+    "unique_nodes": 19,
+    "overlap": 0
+  },
+  "node_class_distribution": {
+    "all": {
+      "sensor_system": 2,
+      "agency": 2,
+      "asset": 2,
+      "flooding_zone": 1,
+      "transit_service": 1,
+      "congestion_zone": 2,
+      "mobility_pattern": 1,
+      "stakeholder": 1,
+      "maintenance_event": 2,
+      "corridor": 3,
+      "infrastructure_failure": 2
+    },
+    "vector_hits": {
+      "sensor_system": 2,
+      "maintenance_event": 1,
+      "flooding_zone": 1,
+      "congestion_zone": 1,
+      "asset": 2,
+      "infrastructure_failure": 1
+    },
+    "graph_expansion": {
+      "agency": 2,
+      "stakeholder": 1,
+      "maintenance_event": 1,
+      "corridor": 3,
+      "transit_service": 1,
+      "mobility_pattern": 1,
+      "infrastructure_failure": 1,
+      "congestion_zone": 1
+    }
+  },
+  "edge_type_distribution": {
+    "MAINTAINS": 2,
+    "IMPACTS": 1,
+    "DEPENDS_ON": 1,
+    "OVERLAPS_WITH": 3,
+    "CONSTRAINS": 1,
+    "CORRELATES_WITH": 2,
+    "MONITORS": 1
+  },
+  "top_traversed_relations": [
+    [
+      "OVERLAPS_WITH",
+      3
+    ],
+    [
+      "MAINTAINS",
+      2
+    ],
+    [
+      "CORRELATES_WITH",
+      2
+    ],
+    [
+      "IMPACTS",
+      1
+    ],
+    [
+      "DEPENDS_ON",
+      1
+    ]
+  ],
+  "expansion_depth": {
+    "metrics": {
+      "min": 1,
+      "max": 1,
+      "avg": 1.0
+    },
+    "histogram": {
+      "1": 11
+    }
+  },
+  "duplicates": {
+    "vector_hits": {},
+    "graph_expansion": {}
+  },
+  "context_size": {
+    "chars": 2177,
+    "words": 249,
+    "lines": 65
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "query": "multimodal transfer bottlenecks near Silk Board junction",
+  "breakdown": {
+    "vector_hits": 8,
+    "graph_expansion": 21,
+    "unique_nodes": 29,
+    "overlap": 0
+  },
+  "node_class_distribution": {
+    "all": {
+      "policy": 2,
+      "congestion_zone": 4,
+      "urban_region": 2,
+      "maintenance_event": 4,
+      "corridor": 6,
+      "flooding_zone": 1,
+      "transit_service": 6,
+      "infrastructure_failure": 2,
+      "mobility_pattern": 2
+    },
+    "vector_hits": {
+      "corridor": 6,
+      "transit_service": 2
+    },
+    "graph_expansion": {
+      "urban_region": 2,
+      "congestion_zone": 4,
+      "infrastructure_failure": 2,
+      "transit_service": 4,
+      "policy": 2,
+      "mobility_pattern": 2,
+      "maintenance_event": 4,
+      "flooding_zone": 1
+    }
+  },
+  "edge_type_distribution": {
+    "SERVES": 2,
+    "OVERLAPS_WITH": 5,
+    "CONSTRAINS": 7,
+    "DEPENDS_ON": 7
+  },
+  "top_traversed_relations": [
+    [
+      "CONSTRAINS",
+      7
+    ],
+    [
+      "DEPENDS_ON",
+      7
+    ],
+    [
+      "OVERLAPS_WITH",
+      5
+    ],
+    [
+      "SERVES",
+      2
+    ]
+  ],
+  "expansion_depth": {
+    "metrics": {
+      "min": 1,
+      "max": 1,
+      "avg": 1.0
+    },
+    "histogram": {
+      "1": 21
+    }
+  },
+  "duplicates": {
+    "vector_hits": {},
+    "graph_expansion": {}
+  },
+  "context_size": {
+    "chars": 3535,
+    "words": 393,
+    "lines": 95
+  }
+}

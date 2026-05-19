@@ -1,0 +1,26 @@
+graph_root: ../seed_graph/bengaluru
+output_dir: ./output/semantic_traversal/semantic
+reports_dir: ./reports
+
+qdrant:
+  url: http://localhost:6333
+  collection: bengaluru_seed_v1
+
+retrieval:
+  top_k: 8
+  graph_hops: 1
+  edge_types: [DEPENDS_ON, IMPACTS, OVERLAPS_WITH, CONSTRAINS, MAINTAINS, SERVES, MONITORS, CAUSES, CORRELATES_WITH]
+  semantic_traversal: true
+  semantic_threshold: 0.15
+  semantic_max_neighbors: 6
+  semantic_rerank: true
+  hub_suppression: true
+  hub_classes: [agency, corridor, transit_service]
+  hub_penalty: 0.15
+  semantic_query_weight: 0.6
+  semantic_seed_weight: 0.4
+
+context:
+  max_nodes: 40
+  include_relations: true
+  include_content: true

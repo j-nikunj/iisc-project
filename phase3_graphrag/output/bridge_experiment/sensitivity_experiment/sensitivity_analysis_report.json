@@ -1,0 +1,384 @@
+{
+  "query": "multimodal transfer bottlenecks near Silk Board junction",
+  "experiments": [
+    {
+      "name": "k4_h1_all",
+      "query": "multimodal transfer bottlenecks near Silk Board junction",
+      "params": {
+        "top_k": 4,
+        "hops": 1,
+        "edges": [],
+        "node_classes": [],
+        "edge_filter": "all"
+      },
+      "metrics": {
+        "vector_hits": 4,
+        "graph_expansion": 12,
+        "unique_nodes": 16,
+        "overlap": 0,
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.25,
+        "semantic_coherence_proxy": 0.25,
+        "node_class_diversity": 11,
+        "relation_diversity": 8,
+        "expansion_depth_avg": 1.0,
+        "context_words": 202,
+        "words_per_node": 12.62,
+        "words_per_vector_hit": 50.5,
+        "context_growth_rate": 3.0,
+        "expansion_only_ratio": 0.75,
+        "noise_amplification": 3.0,
+        "expansion_redundancy": 0
+      },
+      "delta_vs_baseline": {
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": -0.1711,
+        "node_class_diversity": 0.0,
+        "relation_diversity": 2.0,
+        "context_words": -41.0,
+        "noise_amplification": 1.625
+      }
+    },
+    {
+      "name": "k8_h1_all",
+      "query": "multimodal transfer bottlenecks near Silk Board junction",
+      "params": {
+        "top_k": 8,
+        "hops": 1,
+        "edges": [],
+        "node_classes": [],
+        "edge_filter": "all"
+      },
+      "metrics": {
+        "vector_hits": 8,
+        "graph_expansion": 11,
+        "unique_nodes": 19,
+        "overlap": 0,
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.4211,
+        "semantic_coherence_proxy": 0.4211,
+        "node_class_diversity": 11,
+        "relation_diversity": 6,
+        "expansion_depth_avg": 1.0,
+        "context_words": 243,
+        "words_per_node": 12.79,
+        "words_per_vector_hit": 30.38,
+        "context_growth_rate": 1.375,
+        "expansion_only_ratio": 0.5789,
+        "noise_amplification": 1.375,
+        "expansion_redundancy": 0
+      },
+      "delta_vs_baseline": {
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.0,
+        "node_class_diversity": 0.0,
+        "relation_diversity": 0.0,
+        "context_words": 0.0,
+        "noise_amplification": 0.0
+      }
+    },
+    {
+      "name": "k16_h1_all",
+      "query": "multimodal transfer bottlenecks near Silk Board junction",
+      "params": {
+        "top_k": 16,
+        "hops": 1,
+        "edges": [],
+        "node_classes": [],
+        "edge_filter": "all"
+      },
+      "metrics": {
+        "vector_hits": 16,
+        "graph_expansion": 16,
+        "unique_nodes": 32,
+        "overlap": 0,
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.5,
+        "semantic_coherence_proxy": 0.5,
+        "node_class_diversity": 12,
+        "relation_diversity": 6,
+        "expansion_depth_avg": 1.0,
+        "context_words": 410,
+        "words_per_node": 12.81,
+        "words_per_vector_hit": 25.62,
+        "context_growth_rate": 1.0,
+        "expansion_only_ratio": 0.5,
+        "noise_amplification": 1.0,
+        "expansion_redundancy": 0
+      },
+      "delta_vs_baseline": {
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.0789,
+        "node_class_diversity": 1.0,
+        "relation_diversity": 0.0,
+        "context_words": 167.0,
+        "noise_amplification": -0.375
+      }
+    },
+    {
+      "name": "k8_h2_all",
+      "query": "multimodal transfer bottlenecks near Silk Board junction",
+      "params": {
+        "top_k": 8,
+        "hops": 2,
+        "edges": [],
+        "node_classes": [],
+        "edge_filter": "all"
+      },
+      "metrics": {
+        "vector_hits": 8,
+        "graph_expansion": 31,
+        "unique_nodes": 39,
+        "overlap": 0,
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.2051,
+        "semantic_coherence_proxy": 0.2051,
+        "node_class_diversity": 13,
+        "relation_diversity": 8,
+        "expansion_depth_avg": 1.6452,
+        "context_words": 495,
+        "words_per_node": 12.69,
+        "words_per_vector_hit": 61.88,
+        "context_growth_rate": 3.875,
+        "expansion_only_ratio": 0.7949,
+        "noise_amplification": 3.875,
+        "expansion_redundancy": 0
+      },
+      "delta_vs_baseline": {
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": -0.216,
+        "node_class_diversity": 2.0,
+        "relation_diversity": 2.0,
+        "context_words": 252.0,
+        "noise_amplification": 2.5
+      }
+    },
+    {
+      "name": "k16_h2_all",
+      "query": "multimodal transfer bottlenecks near Silk Board junction",
+      "params": {
+        "top_k": 16,
+        "hops": 2,
+        "edges": [],
+        "node_classes": [],
+        "edge_filter": "all"
+      },
+      "metrics": {
+        "vector_hits": 16,
+        "graph_expansion": 29,
+        "unique_nodes": 45,
+        "overlap": 0,
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.3556,
+        "semantic_coherence_proxy": 0.3556,
+        "node_class_diversity": 13,
+        "relation_diversity": 9,
+        "expansion_depth_avg": 1.4483,
+        "context_words": 550,
+        "words_per_node": 12.22,
+        "words_per_vector_hit": 34.38,
+        "context_growth_rate": 1.8125,
+        "expansion_only_ratio": 0.6444,
+        "noise_amplification": 1.8125,
+        "expansion_redundancy": 0
+      },
+      "delta_vs_baseline": {
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": -0.0655,
+        "node_class_diversity": 2.0,
+        "relation_diversity": 3.0,
+        "context_words": 307.0,
+        "noise_amplification": 0.4375
+      }
+    },
+    {
+      "name": "k8_h1_operational",
+      "query": "multimodal transfer bottlenecks near Silk Board junction",
+      "params": {
+        "top_k": 8,
+        "hops": 1,
+        "edges": [
+          "IMPACTS",
+          "DEPENDS_ON",
+          "CONSTRAINS"
+        ],
+        "node_classes": [],
+        "edge_filter": "operational"
+      },
+      "metrics": {
+        "vector_hits": 8,
+        "graph_expansion": 3,
+        "unique_nodes": 11,
+        "overlap": 0,
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.7273,
+        "semantic_coherence_proxy": 0.7273,
+        "node_class_diversity": 8,
+        "relation_diversity": 3,
+        "expansion_depth_avg": 1.0,
+        "context_words": 159,
+        "words_per_node": 14.45,
+        "words_per_vector_hit": 19.88,
+        "context_growth_rate": 0.375,
+        "expansion_only_ratio": 0.2727,
+        "noise_amplification": 0.375,
+        "expansion_redundancy": 0
+      },
+      "delta_vs_baseline": {
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.3062,
+        "node_class_diversity": -3.0,
+        "relation_diversity": -3.0,
+        "context_words": -84.0,
+        "noise_amplification": -1.0
+      }
+    },
+    {
+      "name": "k8_h1_maintenance_overlap",
+      "query": "multimodal transfer bottlenecks near Silk Board junction",
+      "params": {
+        "top_k": 8,
+        "hops": 1,
+        "edges": [
+          "MAINTAINS",
+          "OVERLAPS_WITH"
+        ],
+        "node_classes": [],
+        "edge_filter": "maintenance_overlap"
+      },
+      "metrics": {
+        "vector_hits": 8,
+        "graph_expansion": 6,
+        "unique_nodes": 14,
+        "overlap": 0,
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.5714,
+        "semantic_coherence_proxy": 0.5714,
+        "node_class_diversity": 9,
+        "relation_diversity": 2,
+        "expansion_depth_avg": 1.0,
+        "context_words": 186,
+        "words_per_node": 13.29,
+        "words_per_vector_hit": 23.25,
+        "context_growth_rate": 0.75,
+        "expansion_only_ratio": 0.4286,
+        "noise_amplification": 0.75,
+        "expansion_redundancy": 0
+      },
+      "delta_vs_baseline": {
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.1503,
+        "node_class_diversity": -2.0,
+        "relation_diversity": -4.0,
+        "context_words": -57.0,
+        "noise_amplification": -0.625
+      }
+    },
+    {
+      "name": "k8_h1_transit_corridor",
+      "query": "multimodal transfer bottlenecks near Silk Board junction",
+      "params": {
+        "top_k": 8,
+        "hops": 1,
+        "edges": [],
+        "node_classes": [
+          "transit_service",
+          "corridor"
+        ],
+        "edge_filter": "all"
+      },
+      "metrics": {
+        "vector_hits": 8,
+        "graph_expansion": 22,
+        "unique_nodes": 30,
+        "overlap": 0,
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.2667,
+        "semantic_coherence_proxy": 0.2667,
+        "node_class_diversity": 10,
+        "relation_diversity": 5,
+        "expansion_depth_avg": 1.0,
+        "context_words": 408,
+        "words_per_node": 13.6,
+        "words_per_vector_hit": 51.0,
+        "context_growth_rate": 2.75,
+        "expansion_only_ratio": 0.7333,
+        "noise_amplification": 2.75,
+        "expansion_redundancy": 0
+      },
+      "delta_vs_baseline": {
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": -0.1544,
+        "node_class_diversity": -1.0,
+        "relation_diversity": -1.0,
+        "context_words": 165.0,
+        "noise_amplification": 1.375
+      }
+    }
+  ],
+  "summary": {
+    "best_alignment_configs": [
+      "k8_h1_operational",
+      "k8_h1_maintenance_overlap",
+      "k16_h1_all"
+    ],
+    "highest_noise_configs": [
+      "k8_h2_all",
+      "k4_h1_all",
+      "k8_h1_transit_corridor"
+    ],
+    "edge_filter_stats": {
+      "all": {
+        "avg_overlap_ratio": 0.0,
+        "avg_semantic_signal_ratio": 0.3331,
+        "avg_noise_amplification": 2.3021,
+        "avg_relation_diversity": 7.0
+      },
+      "operational": {
+        "avg_overlap_ratio": 0.0,
+        "avg_semantic_signal_ratio": 0.7273,
+        "avg_noise_amplification": 0.375,
+        "avg_relation_diversity": 3.0
+      },
+      "maintenance_overlap": {
+        "avg_overlap_ratio": 0.0,
+        "avg_semantic_signal_ratio": 0.5714,
+        "avg_noise_amplification": 0.75,
+        "avg_relation_diversity": 2.0
+      }
+    },
+    "multi_hop_effects": [
+      {
+        "pair": "k8_h1_all -> k8_h2_all",
+        "delta_overlap_ratio": 0.0,
+        "delta_semantic_signal_ratio": -0.216,
+        "delta_relation_diversity": 2,
+        "delta_noise_amplification": 2.5
+      },
+      {
+        "pair": "k16_h1_all -> k16_h2_all",
+        "delta_overlap_ratio": 0.0,
+        "delta_semantic_signal_ratio": -0.1444,
+        "delta_relation_diversity": 3,
+        "delta_noise_amplification": 0.8125
+      }
+    ],
+    "baseline_config": "k8_h1_all"
+  }
+}

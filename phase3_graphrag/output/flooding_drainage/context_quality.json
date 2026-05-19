@@ -1,0 +1,77 @@
+{
+  "query": "flooding and drainage bottlenecks near Silk Board junction",
+  "breakdown": {
+    "vector_hits": 8,
+    "graph_expansion": 6,
+    "unique_nodes": 14,
+    "overlap": 0
+  },
+  "node_class_distribution": {
+    "all": {
+      "congestion_zone": 1,
+      "corridor": 3,
+      "maintenance_event": 2,
+      "stakeholder": 1,
+      "agency": 1,
+      "asset": 2,
+      "flooding_zone": 2,
+      "infrastructure_failure": 2
+    },
+    "vector_hits": {
+      "flooding_zone": 2,
+      "infrastructure_failure": 2,
+      "asset": 2,
+      "congestion_zone": 1,
+      "maintenance_event": 1
+    },
+    "graph_expansion": {
+      "agency": 1,
+      "corridor": 3,
+      "maintenance_event": 1,
+      "stakeholder": 1
+    }
+  },
+  "edge_type_distribution": {
+    "MAINTAINS": 1,
+    "OVERLAPS_WITH": 3,
+    "DEPENDS_ON": 1,
+    "IMPACTS": 1
+  },
+  "top_traversed_relations": [
+    [
+      "OVERLAPS_WITH",
+      3
+    ],
+    [
+      "MAINTAINS",
+      1
+    ],
+    [
+      "DEPENDS_ON",
+      1
+    ],
+    [
+      "IMPACTS",
+      1
+    ]
+  ],
+  "expansion_depth": {
+    "metrics": {
+      "min": 1,
+      "max": 1,
+      "avg": 1.0
+    },
+    "histogram": {
+      "1": 6
+    }
+  },
+  "duplicates": {
+    "vector_hits": {},
+    "graph_expansion": {}
+  },
+  "context_size": {
+    "chars": 1661,
+    "words": 183,
+    "lines": 50
+  }
+}

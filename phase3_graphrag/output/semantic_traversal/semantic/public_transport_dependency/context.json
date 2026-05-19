@@ -1,0 +1,251 @@
+{
+  "query": "public transport dependency for commuters near Silk Board",
+  "vector_hits": [
+    {
+      "node_id": "pattern-peak-hour-it-commute",
+      "title": "Peak-hour IT Corridor Commute",
+      "node_class": "mobility_pattern",
+      "score": 0.70304626
+    },
+    {
+      "node_id": "zone-silk-board-congestion",
+      "title": "Silk Board Congestion Zone",
+      "node_class": "congestion_zone",
+      "score": 0.6955723
+    },
+    {
+      "node_id": "asset-blr-silk-board-junction",
+      "title": "Silk Board Junction",
+      "node_class": "asset",
+      "score": 0.6650332
+    },
+    {
+      "node_id": "failure-silk-board-spillback",
+      "title": "Silk Board Spillback Failure",
+      "node_class": "infrastructure_failure",
+      "score": 0.66130626
+    },
+    {
+      "node_id": "pattern-airport-commute",
+      "title": "Airport Commute Pattern",
+      "node_class": "mobility_pattern",
+      "score": 0.66067034
+    },
+    {
+      "node_id": "pattern-two-wheeler-last-mile",
+      "title": "Two-wheeler Dominant Last-mile",
+      "node_class": "mobility_pattern",
+      "score": 0.65791917
+    },
+    {
+      "node_id": "asset-blr-silk-board-underpass",
+      "title": "Silk Board Underpass",
+      "node_class": "asset",
+      "score": 0.6533213
+    },
+    {
+      "node_id": "stakeholder-it-corridor-commuters",
+      "title": "IT Corridor Commuters",
+      "node_class": "stakeholder",
+      "score": 0.65314853
+    }
+  ],
+  "graph_expansion": [
+    {
+      "node_id": "maintenance-desilting-pre-monsoon",
+      "title": "Pre-monsoon Desilting Drive (Illustrative)",
+      "node_class": "maintenance_event",
+      "path": [
+        {
+          "from": "maintenance-desilting-pre-monsoon",
+          "edge": "DEPENDS_ON",
+          "to": "asset-blr-silk-board-underpass",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "corridor-blr-orr",
+      "title": "Outer Ring Road",
+      "node_class": "corridor",
+      "path": [
+        {
+          "from": "zone-silk-board-congestion",
+          "edge": "OVERLAPS_WITH",
+          "to": "corridor-blr-orr",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "node_id": "zone-silk-board-underpass-flooding",
+      "title": "Silk Board Underpass Flooding Zone",
+      "node_class": "flooding_zone",
+      "path": [
+        {
+          "from": "asset-blr-silk-board-underpass",
+          "edge": "OVERLAPS_WITH",
+          "to": "zone-silk-board-underpass-flooding",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "node_id": "zone-kr-puram-congestion",
+      "title": "KR Puram Congestion Zone",
+      "node_class": "congestion_zone",
+      "path": [
+        {
+          "from": "zone-kr-puram-congestion",
+          "edge": "IMPACTS",
+          "to": "stakeholder-it-corridor-commuters",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "stakeholder-informal-auto-drivers",
+      "title": "Informal Auto Drivers",
+      "node_class": "stakeholder",
+      "path": [
+        {
+          "from": "pattern-two-wheeler-last-mile",
+          "edge": "IMPACTS",
+          "to": "stakeholder-informal-auto-drivers",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "node_id": "service-bmtc-500d",
+      "title": "BMTC 500D ORR",
+      "node_class": "transit_service",
+      "path": [
+        {
+          "from": "pattern-peak-hour-it-commute",
+          "edge": "DEPENDS_ON",
+          "to": "service-bmtc-500d",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "node_id": "corridor-blr-hosur-road",
+      "title": "Hosur Road",
+      "node_class": "corridor",
+      "path": [
+        {
+          "from": "zone-silk-board-congestion",
+          "edge": "OVERLAPS_WITH",
+          "to": "corridor-blr-hosur-road",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "node_id": "service-vayu-vajra-kia9",
+      "title": "Vayu Vajra KIA-9",
+      "node_class": "transit_service",
+      "path": [
+        {
+          "from": "pattern-airport-commute",
+          "edge": "DEPENDS_ON",
+          "to": "service-vayu-vajra-kia9",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "node_id": "maintenance-silk-board-signal-retiming",
+      "title": "Silk Board Signal Retiming (Illustrative)",
+      "node_class": "maintenance_event",
+      "path": [
+        {
+          "from": "maintenance-silk-board-signal-retiming",
+          "edge": "DEPENDS_ON",
+          "to": "asset-blr-silk-board-junction",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "corridor-blr-airport-road",
+      "title": "Airport Road (Bellary Road)",
+      "node_class": "corridor",
+      "path": [
+        {
+          "from": "pattern-airport-commute",
+          "edge": "DEPENDS_ON",
+          "to": "corridor-blr-airport-road",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "node_id": "agency-bbmp",
+      "title": "BBMP",
+      "node_class": "agency",
+      "path": [
+        {
+          "from": "agency-bbmp",
+          "edge": "MAINTAINS",
+          "to": "asset-blr-silk-board-junction",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "corridor-blr-bannerghatta-road",
+      "title": "Bannerghatta Road",
+      "node_class": "corridor",
+      "path": [
+        {
+          "from": "corridor-blr-bannerghatta-road",
+          "edge": "OVERLAPS_WITH",
+          "to": "zone-silk-board-congestion",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "sensor-silk-board-cctv",
+      "title": "Silk Board CCTV Cluster",
+      "node_class": "sensor_system",
+      "path": [
+        {
+          "from": "sensor-silk-board-cctv",
+          "edge": "MONITORS",
+          "to": "zone-silk-board-congestion",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "zone-marathahalli-congestion",
+      "title": "Marathahalli Congestion Zone",
+      "node_class": "congestion_zone",
+      "path": [
+        {
+          "from": "pattern-peak-hour-it-commute",
+          "edge": "CORRELATES_WITH",
+          "to": "zone-marathahalli-congestion",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "node_id": "zone-hebbal-congestion",
+      "title": "Hebbal Congestion Zone",
+      "node_class": "congestion_zone",
+      "path": [
+        {
+          "from": "pattern-airport-commute",
+          "edge": "CORRELATES_WITH",
+          "to": "zone-hebbal-congestion",
+          "direction": "out"
+        }
+      ]
+    }
+  ],
+  "context_text": "Query: public transport dependency for commuters near Silk Board\n\nVector Hits:\n\n- Peak-hour IT Corridor Commute (pattern-peak-hour-it-commute): 0.7030\n- Silk Board Congestion Zone (zone-silk-board-congestion): 0.6956\n- Silk Board Junction (asset-blr-silk-board-junction): 0.6650\n- Silk Board Spillback Failure (failure-silk-board-spillback): 0.6613\n- Airport Commute Pattern (pattern-airport-commute): 0.6607\n- Two-wheeler Dominant Last-mile (pattern-two-wheeler-last-mile): 0.6579\n- Silk Board Underpass (asset-blr-silk-board-underpass): 0.6533\n- IT Corridor Commuters (stakeholder-it-corridor-commuters): 0.6531\n\nGraph Expansion:\n\n- Pre-monsoon Desilting Drive (Illustrative) (maintenance-desilting-pre-monsoon)\n- Outer Ring Road (corridor-blr-orr)\n- Silk Board Underpass Flooding Zone (zone-silk-board-underpass-flooding)\n- KR Puram Congestion Zone (zone-kr-puram-congestion)\n- Informal Auto Drivers (stakeholder-informal-auto-drivers)\n- BMTC 500D ORR (service-bmtc-500d)\n- Hosur Road (corridor-blr-hosur-road)\n- Vayu Vajra KIA-9 (service-vayu-vajra-kia9)\n- Silk Board Signal Retiming (Illustrative) (maintenance-silk-board-signal-retiming)\n- Airport Road (Bellary Road) (corridor-blr-airport-road)\n- BBMP (agency-bbmp)\n- Bannerghatta Road (corridor-blr-bannerghatta-road)\n- Silk Board CCTV Cluster (sensor-silk-board-cctv)\n- Marathahalli Congestion Zone (zone-marathahalli-congestion)\n- Hebbal Congestion Zone (zone-hebbal-congestion)\n\n## Peak-hour IT Corridor Commute\nClass: mobility_pattern\n## Silk Board Congestion Zone\nClass: congestion_zone\n## Silk Board Junction\nClass: asset\n## Silk Board Spillback Failure\nClass: infrastructure_failure\n## Airport Commute Pattern\nClass: mobility_pattern\n## Two-wheeler Dominant Last-mile\nClass: mobility_pattern\n## Silk Board Underpass\nClass: asset\n## IT Corridor Commuters\nClass: stakeholder\n## Pre-monsoon Desilting Drive (Illustrative)\nClass: maintenance_event\n## Outer Ring Road\nClass: corridor\n## Silk Board Underpass Flooding Zone\nClass: flooding_zone\n## KR Puram Congestion Zone\nClass: congestion_zone\n## Informal Auto Drivers\nClass: stakeholder\n## BMTC 500D ORR\nClass: transit_service\n## Hosur Road\nClass: corridor\n## Vayu Vajra KIA-9\nClass: transit_service\n## Silk Board Signal Retiming (Illustrative)\nClass: maintenance_event\n## Airport Road (Bellary Road)\nClass: corridor\n## BBMP\nClass: agency\n## Bannerghatta Road\nClass: corridor\n## Silk Board CCTV Cluster\nClass: sensor_system\n## Marathahalli Congestion Zone\nClass: congestion_zone\n## Hebbal Congestion Zone\nClass: congestion_zone"
+}

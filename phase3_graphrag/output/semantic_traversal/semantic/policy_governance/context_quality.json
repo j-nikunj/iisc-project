@@ -1,0 +1,86 @@
+{
+  "query": "policy and governance constraints on corridor upgrades in Bengaluru",
+  "breakdown": {
+    "vector_hits": 8,
+    "graph_expansion": 13,
+    "unique_nodes": 21,
+    "overlap": 0
+  },
+  "node_class_distribution": {
+    "all": {
+      "transit_service": 4,
+      "corridor": 4,
+      "flooding_zone": 1,
+      "stakeholder": 2,
+      "mobility_pattern": 1,
+      "congestion_zone": 4,
+      "agency": 2,
+      "infrastructure_failure": 1,
+      "asset": 1,
+      "maintenance_event": 1
+    },
+    "vector_hits": {
+      "corridor": 4,
+      "stakeholder": 2,
+      "asset": 1,
+      "agency": 1
+    },
+    "graph_expansion": {
+      "infrastructure_failure": 1,
+      "transit_service": 4,
+      "congestion_zone": 4,
+      "mobility_pattern": 1,
+      "agency": 1,
+      "flooding_zone": 1,
+      "maintenance_event": 1
+    }
+  },
+  "edge_type_distribution": {
+    "CONSTRAINS": 2,
+    "DEPENDS_ON": 5,
+    "OVERLAPS_WITH": 3,
+    "MAINTAINS": 1,
+    "IMPACTS": 2
+  },
+  "top_traversed_relations": [
+    [
+      "DEPENDS_ON",
+      5
+    ],
+    [
+      "OVERLAPS_WITH",
+      3
+    ],
+    [
+      "CONSTRAINS",
+      2
+    ],
+    [
+      "IMPACTS",
+      2
+    ],
+    [
+      "MAINTAINS",
+      1
+    ]
+  ],
+  "expansion_depth": {
+    "metrics": {
+      "min": 1,
+      "max": 1,
+      "avg": 1.0
+    },
+    "histogram": {
+      "1": 13
+    }
+  },
+  "duplicates": {
+    "vector_hits": {},
+    "graph_expansion": {}
+  },
+  "context_size": {
+    "chars": 2467,
+    "words": 279,
+    "lines": 71
+  }
+}

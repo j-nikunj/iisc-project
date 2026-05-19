@@ -1,0 +1,240 @@
+GraphRAG Candidate Bridge Relations
+
+Summary:
+- contexts analyzed: 16
+- vector nodes: 32
+- expansion nodes: 40
+- expansion-heavy nodes: 15
+- vector-heavy nodes: 22
+- low-degree vector nodes: 0
+- generic classes: agency, corridor, transit_service
+
+Note: Graph expansion excludes vector hits by design in assemble_context; overlap=0 does not imply missing adjacency.
+
+High Confidence Structural Gaps
+- none
+
+Possible Semantic Cross Links
+- KR Puram Bridge (asset) -> Marathahalli Congestion Zone (congestion_zone), edge: OVERLAPS_WITH, confidence: 0.72
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board CCTV Cluster (sensor_system) -> Silk Board Underpass Flooding Zone (flooding_zone), edge: MONITORS, confidence: 0.72
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- KR Puram Bridge (asset) -> Hebbal Congestion Zone (congestion_zone), edge: OVERLAPS_WITH, confidence: 0.72
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Peak-hour IT Corridor Commute (mobility_pattern) -> Hebbal Congestion Zone (congestion_zone), edge: CORRELATES_WITH, confidence: 0.71
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board Spillback Failure (infrastructure_failure) -> Silk Board Underpass Flooding Zone (flooding_zone), edge: CAUSES, confidence: 0.71
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board Underpass (asset) -> Marathahalli Congestion Zone (congestion_zone), edge: OVERLAPS_WITH, confidence: 0.71
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board Junction (asset) -> Marathahalli Congestion Zone (congestion_zone), edge: OVERLAPS_WITH, confidence: 0.71
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Old Madras Road (corridor) -> Hebbal Congestion Zone (congestion_zone), edge: OVERLAPS_WITH, confidence: 0.71
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board Underpass (asset) -> Hebbal Congestion Zone (congestion_zone), edge: OVERLAPS_WITH, confidence: 0.70
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board Junction (asset) -> Hebbal Congestion Zone (congestion_zone), edge: OVERLAPS_WITH, confidence: 0.70
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Outer Ring Road (corridor) -> Hebbal Congestion Zone (congestion_zone), edge: OVERLAPS_WITH, confidence: 0.70
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- ORR ANPR Camera Network (Illustrative) (sensor_system) -> Hebbal Congestion Zone (congestion_zone), edge: MONITORS, confidence: 0.70
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board CCTV Cluster (sensor_system) -> Marathahalli Congestion Zone (congestion_zone), edge: MONITORS, confidence: 0.68
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board CCTV Cluster (sensor_system) -> KR Puram Congestion Zone (congestion_zone), edge: MONITORS, confidence: 0.68
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board CCTV Cluster (sensor_system) -> Hebbal Congestion Zone (congestion_zone), edge: MONITORS, confidence: 0.68
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- ORR ANPR Camera Network (Illustrative) (sensor_system) -> KR Puram Congestion Zone (congestion_zone), edge: MONITORS, confidence: 0.68
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Peak-hour IT Corridor Commute (mobility_pattern) -> KR Puram Congestion Zone (congestion_zone), edge: CORRELATES_WITH, confidence: 0.68
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Two-wheeler Dominant Last-mile (mobility_pattern) -> Bannerghatta Road (corridor), edge: DEPENDS_ON, confidence: 0.67
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board Junction (asset) -> ORR-Bellandur Flooding Zone (flooding_zone), edge: OVERLAPS_WITH, confidence: 0.67
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board Underpass (asset) -> ORR-Bellandur Flooding Zone (flooding_zone), edge: OVERLAPS_WITH, confidence: 0.67
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board Congestion Zone (congestion_zone) -> Informal Auto Drivers (stakeholder), edge: IMPACTS, confidence: 0.67
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Two-wheeler Dominant Last-mile (mobility_pattern) -> KR Puram Congestion Zone (congestion_zone), edge: CORRELATES_WITH, confidence: 0.66
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Peak-hour IT Corridor Commute (mobility_pattern) -> Informal Auto Drivers (stakeholder), edge: IMPACTS, confidence: 0.66
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board Spillback Failure (infrastructure_failure) -> Informal Auto Drivers (stakeholder), edge: IMPACTS, confidence: 0.66
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Two-wheeler Dominant Last-mile (mobility_pattern) -> Hebbal Congestion Zone (congestion_zone), edge: CORRELATES_WITH, confidence: 0.66
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+
+Generic Hub Reductions
+- Two-wheeler Dominant Last-mile (mobility_pattern) -> BBMP (agency), edge: IMPACTS, confidence: 0.63
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board Underpass (asset) -> Bangalore Traffic Police (agency), edge: MAINTAINS, confidence: 0.63
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Old Madras Road (corridor) -> BBMP (agency), edge: IMPACTS, confidence: 0.62
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board CCTV Cluster (sensor_system) -> Bangalore Traffic Police (agency), edge: IMPACTS, confidence: 0.60
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Peak-hour IT Corridor Commute (mobility_pattern) -> Bangalore Traffic Police (agency), edge: IMPACTS, confidence: 0.60
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- ORR ANPR Camera Network (Illustrative) (sensor_system) -> BBMP (agency), edge: IMPACTS, confidence: 0.60
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Peak-hour IT Corridor Commute (mobility_pattern) -> BBMP (agency), edge: IMPACTS, confidence: 0.60
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board Congestion Zone (congestion_zone) -> Bangalore Traffic Police (agency), edge: IMPACTS, confidence: 0.59
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- ORR ANPR Camera Network (Illustrative) (sensor_system) -> Bangalore Traffic Police (agency), edge: IMPACTS, confidence: 0.59
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board Underpass Flooding Zone (flooding_zone) -> Bangalore Traffic Police (agency), edge: IMPACTS, confidence: 0.59
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board Spillback Failure (infrastructure_failure) -> BBMP (agency), edge: IMPACTS, confidence: 0.59
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board Spillback Failure (infrastructure_failure) -> Bangalore Traffic Police (agency), edge: IMPACTS, confidence: 0.59
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Old Madras Road (corridor) -> BMTC Hosur Road Corridor Service (Illustrative) (transit_service), edge: DEPENDS_ON, confidence: 0.57
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Old Madras Road (corridor) -> BMTC Bannerghatta Road Corridor Service (Illustrative) (transit_service), edge: DEPENDS_ON, confidence: 0.57
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- IT Corridor Commuters (stakeholder) -> BBMP (agency), edge: IMPACTS, confidence: 0.54
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Outer Ring Road (corridor) -> BMTC Bannerghatta Road Corridor Service (Illustrative) (transit_service), edge: DEPENDS_ON, confidence: 0.53
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board Junction (asset) -> Bangalore Traffic Police (agency), edge: MAINTAINS, confidence: 0.53
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Outer Ring Road (corridor) -> BBMP (agency), edge: IMPACTS, confidence: 0.52
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- ORR-Bellandur Flooding Zone (flooding_zone) -> BBMP (agency), edge: IMPACTS, confidence: 0.52
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Koramangala Valley Drainage Overload (infrastructure_failure) -> BBMP (agency), edge: IMPACTS, confidence: 0.52
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Mahadevapura Flyover (asset) -> BMTC Hosur Road Corridor Service (Illustrative) (transit_service), edge: DEPENDS_ON, confidence: 0.52
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Mahadevapura Flyover (asset) -> BMTC Bannerghatta Road Corridor Service (Illustrative) (transit_service), edge: DEPENDS_ON, confidence: 0.52
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- ORR ANPR Camera Network (Illustrative) (sensor_system) -> BMTC Hosur Road Corridor Service (Illustrative) (transit_service), edge: IMPACTS, confidence: 0.51
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- ORR ANPR Camera Network (Illustrative) (sensor_system) -> BMTC Bannerghatta Road Corridor Service (Illustrative) (transit_service), edge: IMPACTS, confidence: 0.51
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board Congestion Zone (congestion_zone) -> BBMP (agency), edge: IMPACTS, confidence: 0.49
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+
+Optional Enrichment
+- Airport Road (Bellary Road) (corridor) -> Outer Ring Road (corridor), edge: CONNECTS_TO, confidence: 0.61
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Hosur Road (corridor) -> Bannerghatta Road (corridor), edge: CONNECTS_TO, confidence: 0.56
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Old Madras Road (corridor) -> Airport Road (Bellary Road) (corridor), edge: CONNECTS_TO, confidence: 0.55
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Airport Road (Bellary Road) (corridor) -> Hosur Road (corridor), edge: CONNECTS_TO, confidence: 0.55
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Airport Road (Bellary Road) (corridor) -> Bannerghatta Road (corridor), edge: CONNECTS_TO, confidence: 0.55
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board Underpass (asset) -> Silk Board CCTV Cluster (sensor_system), edge: MONITORS, confidence: 0.53
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Old Madras Road (corridor) -> Hosur Road (corridor), edge: CONNECTS_TO, confidence: 0.52
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board Underpass (asset) -> Silk Board Congestion Zone (congestion_zone), edge: OVERLAPS_WITH, confidence: 0.52
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Old Madras Road (corridor) -> Bannerghatta Road (corridor), edge: CONNECTS_TO, confidence: 0.52
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Bannerghatta Road (corridor) -> Outer Ring Road (corridor), edge: CONNECTS_TO, confidence: 0.51
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- ORR-Bellandur Flooding Zone (flooding_zone) -> Mahadevapura Flyover (asset), edge: OVERLAPS_WITH, confidence: 0.50
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board Junction (asset) -> Silk Board Underpass (asset), edge: IMPACTS, confidence: 0.46
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board Underpass (asset) -> Hebbal Flyover (asset), edge: IMPACTS, confidence: 0.46
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- KR Puram Bridge (asset) -> Mahadevapura Flyover (asset), edge: IMPACTS, confidence: 0.45
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Hebbal Flyover (asset) -> Mahadevapura Flyover (asset), edge: IMPACTS, confidence: 0.45
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board Underpass (asset) -> Mahadevapura Flyover (asset), edge: IMPACTS, confidence: 0.43
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Old Madras Road (corridor) -> KR Puram Bridge (asset), edge: IMPACTS, confidence: 0.43
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board Underpass (asset) -> KR Puram Bridge (asset), edge: IMPACTS, confidence: 0.43
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board Signal Retiming (Illustrative) (maintenance_event) -> Silk Board CCTV Cluster (sensor_system), edge: IMPACTS, confidence: 0.42
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- KR Puram Bridge (asset) -> Hebbal Flyover (asset), edge: IMPACTS, confidence: 0.42
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board Junction (asset) -> Mahadevapura Flyover (asset), edge: IMPACTS, confidence: 0.41
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board Junction (asset) -> Old Madras Road (corridor), edge: IMPACTS, confidence: 0.41
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.
+- Silk Board Junction (asset) -> Airport Road (Bellary Road) (corridor), edge: IMPACTS, confidence: 0.40
+  - rationale: Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.
+  - expected: Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.

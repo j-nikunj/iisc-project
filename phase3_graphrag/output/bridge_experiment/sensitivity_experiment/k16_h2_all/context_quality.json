@@ -1,0 +1,104 @@
+{
+  "query": "multimodal transfer bottlenecks near Silk Board junction",
+  "breakdown": {
+    "vector_hits": 16,
+    "graph_expansion": 29,
+    "unique_nodes": 45,
+    "overlap": 0
+  },
+  "node_class_distribution": {
+    "all": {
+      "congestion_zone": 4,
+      "mobility_pattern": 3,
+      "urban_region": 2,
+      "maintenance_event": 4,
+      "corridor": 6,
+      "transit_service": 4,
+      "sensor_system": 3,
+      "asset": 6,
+      "policy": 2,
+      "infrastructure_failure": 4,
+      "stakeholder": 3,
+      "agency": 2,
+      "flooding_zone": 2
+    },
+    "vector_hits": {
+      "maintenance_event": 2,
+      "asset": 5,
+      "congestion_zone": 1,
+      "sensor_system": 2,
+      "infrastructure_failure": 1,
+      "mobility_pattern": 2,
+      "flooding_zone": 1,
+      "corridor": 2
+    },
+    "graph_expansion": {
+      "transit_service": 4,
+      "agency": 2,
+      "congestion_zone": 3,
+      "policy": 2,
+      "urban_region": 2,
+      "stakeholder": 3,
+      "infrastructure_failure": 3,
+      "maintenance_event": 2,
+      "mobility_pattern": 1,
+      "corridor": 4,
+      "asset": 1,
+      "flooding_zone": 1,
+      "sensor_system": 1
+    }
+  },
+  "edge_type_distribution": {
+    "DEPENDS_ON": 6,
+    "MAINTAINS": 4,
+    "OVERLAPS_WITH": 9,
+    "CONSTRAINS": 7,
+    "SERVES": 2,
+    "IMPACTS": 3,
+    "CORRELATES_WITH": 9,
+    "CAUSES": 1,
+    "MONITORS": 1
+  },
+  "top_traversed_relations": [
+    [
+      "OVERLAPS_WITH",
+      9
+    ],
+    [
+      "CORRELATES_WITH",
+      9
+    ],
+    [
+      "CONSTRAINS",
+      7
+    ],
+    [
+      "DEPENDS_ON",
+      6
+    ],
+    [
+      "MAINTAINS",
+      4
+    ]
+  ],
+  "expansion_depth": {
+    "metrics": {
+      "min": 1,
+      "max": 2,
+      "avg": 1.4482758620689655
+    },
+    "histogram": {
+      "1": 16,
+      "2": 13
+    }
+  },
+  "duplicates": {
+    "vector_hits": {},
+    "graph_expansion": {}
+  },
+  "context_size": {
+    "chars": 4958,
+    "words": 550,
+    "lines": 133
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "query": "policy and governance constraints on corridor upgrades in Bengaluru",
+  "vector_hits": [
+    {
+      "node_id": "corridor-blr-old-madras-road",
+      "title": "Old Madras Road",
+      "node_class": "corridor",
+      "score": 0.6956443
+    },
+    {
+      "node_id": "stakeholder-east-residents",
+      "title": "East Bengaluru Residents Associations",
+      "node_class": "stakeholder",
+      "score": 0.6875211
+    },
+    {
+      "node_id": "stakeholder-freight-operators",
+      "title": "Freight Operators - Bengaluru",
+      "node_class": "stakeholder",
+      "score": 0.6857743
+    },
+    {
+      "node_id": "corridor-blr-airport-road",
+      "title": "Airport Road (Bellary Road)",
+      "node_class": "corridor",
+      "score": 0.6820906
+    },
+    {
+      "node_id": "corridor-blr-hosur-road",
+      "title": "Hosur Road",
+      "node_class": "corridor",
+      "score": 0.6813681
+    },
+    {
+      "node_id": "corridor-blr-bannerghatta-road",
+      "title": "Bannerghatta Road",
+      "node_class": "corridor",
+      "score": 0.67993134
+    },
+    {
+      "node_id": "asset-blr-kr-puram-bridge",
+      "title": "KR Puram Bridge",
+      "node_class": "asset",
+      "score": 0.6639024
+    },
+    {
+      "node_id": "agency-dult",
+      "title": "DULT",
+      "node_class": "agency",
+      "score": 0.66368294
+    }
+  ],
+  "graph_expansion": [
+    {
+      "node_id": "failure-hebbal-bearing-wear",
+      "title": "Hebbal Flyover Bearing Wear (Hypothesized)",
+      "node_class": "infrastructure_failure",
+      "path": [
+        {
+          "from": "failure-hebbal-bearing-wear",
+          "edge": "CONSTRAINS",
+          "to": "corridor-blr-airport-road",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "zone-silk-board-congestion",
+      "title": "Silk Board Congestion Zone",
+      "node_class": "congestion_zone",
+      "path": [
+        {
+          "from": "corridor-blr-hosur-road",
+          "edge": "OVERLAPS_WITH",
+          "to": "zone-silk-board-congestion",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "node_id": "service-bmtc-hosur-road",
+      "title": "BMTC Hosur Road Corridor Service (Illustrative)",
+      "node_class": "transit_service",
+      "path": [
+        {
+          "from": "service-bmtc-hosur-road",
+          "edge": "DEPENDS_ON",
+          "to": "corridor-blr-hosur-road",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "service-bmtc-old-madras-road",
+      "title": "BMTC Old Madras Road Corridor Service (Illustrative)",
+      "node_class": "transit_service",
+      "path": [
+        {
+          "from": "service-bmtc-old-madras-road",
+          "edge": "DEPENDS_ON",
+          "to": "corridor-blr-old-madras-road",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "maintenance-hebbal-inspection",
+      "title": "Hebbal Flyover Inspection (Illustrative)",
+      "node_class": "maintenance_event",
+      "path": [
+        {
+          "from": "maintenance-hebbal-inspection",
+          "edge": "CONSTRAINS",
+          "to": "corridor-blr-airport-road",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "zone-kr-puram-congestion",
+      "title": "KR Puram Congestion Zone",
+      "node_class": "congestion_zone",
+      "path": [
+        {
+          "from": "corridor-blr-old-madras-road",
+          "edge": "OVERLAPS_WITH",
+          "to": "zone-kr-puram-congestion",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "node_id": "service-vayu-vajra-kia9",
+      "title": "Vayu Vajra KIA-9",
+      "node_class": "transit_service",
+      "path": [
+        {
+          "from": "service-vayu-vajra-kia9",
+          "edge": "DEPENDS_ON",
+          "to": "corridor-blr-airport-road",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "zone-whitefield-underpass-flooding",
+      "title": "Whitefield Underpass Flooding Zone",
+      "node_class": "flooding_zone",
+      "path": [
+        {
+          "from": "zone-whitefield-underpass-flooding",
+          "edge": "IMPACTS",
+          "to": "stakeholder-east-residents",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "service-bmtc-bannerghatta-road",
+      "title": "BMTC Bannerghatta Road Corridor Service (Illustrative)",
+      "node_class": "transit_service",
+      "path": [
+        {
+          "from": "service-bmtc-bannerghatta-road",
+          "edge": "DEPENDS_ON",
+          "to": "corridor-blr-bannerghatta-road",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "agency-bbmp",
+      "title": "BBMP",
+      "node_class": "agency",
+      "path": [
+        {
+          "from": "agency-bbmp",
+          "edge": "MAINTAINS",
+          "to": "asset-blr-kr-puram-bridge",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "zone-marathahalli-congestion",
+      "title": "Marathahalli Congestion Zone",
+      "node_class": "congestion_zone",
+      "path": [
+        {
+          "from": "zone-marathahalli-congestion",
+          "edge": "IMPACTS",
+          "to": "stakeholder-freight-operators",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "zone-hebbal-congestion",
+      "title": "Hebbal Congestion Zone",
+      "node_class": "congestion_zone",
+      "path": [
+        {
+          "from": "corridor-blr-airport-road",
+          "edge": "OVERLAPS_WITH",
+          "to": "zone-hebbal-congestion",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "node_id": "pattern-airport-commute",
+      "title": "Airport Commute Pattern",
+      "node_class": "mobility_pattern",
+      "path": [
+        {
+          "from": "pattern-airport-commute",
+          "edge": "DEPENDS_ON",
+          "to": "corridor-blr-airport-road",
+          "direction": "in"
+        }
+      ]
+    }
+  ],
+  "context_text": "Query: policy and governance constraints on corridor upgrades in Bengaluru\n\nVector Hits:\n\n- Old Madras Road (corridor-blr-old-madras-road): 0.6956\n- East Bengaluru Residents Associations (stakeholder-east-residents): 0.6875\n- Freight Operators - Bengaluru (stakeholder-freight-operators): 0.6858\n- Airport Road (Bellary Road) (corridor-blr-airport-road): 0.6821\n- Hosur Road (corridor-blr-hosur-road): 0.6814\n- Bannerghatta Road (corridor-blr-bannerghatta-road): 0.6799\n- KR Puram Bridge (asset-blr-kr-puram-bridge): 0.6639\n- DULT (agency-dult): 0.6637\n\nGraph Expansion:\n\n- Hebbal Flyover Bearing Wear (Hypothesized) (failure-hebbal-bearing-wear)\n- Silk Board Congestion Zone (zone-silk-board-congestion)\n- BMTC Hosur Road Corridor Service (Illustrative) (service-bmtc-hosur-road)\n- BMTC Old Madras Road Corridor Service (Illustrative) (service-bmtc-old-madras-road)\n- Hebbal Flyover Inspection (Illustrative) (maintenance-hebbal-inspection)\n- KR Puram Congestion Zone (zone-kr-puram-congestion)\n- Vayu Vajra KIA-9 (service-vayu-vajra-kia9)\n- Whitefield Underpass Flooding Zone (zone-whitefield-underpass-flooding)\n- BMTC Bannerghatta Road Corridor Service (Illustrative) (service-bmtc-bannerghatta-road)\n- BBMP (agency-bbmp)\n- Marathahalli Congestion Zone (zone-marathahalli-congestion)\n- Hebbal Congestion Zone (zone-hebbal-congestion)\n- Airport Commute Pattern (pattern-airport-commute)\n\n## Old Madras Road\nClass: corridor\n## East Bengaluru Residents Associations\nClass: stakeholder\n## Freight Operators - Bengaluru\nClass: stakeholder\n## Airport Road (Bellary Road)\nClass: corridor\n## Hosur Road\nClass: corridor\n## Bannerghatta Road\nClass: corridor\n## KR Puram Bridge\nClass: asset\n## DULT\nClass: agency\n## Hebbal Flyover Bearing Wear (Hypothesized)\nClass: infrastructure_failure\n## Silk Board Congestion Zone\nClass: congestion_zone\n## BMTC Hosur Road Corridor Service (Illustrative)\nClass: transit_service\n## BMTC Old Madras Road Corridor Service (Illustrative)\nClass: transit_service\n## Hebbal Flyover Inspection (Illustrative)\nClass: maintenance_event\n## KR Puram Congestion Zone\nClass: congestion_zone\n## Vayu Vajra KIA-9\nClass: transit_service\n## Whitefield Underpass Flooding Zone\nClass: flooding_zone\n## BMTC Bannerghatta Road Corridor Service (Illustrative)\nClass: transit_service\n## BBMP\nClass: agency\n## Marathahalli Congestion Zone\nClass: congestion_zone\n## Hebbal Congestion Zone\nClass: congestion_zone\n## Airport Commute Pattern\nClass: mobility_pattern"
+}

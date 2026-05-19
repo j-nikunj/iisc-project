@@ -1,0 +1,173 @@
+{
+  "query": "flooding and drainage bottlenecks near Silk Board junction",
+  "vector_hits": [
+    {
+      "node_id": "zone-silk-board-underpass-flooding",
+      "title": "Silk Board Underpass Flooding Zone",
+      "node_class": "flooding_zone",
+      "score": 0.78015125
+    },
+    {
+      "node_id": "failure-koramangala-drainage-overload",
+      "title": "Koramangala Valley Drainage Overload",
+      "node_class": "infrastructure_failure",
+      "score": 0.7351873
+    },
+    {
+      "node_id": "asset-blr-silk-board-underpass",
+      "title": "Silk Board Underpass",
+      "node_class": "asset",
+      "score": 0.7199957
+    },
+    {
+      "node_id": "zone-silk-board-congestion",
+      "title": "Silk Board Congestion Zone",
+      "node_class": "congestion_zone",
+      "score": 0.7166949
+    },
+    {
+      "node_id": "maintenance-desilting-pre-monsoon",
+      "title": "Pre-monsoon Desilting Drive (Illustrative)",
+      "node_class": "maintenance_event",
+      "score": 0.7095448
+    },
+    {
+      "node_id": "zone-orr-bellandur-flooding",
+      "title": "ORR-Bellandur Flooding Zone",
+      "node_class": "flooding_zone",
+      "score": 0.70684505
+    },
+    {
+      "node_id": "failure-silk-board-spillback",
+      "title": "Silk Board Spillback Failure",
+      "node_class": "infrastructure_failure",
+      "score": 0.7014308
+    },
+    {
+      "node_id": "asset-blr-silk-board-junction",
+      "title": "Silk Board Junction",
+      "node_class": "asset",
+      "score": 0.6885103
+    }
+  ],
+  "graph_expansion": [
+    {
+      "node_id": "stakeholder-it-corridor-commuters",
+      "title": "IT Corridor Commuters",
+      "node_class": "stakeholder",
+      "path": [
+        {
+          "from": "zone-silk-board-congestion",
+          "edge": "IMPACTS",
+          "to": "stakeholder-it-corridor-commuters",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "node_id": "agency-bbmp",
+      "title": "BBMP",
+      "node_class": "agency",
+      "path": [
+        {
+          "from": "agency-bbmp",
+          "edge": "MAINTAINS",
+          "to": "asset-blr-silk-board-underpass",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "pattern-peak-hour-it-commute",
+      "title": "Peak-hour IT Corridor Commute",
+      "node_class": "mobility_pattern",
+      "path": [
+        {
+          "from": "pattern-peak-hour-it-commute",
+          "edge": "CORRELATES_WITH",
+          "to": "zone-silk-board-congestion",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "sensor-silk-board-cctv",
+      "title": "Silk Board CCTV Cluster",
+      "node_class": "sensor_system",
+      "path": [
+        {
+          "from": "sensor-silk-board-cctv",
+          "edge": "MONITORS",
+          "to": "zone-silk-board-congestion",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "corridor-blr-hosur-road",
+      "title": "Hosur Road",
+      "node_class": "corridor",
+      "path": [
+        {
+          "from": "zone-silk-board-congestion",
+          "edge": "OVERLAPS_WITH",
+          "to": "corridor-blr-hosur-road",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "node_id": "maintenance-silk-board-signal-retiming",
+      "title": "Silk Board Signal Retiming (Illustrative)",
+      "node_class": "maintenance_event",
+      "path": [
+        {
+          "from": "maintenance-silk-board-signal-retiming",
+          "edge": "DEPENDS_ON",
+          "to": "asset-blr-silk-board-junction",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "sensor-koramangala-flood-gauge",
+      "title": "Koramangala Flood Gauge (Illustrative)",
+      "node_class": "sensor_system",
+      "path": [
+        {
+          "from": "sensor-koramangala-flood-gauge",
+          "edge": "MONITORS",
+          "to": "zone-orr-bellandur-flooding",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "corridor-blr-bannerghatta-road",
+      "title": "Bannerghatta Road",
+      "node_class": "corridor",
+      "path": [
+        {
+          "from": "corridor-blr-bannerghatta-road",
+          "edge": "OVERLAPS_WITH",
+          "to": "zone-silk-board-congestion",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "corridor-blr-orr",
+      "title": "Outer Ring Road",
+      "node_class": "corridor",
+      "path": [
+        {
+          "from": "maintenance-desilting-pre-monsoon",
+          "edge": "CONSTRAINS",
+          "to": "corridor-blr-orr",
+          "direction": "out"
+        }
+      ]
+    }
+  ],
+  "context_text": "Query: flooding and drainage bottlenecks near Silk Board junction\n\nVector Hits:\n\n- Silk Board Underpass Flooding Zone (zone-silk-board-underpass-flooding): 0.7802\n- Koramangala Valley Drainage Overload (failure-koramangala-drainage-overload): 0.7352\n- Silk Board Underpass (asset-blr-silk-board-underpass): 0.7200\n- Silk Board Congestion Zone (zone-silk-board-congestion): 0.7167\n- Pre-monsoon Desilting Drive (Illustrative) (maintenance-desilting-pre-monsoon): 0.7095\n- ORR-Bellandur Flooding Zone (zone-orr-bellandur-flooding): 0.7068\n- Silk Board Spillback Failure (failure-silk-board-spillback): 0.7014\n- Silk Board Junction (asset-blr-silk-board-junction): 0.6885\n\nGraph Expansion:\n\n- IT Corridor Commuters (stakeholder-it-corridor-commuters)\n- BBMP (agency-bbmp)\n- Peak-hour IT Corridor Commute (pattern-peak-hour-it-commute)\n- Silk Board CCTV Cluster (sensor-silk-board-cctv)\n- Hosur Road (corridor-blr-hosur-road)\n- Silk Board Signal Retiming (Illustrative) (maintenance-silk-board-signal-retiming)\n- Koramangala Flood Gauge (Illustrative) (sensor-koramangala-flood-gauge)\n- Bannerghatta Road (corridor-blr-bannerghatta-road)\n- Outer Ring Road (corridor-blr-orr)\n\n## Silk Board Underpass Flooding Zone\nClass: flooding_zone\n## Koramangala Valley Drainage Overload\nClass: infrastructure_failure\n## Silk Board Underpass\nClass: asset\n## Silk Board Congestion Zone\nClass: congestion_zone\n## Pre-monsoon Desilting Drive (Illustrative)\nClass: maintenance_event\n## ORR-Bellandur Flooding Zone\nClass: flooding_zone\n## Silk Board Spillback Failure\nClass: infrastructure_failure\n## Silk Board Junction\nClass: asset\n## IT Corridor Commuters\nClass: stakeholder\n## BBMP\nClass: agency\n## Peak-hour IT Corridor Commute\nClass: mobility_pattern\n## Silk Board CCTV Cluster\nClass: sensor_system\n## Hosur Road\nClass: corridor\n## Silk Board Signal Retiming (Illustrative)\nClass: maintenance_event\n## Koramangala Flood Gauge (Illustrative)\nClass: sensor_system\n## Bannerghatta Road\nClass: corridor\n## Outer Ring Road\nClass: corridor"
+}

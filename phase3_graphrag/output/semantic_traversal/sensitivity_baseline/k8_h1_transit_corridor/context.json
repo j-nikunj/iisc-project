@@ -1,0 +1,342 @@
+{
+  "query": "multimodal transfer bottlenecks near Silk Board junction",
+  "vector_hits": [
+    {
+      "node_id": "corridor-blr-orr",
+      "title": "Outer Ring Road",
+      "node_class": "corridor",
+      "score": 0.5843956
+    },
+    {
+      "node_id": "corridor-blr-old-madras-road",
+      "title": "Old Madras Road",
+      "node_class": "corridor",
+      "score": 0.56532806
+    },
+    {
+      "node_id": "corridor-blr-hosur-road",
+      "title": "Hosur Road",
+      "node_class": "corridor",
+      "score": 0.5606415
+    },
+    {
+      "node_id": "corridor-blr-airport-road",
+      "title": "Airport Road (Bellary Road)",
+      "node_class": "corridor",
+      "score": 0.55999887
+    },
+    {
+      "node_id": "service-bmtc-500d",
+      "title": "BMTC 500D ORR",
+      "node_class": "transit_service",
+      "score": 0.55639505
+    },
+    {
+      "node_id": "corridor-blr-bannerghatta-road",
+      "title": "Bannerghatta Road",
+      "node_class": "corridor",
+      "score": 0.5514274
+    },
+    {
+      "node_id": "service-bmtc-old-madras-road",
+      "title": "BMTC Old Madras Road Corridor Service (Illustrative)",
+      "node_class": "transit_service",
+      "score": 0.5346005
+    },
+    {
+      "node_id": "corridor-blr-sarjapur-road",
+      "title": "Sarjapur Road",
+      "node_class": "corridor",
+      "score": 0.5336088
+    }
+  ],
+  "graph_expansion": [
+    {
+      "node_id": "zone-orr-bellandur-flooding",
+      "title": "ORR-Bellandur Flooding Zone",
+      "node_class": "flooding_zone",
+      "path": [
+        {
+          "from": "zone-orr-bellandur-flooding",
+          "edge": "OVERLAPS_WITH",
+          "to": "corridor-blr-orr",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "region-bengaluru-urban",
+      "title": "Bengaluru Urban Region",
+      "node_class": "urban_region",
+      "path": [
+        {
+          "from": "service-bmtc-old-madras-road",
+          "edge": "SERVES",
+          "to": "region-bengaluru-urban",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "node_id": "zone-marathahalli-congestion",
+      "title": "Marathahalli Congestion Zone",
+      "node_class": "congestion_zone",
+      "path": [
+        {
+          "from": "corridor-blr-orr",
+          "edge": "OVERLAPS_WITH",
+          "to": "zone-marathahalli-congestion",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "node_id": "service-bmtc-sarjapur-road",
+      "title": "BMTC Sarjapur Road Corridor Service (Illustrative)",
+      "node_class": "transit_service",
+      "path": [
+        {
+          "from": "service-bmtc-sarjapur-road",
+          "edge": "DEPENDS_ON",
+          "to": "corridor-blr-sarjapur-road",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "service-bmtc-bannerghatta-road",
+      "title": "BMTC Bannerghatta Road Corridor Service (Illustrative)",
+      "node_class": "transit_service",
+      "path": [
+        {
+          "from": "service-bmtc-bannerghatta-road",
+          "edge": "DEPENDS_ON",
+          "to": "corridor-blr-bannerghatta-road",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "service-vayu-vajra-kia9",
+      "title": "Vayu Vajra KIA-9",
+      "node_class": "transit_service",
+      "path": [
+        {
+          "from": "service-vayu-vajra-kia9",
+          "edge": "DEPENDS_ON",
+          "to": "corridor-blr-airport-road",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "maintenance-orr-resurfacing",
+      "title": "ORR Resurfacing Cycle (Illustrative)",
+      "node_class": "maintenance_event",
+      "path": [
+        {
+          "from": "maintenance-orr-resurfacing",
+          "edge": "DEPENDS_ON",
+          "to": "corridor-blr-orr",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "maintenance-desilting-pre-monsoon",
+      "title": "Pre-monsoon Desilting Drive (Illustrative)",
+      "node_class": "maintenance_event",
+      "path": [
+        {
+          "from": "maintenance-desilting-pre-monsoon",
+          "edge": "CONSTRAINS",
+          "to": "corridor-blr-orr",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "policy-nutp-2014",
+      "title": "National Urban Transport Policy 2014",
+      "node_class": "policy",
+      "path": [
+        {
+          "from": "policy-nutp-2014",
+          "edge": "CONSTRAINS",
+          "to": "service-bmtc-500d",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "zone-hebbal-congestion",
+      "title": "Hebbal Congestion Zone",
+      "node_class": "congestion_zone",
+      "path": [
+        {
+          "from": "corridor-blr-airport-road",
+          "edge": "OVERLAPS_WITH",
+          "to": "zone-hebbal-congestion",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "node_id": "policy-blr-bus-priority",
+      "title": "Bengaluru Bus Priority Policy (Illustrative)",
+      "node_class": "policy",
+      "path": [
+        {
+          "from": "policy-blr-bus-priority",
+          "edge": "CONSTRAINS",
+          "to": "corridor-blr-orr",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "maintenance-hebbal-inspection",
+      "title": "Hebbal Flyover Inspection (Illustrative)",
+      "node_class": "maintenance_event",
+      "path": [
+        {
+          "from": "maintenance-hebbal-inspection",
+          "edge": "CONSTRAINS",
+          "to": "corridor-blr-airport-road",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "maintenance-silk-board-signal-retiming",
+      "title": "Silk Board Signal Retiming (Illustrative)",
+      "node_class": "maintenance_event",
+      "path": [
+        {
+          "from": "maintenance-silk-board-signal-retiming",
+          "edge": "CONSTRAINS",
+          "to": "service-bmtc-500d",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "sensor-orr-anpr",
+      "title": "ORR ANPR Camera Network (Illustrative)",
+      "node_class": "sensor_system",
+      "path": [
+        {
+          "from": "sensor-orr-anpr",
+          "edge": "MONITORS",
+          "to": "corridor-blr-orr",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "zone-silk-board-congestion",
+      "title": "Silk Board Congestion Zone",
+      "node_class": "congestion_zone",
+      "path": [
+        {
+          "from": "corridor-blr-orr",
+          "edge": "OVERLAPS_WITH",
+          "to": "zone-silk-board-congestion",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "node_id": "failure-hebbal-bearing-wear",
+      "title": "Hebbal Flyover Bearing Wear (Hypothesized)",
+      "node_class": "infrastructure_failure",
+      "path": [
+        {
+          "from": "failure-hebbal-bearing-wear",
+          "edge": "CONSTRAINS",
+          "to": "corridor-blr-airport-road",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "pattern-airport-commute",
+      "title": "Airport Commute Pattern",
+      "node_class": "mobility_pattern",
+      "path": [
+        {
+          "from": "pattern-airport-commute",
+          "edge": "DEPENDS_ON",
+          "to": "corridor-blr-airport-road",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "failure-orr-pavement-rutting",
+      "title": "ORR Pavement Rutting Pattern",
+      "node_class": "infrastructure_failure",
+      "path": [
+        {
+          "from": "failure-orr-pavement-rutting",
+          "edge": "CONSTRAINS",
+          "to": "service-bmtc-500d",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "region-orr-it-corridor",
+      "title": "ORR IT Corridor Region",
+      "node_class": "urban_region",
+      "path": [
+        {
+          "from": "service-bmtc-500d",
+          "edge": "SERVES",
+          "to": "region-orr-it-corridor",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "node_id": "zone-kr-puram-congestion",
+      "title": "KR Puram Congestion Zone",
+      "node_class": "congestion_zone",
+      "path": [
+        {
+          "from": "corridor-blr-old-madras-road",
+          "edge": "OVERLAPS_WITH",
+          "to": "zone-kr-puram-congestion",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "node_id": "pattern-peak-hour-it-commute",
+      "title": "Peak-hour IT Corridor Commute",
+      "node_class": "mobility_pattern",
+      "path": [
+        {
+          "from": "pattern-peak-hour-it-commute",
+          "edge": "DEPENDS_ON",
+          "to": "service-bmtc-500d",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "service-bmtc-hosur-road",
+      "title": "BMTC Hosur Road Corridor Service (Illustrative)",
+      "node_class": "transit_service",
+      "path": [
+        {
+          "from": "service-bmtc-hosur-road",
+          "edge": "DEPENDS_ON",
+          "to": "corridor-blr-hosur-road",
+          "direction": "in"
+        }
+      ]
+    }
+  ],
+  "context_text": "Query: multimodal transfer bottlenecks near Silk Board junction\n\nVector Hits:\n\n- Outer Ring Road (corridor-blr-orr): 0.5844\n- Old Madras Road (corridor-blr-old-madras-road): 0.5653\n- Hosur Road (corridor-blr-hosur-road): 0.5606\n- Airport Road (Bellary Road) (corridor-blr-airport-road): 0.5600\n- BMTC 500D ORR (service-bmtc-500d): 0.5564\n- Bannerghatta Road (corridor-blr-bannerghatta-road): 0.5514\n- BMTC Old Madras Road Corridor Service (Illustrative) (service-bmtc-old-madras-road): 0.5346\n- Sarjapur Road (corridor-blr-sarjapur-road): 0.5336\n\nGraph Expansion:\n\n- ORR-Bellandur Flooding Zone (zone-orr-bellandur-flooding)\n- Bengaluru Urban Region (region-bengaluru-urban)\n- Marathahalli Congestion Zone (zone-marathahalli-congestion)\n- BMTC Sarjapur Road Corridor Service (Illustrative) (service-bmtc-sarjapur-road)\n- BMTC Bannerghatta Road Corridor Service (Illustrative) (service-bmtc-bannerghatta-road)\n- Vayu Vajra KIA-9 (service-vayu-vajra-kia9)\n- ORR Resurfacing Cycle (Illustrative) (maintenance-orr-resurfacing)\n- Pre-monsoon Desilting Drive (Illustrative) (maintenance-desilting-pre-monsoon)\n- National Urban Transport Policy 2014 (policy-nutp-2014)\n- Hebbal Congestion Zone (zone-hebbal-congestion)\n- Bengaluru Bus Priority Policy (Illustrative) (policy-blr-bus-priority)\n- Hebbal Flyover Inspection (Illustrative) (maintenance-hebbal-inspection)\n- Silk Board Signal Retiming (Illustrative) (maintenance-silk-board-signal-retiming)\n- ORR ANPR Camera Network (Illustrative) (sensor-orr-anpr)\n- Silk Board Congestion Zone (zone-silk-board-congestion)\n- Hebbal Flyover Bearing Wear (Hypothesized) (failure-hebbal-bearing-wear)\n- Airport Commute Pattern (pattern-airport-commute)\n- ORR Pavement Rutting Pattern (failure-orr-pavement-rutting)\n- ORR IT Corridor Region (region-orr-it-corridor)\n- KR Puram Congestion Zone (zone-kr-puram-congestion)\n- Peak-hour IT Corridor Commute (pattern-peak-hour-it-commute)\n- BMTC Hosur Road Corridor Service (Illustrative) (service-bmtc-hosur-road)\n\n## Outer Ring Road\nClass: corridor\n## Old Madras Road\nClass: corridor\n## Hosur Road\nClass: corridor\n## Airport Road (Bellary Road)\nClass: corridor\n## BMTC 500D ORR\nClass: transit_service\n## Bannerghatta Road\nClass: corridor\n## BMTC Old Madras Road Corridor Service (Illustrative)\nClass: transit_service\n## Sarjapur Road\nClass: corridor\n## ORR-Bellandur Flooding Zone\nClass: flooding_zone\n## Bengaluru Urban Region\nClass: urban_region\n## Marathahalli Congestion Zone\nClass: congestion_zone\n## BMTC Sarjapur Road Corridor Service (Illustrative)\nClass: transit_service\n## BMTC Bannerghatta Road Corridor Service (Illustrative)\nClass: transit_service\n## Vayu Vajra KIA-9\nClass: transit_service\n## ORR Resurfacing Cycle (Illustrative)\nClass: maintenance_event\n## Pre-monsoon Desilting Drive (Illustrative)\nClass: maintenance_event\n## National Urban Transport Policy 2014\nClass: policy\n## Hebbal Congestion Zone\nClass: congestion_zone\n## Bengaluru Bus Priority Policy (Illustrative)\nClass: policy\n## Hebbal Flyover Inspection (Illustrative)\nClass: maintenance_event\n## Silk Board Signal Retiming (Illustrative)\nClass: maintenance_event\n## ORR ANPR Camera Network (Illustrative)\nClass: sensor_system\n## Silk Board Congestion Zone\nClass: congestion_zone\n## Hebbal Flyover Bearing Wear (Hypothesized)\nClass: infrastructure_failure\n## Airport Commute Pattern\nClass: mobility_pattern\n## ORR Pavement Rutting Pattern\nClass: infrastructure_failure\n## ORR IT Corridor Region\nClass: urban_region\n## KR Puram Congestion Zone\nClass: congestion_zone\n## Peak-hour IT Corridor Commute\nClass: mobility_pattern\n## BMTC Hosur Road Corridor Service (Illustrative)\nClass: transit_service"
+}

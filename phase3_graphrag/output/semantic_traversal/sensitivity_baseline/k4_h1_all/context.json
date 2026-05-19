@@ -1,0 +1,188 @@
+{
+  "query": "multimodal transfer bottlenecks near Silk Board junction",
+  "vector_hits": [
+    {
+      "node_id": "maintenance-silk-board-signal-retiming",
+      "title": "Silk Board Signal Retiming (Illustrative)",
+      "node_class": "maintenance_event",
+      "score": 0.6743386
+    },
+    {
+      "node_id": "asset-blr-silk-board-junction",
+      "title": "Silk Board Junction",
+      "node_class": "asset",
+      "score": 0.65133667
+    },
+    {
+      "node_id": "asset-blr-silk-board-underpass",
+      "title": "Silk Board Underpass",
+      "node_class": "asset",
+      "score": 0.62363136
+    },
+    {
+      "node_id": "zone-silk-board-congestion",
+      "title": "Silk Board Congestion Zone",
+      "node_class": "congestion_zone",
+      "score": 0.62289727
+    }
+  ],
+  "graph_expansion": [
+    {
+      "node_id": "maintenance-desilting-pre-monsoon",
+      "title": "Pre-monsoon Desilting Drive (Illustrative)",
+      "node_class": "maintenance_event",
+      "path": [
+        {
+          "from": "maintenance-desilting-pre-monsoon",
+          "edge": "DEPENDS_ON",
+          "to": "asset-blr-silk-board-underpass",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "zone-silk-board-underpass-flooding",
+      "title": "Silk Board Underpass Flooding Zone",
+      "node_class": "flooding_zone",
+      "path": [
+        {
+          "from": "asset-blr-silk-board-underpass",
+          "edge": "OVERLAPS_WITH",
+          "to": "zone-silk-board-underpass-flooding",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "node_id": "agency-bbmp",
+      "title": "BBMP",
+      "node_class": "agency",
+      "path": [
+        {
+          "from": "agency-bbmp",
+          "edge": "MAINTAINS",
+          "to": "asset-blr-silk-board-junction",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "agency-btp",
+      "title": "Bangalore Traffic Police",
+      "node_class": "agency",
+      "path": [
+        {
+          "from": "agency-btp",
+          "edge": "MAINTAINS",
+          "to": "maintenance-silk-board-signal-retiming",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "service-bmtc-500d",
+      "title": "BMTC 500D ORR",
+      "node_class": "transit_service",
+      "path": [
+        {
+          "from": "maintenance-silk-board-signal-retiming",
+          "edge": "CONSTRAINS",
+          "to": "service-bmtc-500d",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "node_id": "stakeholder-it-corridor-commuters",
+      "title": "IT Corridor Commuters",
+      "node_class": "stakeholder",
+      "path": [
+        {
+          "from": "zone-silk-board-congestion",
+          "edge": "IMPACTS",
+          "to": "stakeholder-it-corridor-commuters",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "node_id": "failure-silk-board-spillback",
+      "title": "Silk Board Spillback Failure",
+      "node_class": "infrastructure_failure",
+      "path": [
+        {
+          "from": "failure-silk-board-spillback",
+          "edge": "CAUSES",
+          "to": "zone-silk-board-congestion",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "pattern-peak-hour-it-commute",
+      "title": "Peak-hour IT Corridor Commute",
+      "node_class": "mobility_pattern",
+      "path": [
+        {
+          "from": "pattern-peak-hour-it-commute",
+          "edge": "CORRELATES_WITH",
+          "to": "zone-silk-board-congestion",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "sensor-silk-board-cctv",
+      "title": "Silk Board CCTV Cluster",
+      "node_class": "sensor_system",
+      "path": [
+        {
+          "from": "sensor-silk-board-cctv",
+          "edge": "MONITORS",
+          "to": "asset-blr-silk-board-junction",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "corridor-blr-bannerghatta-road",
+      "title": "Bannerghatta Road",
+      "node_class": "corridor",
+      "path": [
+        {
+          "from": "corridor-blr-bannerghatta-road",
+          "edge": "OVERLAPS_WITH",
+          "to": "zone-silk-board-congestion",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "node_id": "corridor-blr-hosur-road",
+      "title": "Hosur Road",
+      "node_class": "corridor",
+      "path": [
+        {
+          "from": "zone-silk-board-congestion",
+          "edge": "OVERLAPS_WITH",
+          "to": "corridor-blr-hosur-road",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "node_id": "corridor-blr-orr",
+      "title": "Outer Ring Road",
+      "node_class": "corridor",
+      "path": [
+        {
+          "from": "zone-silk-board-congestion",
+          "edge": "OVERLAPS_WITH",
+          "to": "corridor-blr-orr",
+          "direction": "out"
+        }
+      ]
+    }
+  ],
+  "context_text": "Query: multimodal transfer bottlenecks near Silk Board junction\n\nVector Hits:\n\n- Silk Board Signal Retiming (Illustrative) (maintenance-silk-board-signal-retiming): 0.6743\n- Silk Board Junction (asset-blr-silk-board-junction): 0.6513\n- Silk Board Underpass (asset-blr-silk-board-underpass): 0.6236\n- Silk Board Congestion Zone (zone-silk-board-congestion): 0.6229\n\nGraph Expansion:\n\n- Pre-monsoon Desilting Drive (Illustrative) (maintenance-desilting-pre-monsoon)\n- Silk Board Underpass Flooding Zone (zone-silk-board-underpass-flooding)\n- BBMP (agency-bbmp)\n- Bangalore Traffic Police (agency-btp)\n- BMTC 500D ORR (service-bmtc-500d)\n- IT Corridor Commuters (stakeholder-it-corridor-commuters)\n- Silk Board Spillback Failure (failure-silk-board-spillback)\n- Peak-hour IT Corridor Commute (pattern-peak-hour-it-commute)\n- Silk Board CCTV Cluster (sensor-silk-board-cctv)\n- Bannerghatta Road (corridor-blr-bannerghatta-road)\n- Hosur Road (corridor-blr-hosur-road)\n- Outer Ring Road (corridor-blr-orr)\n\n## Silk Board Signal Retiming (Illustrative)\nClass: maintenance_event\n## Silk Board Junction\nClass: asset\n## Silk Board Underpass\nClass: asset\n## Silk Board Congestion Zone\nClass: congestion_zone\n## Pre-monsoon Desilting Drive (Illustrative)\nClass: maintenance_event\n## Silk Board Underpass Flooding Zone\nClass: flooding_zone\n## BBMP\nClass: agency\n## Bangalore Traffic Police\nClass: agency\n## BMTC 500D ORR\nClass: transit_service\n## IT Corridor Commuters\nClass: stakeholder\n## Silk Board Spillback Failure\nClass: infrastructure_failure\n## Peak-hour IT Corridor Commute\nClass: mobility_pattern\n## Silk Board CCTV Cluster\nClass: sensor_system\n## Bannerghatta Road\nClass: corridor\n## Hosur Road\nClass: corridor\n## Outer Ring Road\nClass: corridor"
+}

@@ -1,0 +1,580 @@
+{
+  "bridges": [
+    {
+      "name": "cctv_to_underpass_flooding",
+      "source": "sensor-silk-board-cctv",
+      "target": "zone-silk-board-underpass-flooding",
+      "edge": "MONITORS"
+    },
+    {
+      "name": "spillback_to_underpass_flooding",
+      "source": "failure-silk-board-spillback",
+      "target": "zone-silk-board-underpass-flooding",
+      "edge": "CAUSES"
+    },
+    {
+      "name": "peak_hour_to_hebbal_congestion",
+      "source": "pattern-peak-hour-it-commute",
+      "target": "zone-hebbal-congestion",
+      "edge": "CORRELATES_WITH"
+    },
+    {
+      "name": "two_wheeler_to_hebbal_congestion",
+      "source": "pattern-two-wheeler-last-mile",
+      "target": "zone-hebbal-congestion",
+      "edge": "CORRELATES_WITH"
+    }
+  ],
+  "per_query": [
+    {
+      "slug": "flooding_drainage",
+      "category": "flooding and drainage",
+      "baseline": {
+        "vector_hits": 8,
+        "graph_expansion": 9,
+        "unique_nodes": 17,
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.4706,
+        "semantic_coherence_proxy": 0.4706,
+        "node_class_diversity": 10,
+        "relation_diversity": 6,
+        "expansion_depth_avg": 1.0,
+        "context_words": 222,
+        "context_growth_rate": 1.125,
+        "noise_amplification": 1.125,
+        "expansion_redundancy": 0
+      },
+      "experiment": {
+        "vector_hits": 8,
+        "graph_expansion": 9,
+        "unique_nodes": 17,
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.4706,
+        "semantic_coherence_proxy": 0.4706,
+        "node_class_diversity": 10,
+        "relation_diversity": 6,
+        "expansion_depth_avg": 1.0,
+        "context_words": 222,
+        "context_growth_rate": 1.125,
+        "noise_amplification": 1.125,
+        "expansion_redundancy": 0
+      },
+      "delta": {
+        "vector_hits": 0,
+        "graph_expansion": 0,
+        "unique_nodes": 0,
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.0,
+        "semantic_coherence_proxy": 0.0,
+        "node_class_diversity": 0,
+        "relation_diversity": 0,
+        "expansion_depth_avg": 0.0,
+        "context_words": 0,
+        "context_growth_rate": 0.0,
+        "noise_amplification": 0.0,
+        "expansion_redundancy": 0
+      },
+      "edge_types_baseline": {
+        "IMPACTS": 1,
+        "CORRELATES_WITH": 1,
+        "OVERLAPS_WITH": 3,
+        "MONITORS": 2,
+        "DEPENDS_ON": 1,
+        "MAINTAINS": 1
+      },
+      "edge_types_experiment": {
+        "MONITORS": 2,
+        "OVERLAPS_WITH": 3,
+        "MAINTAINS": 1,
+        "DEPENDS_ON": 1,
+        "CORRELATES_WITH": 1,
+        "IMPACTS": 1
+      },
+      "generic_expansion_baseline": 4,
+      "generic_expansion_experiment": 4,
+      "bridge_hits": {
+        "cctv_to_underpass_flooding": 1
+      }
+    },
+    {
+      "slug": "multimodal_transport",
+      "category": "multimodal transport",
+      "baseline": {
+        "vector_hits": 8,
+        "graph_expansion": 10,
+        "unique_nodes": 18,
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.4444,
+        "semantic_coherence_proxy": 0.4444,
+        "node_class_diversity": 11,
+        "relation_diversity": 6,
+        "expansion_depth_avg": 1.0,
+        "context_words": 232,
+        "context_growth_rate": 1.25,
+        "noise_amplification": 1.25,
+        "expansion_redundancy": 0
+      },
+      "experiment": {
+        "vector_hits": 8,
+        "graph_expansion": 11,
+        "unique_nodes": 19,
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.4211,
+        "semantic_coherence_proxy": 0.4211,
+        "node_class_diversity": 11,
+        "relation_diversity": 6,
+        "expansion_depth_avg": 1.0,
+        "context_words": 243,
+        "context_growth_rate": 1.375,
+        "noise_amplification": 1.375,
+        "expansion_redundancy": 0
+      },
+      "delta": {
+        "vector_hits": 0,
+        "graph_expansion": 1,
+        "unique_nodes": 1,
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": -0.0233,
+        "semantic_coherence_proxy": -0.0233,
+        "node_class_diversity": 0,
+        "relation_diversity": 0,
+        "expansion_depth_avg": 0.0,
+        "context_words": 11,
+        "context_growth_rate": 0.125,
+        "noise_amplification": 0.125,
+        "expansion_redundancy": 0
+      },
+      "edge_types_baseline": {
+        "DEPENDS_ON": 1,
+        "OVERLAPS_WITH": 4,
+        "CONSTRAINS": 1,
+        "CORRELATES_WITH": 1,
+        "MAINTAINS": 2,
+        "IMPACTS": 1
+      },
+      "edge_types_experiment": {
+        "MAINTAINS": 2,
+        "OVERLAPS_WITH": 4,
+        "CONSTRAINS": 1,
+        "CORRELATES_WITH": 2,
+        "DEPENDS_ON": 1,
+        "IMPACTS": 1
+      },
+      "generic_expansion_baseline": 6,
+      "generic_expansion_experiment": 6,
+      "bridge_hits": {
+        "peak_hour_to_hebbal_congestion": 1
+      }
+    },
+    {
+      "slug": "weak_infra_maintenance",
+      "category": "weak infrastructure maintenance",
+      "baseline": {
+        "vector_hits": 8,
+        "graph_expansion": 12,
+        "unique_nodes": 20,
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.4,
+        "semantic_coherence_proxy": 0.4,
+        "node_class_diversity": 11,
+        "relation_diversity": 8,
+        "expansion_depth_avg": 1.0,
+        "context_words": 270,
+        "context_growth_rate": 1.5,
+        "noise_amplification": 1.5,
+        "expansion_redundancy": 0
+      },
+      "experiment": {
+        "vector_hits": 8,
+        "graph_expansion": 12,
+        "unique_nodes": 20,
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.4,
+        "semantic_coherence_proxy": 0.4,
+        "node_class_diversity": 11,
+        "relation_diversity": 8,
+        "expansion_depth_avg": 1.0,
+        "context_words": 270,
+        "context_growth_rate": 1.5,
+        "noise_amplification": 1.5,
+        "expansion_redundancy": 0
+      },
+      "delta": {
+        "vector_hits": 0,
+        "graph_expansion": 0,
+        "unique_nodes": 0,
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.0,
+        "semantic_coherence_proxy": 0.0,
+        "node_class_diversity": 0,
+        "relation_diversity": 0,
+        "expansion_depth_avg": 0.0,
+        "context_words": 0,
+        "context_growth_rate": 0.0,
+        "noise_amplification": 0.0,
+        "expansion_redundancy": 0
+      },
+      "edge_types_baseline": {
+        "CONSTRAINS": 3,
+        "MAINTAINS": 1,
+        "OVERLAPS_WITH": 1,
+        "CORRELATES_WITH": 1,
+        "MONITORS": 2,
+        "DEPENDS_ON": 1,
+        "CAUSES": 2,
+        "IMPACTS": 1
+      },
+      "edge_types_experiment": {
+        "MAINTAINS": 1,
+        "CONSTRAINS": 3,
+        "OVERLAPS_WITH": 1,
+        "MONITORS": 2,
+        "DEPENDS_ON": 1,
+        "CORRELATES_WITH": 1,
+        "IMPACTS": 1,
+        "CAUSES": 2
+      },
+      "generic_expansion_baseline": 3,
+      "generic_expansion_experiment": 3,
+      "bridge_hits": {}
+    },
+    {
+      "slug": "commuter_impact",
+      "category": "commuter impact",
+      "baseline": {
+        "vector_hits": 8,
+        "graph_expansion": 12,
+        "unique_nodes": 20,
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.4,
+        "semantic_coherence_proxy": 0.4,
+        "node_class_diversity": 11,
+        "relation_diversity": 6,
+        "expansion_depth_avg": 1.0,
+        "context_words": 255,
+        "context_growth_rate": 1.5,
+        "noise_amplification": 1.5,
+        "expansion_redundancy": 0
+      },
+      "experiment": {
+        "vector_hits": 8,
+        "graph_expansion": 12,
+        "unique_nodes": 20,
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.4,
+        "semantic_coherence_proxy": 0.4,
+        "node_class_diversity": 11,
+        "relation_diversity": 6,
+        "expansion_depth_avg": 1.0,
+        "context_words": 255,
+        "context_growth_rate": 1.5,
+        "noise_amplification": 1.5,
+        "expansion_redundancy": 0
+      },
+      "delta": {
+        "vector_hits": 0,
+        "graph_expansion": 0,
+        "unique_nodes": 0,
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.0,
+        "semantic_coherence_proxy": 0.0,
+        "node_class_diversity": 0,
+        "relation_diversity": 0,
+        "expansion_depth_avg": 0.0,
+        "context_words": 0,
+        "context_growth_rate": 0.0,
+        "noise_amplification": 0.0,
+        "expansion_redundancy": 0
+      },
+      "edge_types_baseline": {
+        "IMPACTS": 2,
+        "OVERLAPS_WITH": 3,
+        "MAINTAINS": 2,
+        "DEPENDS_ON": 2,
+        "CORRELATES_WITH": 2,
+        "MONITORS": 1
+      },
+      "edge_types_experiment": {
+        "MONITORS": 1,
+        "CORRELATES_WITH": 3,
+        "IMPACTS": 1,
+        "MAINTAINS": 2,
+        "OVERLAPS_WITH": 3,
+        "DEPENDS_ON": 2
+      },
+      "generic_expansion_baseline": 6,
+      "generic_expansion_experiment": 6,
+      "bridge_hits": {
+        "peak_hour_to_hebbal_congestion": 1
+      }
+    },
+    {
+      "slug": "policy_governance",
+      "category": "policy/governance",
+      "baseline": {
+        "vector_hits": 8,
+        "graph_expansion": 13,
+        "unique_nodes": 21,
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.381,
+        "semantic_coherence_proxy": 0.381,
+        "node_class_diversity": 10,
+        "relation_diversity": 5,
+        "expansion_depth_avg": 1.0,
+        "context_words": 279,
+        "context_growth_rate": 1.625,
+        "noise_amplification": 1.625,
+        "expansion_redundancy": 0
+      },
+      "experiment": {
+        "vector_hits": 8,
+        "graph_expansion": 13,
+        "unique_nodes": 21,
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.381,
+        "semantic_coherence_proxy": 0.381,
+        "node_class_diversity": 10,
+        "relation_diversity": 5,
+        "expansion_depth_avg": 1.0,
+        "context_words": 279,
+        "context_growth_rate": 1.625,
+        "noise_amplification": 1.625,
+        "expansion_redundancy": 0
+      },
+      "delta": {
+        "vector_hits": 0,
+        "graph_expansion": 0,
+        "unique_nodes": 0,
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.0,
+        "semantic_coherence_proxy": 0.0,
+        "node_class_diversity": 0,
+        "relation_diversity": 0,
+        "expansion_depth_avg": 0.0,
+        "context_words": 0,
+        "context_growth_rate": 0.0,
+        "noise_amplification": 0.0,
+        "expansion_redundancy": 0
+      },
+      "edge_types_baseline": {
+        "OVERLAPS_WITH": 3,
+        "DEPENDS_ON": 5,
+        "IMPACTS": 2,
+        "MAINTAINS": 1,
+        "CONSTRAINS": 2
+      },
+      "edge_types_experiment": {
+        "IMPACTS": 2,
+        "CONSTRAINS": 2,
+        "OVERLAPS_WITH": 3,
+        "DEPENDS_ON": 5,
+        "MAINTAINS": 1
+      },
+      "generic_expansion_baseline": 5,
+      "generic_expansion_experiment": 5,
+      "bridge_hits": {}
+    },
+    {
+      "slug": "public_transport_dependency",
+      "category": "public transport dependency",
+      "baseline": {
+        "vector_hits": 8,
+        "graph_expansion": 15,
+        "unique_nodes": 23,
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.3478,
+        "semantic_coherence_proxy": 0.3478,
+        "node_class_diversity": 11,
+        "relation_diversity": 6,
+        "expansion_depth_avg": 1.0,
+        "context_words": 288,
+        "context_growth_rate": 1.875,
+        "noise_amplification": 1.875,
+        "expansion_redundancy": 0
+      },
+      "experiment": {
+        "vector_hits": 8,
+        "graph_expansion": 15,
+        "unique_nodes": 23,
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.3478,
+        "semantic_coherence_proxy": 0.3478,
+        "node_class_diversity": 11,
+        "relation_diversity": 7,
+        "expansion_depth_avg": 1.0,
+        "context_words": 288,
+        "context_growth_rate": 1.875,
+        "noise_amplification": 1.875,
+        "expansion_redundancy": 0
+      },
+      "delta": {
+        "vector_hits": 0,
+        "graph_expansion": 0,
+        "unique_nodes": 0,
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.0,
+        "semantic_coherence_proxy": 0.0,
+        "node_class_diversity": 0,
+        "relation_diversity": 1,
+        "expansion_depth_avg": 0.0,
+        "context_words": 0,
+        "context_growth_rate": 0.0,
+        "noise_amplification": 0.0,
+        "expansion_redundancy": 0
+      },
+      "edge_types_baseline": {
+        "IMPACTS": 2,
+        "MAINTAINS": 1,
+        "CORRELATES_WITH": 2,
+        "OVERLAPS_WITH": 4,
+        "MONITORS": 1,
+        "DEPENDS_ON": 5
+      },
+      "edge_types_experiment": {
+        "CAUSES": 1,
+        "DEPENDS_ON": 5,
+        "MONITORS": 1,
+        "IMPACTS": 2,
+        "CORRELATES_WITH": 2,
+        "OVERLAPS_WITH": 3,
+        "MAINTAINS": 1
+      },
+      "generic_expansion_baseline": 7,
+      "generic_expansion_experiment": 7,
+      "bridge_hits": {
+        "spillback_to_underpass_flooding": 1,
+        "peak_hour_to_hebbal_congestion": 1
+      }
+    },
+    {
+      "slug": "sensor_monitoring",
+      "category": "sensor/monitoring systems",
+      "baseline": {
+        "vector_hits": 8,
+        "graph_expansion": 11,
+        "unique_nodes": 19,
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.4211,
+        "semantic_coherence_proxy": 0.4211,
+        "node_class_diversity": 11,
+        "relation_diversity": 7,
+        "expansion_depth_avg": 1.0,
+        "context_words": 249,
+        "context_growth_rate": 1.375,
+        "noise_amplification": 1.375,
+        "expansion_redundancy": 0
+      },
+      "experiment": {
+        "vector_hits": 8,
+        "graph_expansion": 11,
+        "unique_nodes": 19,
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.4211,
+        "semantic_coherence_proxy": 0.4211,
+        "node_class_diversity": 11,
+        "relation_diversity": 7,
+        "expansion_depth_avg": 1.0,
+        "context_words": 249,
+        "context_growth_rate": 1.375,
+        "noise_amplification": 1.375,
+        "expansion_redundancy": 0
+      },
+      "delta": {
+        "vector_hits": 0,
+        "graph_expansion": 0,
+        "unique_nodes": 0,
+        "overlap_ratio": 0.0,
+        "bridge_node_frequency": 0.0,
+        "semantic_signal_ratio": 0.0,
+        "semantic_coherence_proxy": 0.0,
+        "node_class_diversity": 0,
+        "relation_diversity": 0,
+        "expansion_depth_avg": 0.0,
+        "context_words": 0,
+        "context_growth_rate": 0.0,
+        "noise_amplification": 0.0,
+        "expansion_redundancy": 0
+      },
+      "edge_types_baseline": {
+        "DEPENDS_ON": 1,
+        "IMPACTS": 1,
+        "MAINTAINS": 2,
+        "CORRELATES_WITH": 2,
+        "OVERLAPS_WITH": 3,
+        "MONITORS": 1,
+        "CONSTRAINS": 1
+      },
+      "edge_types_experiment": {
+        "OVERLAPS_WITH": 3,
+        "MAINTAINS": 2,
+        "IMPACTS": 1,
+        "DEPENDS_ON": 1,
+        "MONITORS": 1,
+        "CORRELATES_WITH": 2,
+        "CONSTRAINS": 1
+      },
+      "generic_expansion_baseline": 6,
+      "generic_expansion_experiment": 6,
+      "bridge_hits": {}
+    }
+  ],
+  "summary": {
+    "average_delta": {
+      "semantic_signal_ratio": -0.0033,
+      "semantic_coherence_proxy": -0.0033,
+      "relation_diversity": 0.1429,
+      "node_class_diversity": 0.0,
+      "context_growth_rate": 0.0179,
+      "noise_amplification": 0.0179,
+      "generic_expansion_change": 0.0
+    },
+    "bridge_usage": {
+      "cctv_to_underpass_flooding": 1,
+      "spillback_to_underpass_flooding": 1,
+      "peak_hour_to_hebbal_congestion": 3,
+      "two_wheeler_to_hebbal_congestion": 0
+    }
+  },
+  "sensitivity_summary": {
+    "baseline_best_alignment": [
+      "k8_h1_operational",
+      "k8_h1_maintenance_overlap",
+      "k16_h1_all"
+    ],
+    "experiment_best_alignment": [
+      "k8_h1_operational",
+      "k8_h1_maintenance_overlap",
+      "k16_h1_all"
+    ],
+    "baseline_highest_noise": [
+      "k8_h2_all",
+      "k4_h1_all",
+      "k8_h1_transit_corridor"
+    ],
+    "experiment_highest_noise": [
+      "k8_h2_all",
+      "k4_h1_all",
+      "k8_h1_transit_corridor"
+    ]
+  }
+}

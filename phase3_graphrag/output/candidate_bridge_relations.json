@@ -1,0 +1,1412 @@
+{
+  "summary": {
+    "context_files_analyzed": 16,
+    "vector_nodes": 32,
+    "expansion_nodes": 40,
+    "expansion_heavy_nodes": 15,
+    "vector_heavy_nodes": 22,
+    "low_degree_vector_nodes": 0,
+    "generic_classes": [
+      "agency",
+      "corridor",
+      "transit_service"
+    ],
+    "overlap_note": "Graph expansion excludes vector hits by design in assemble_context; overlap=0 does not imply missing adjacency."
+  },
+  "candidates": {
+    "high_confidence_structural_gaps": [],
+    "possible_semantic_cross_links": [
+      {
+        "source_node": {
+          "id": "asset-blr-kr-puram-bridge",
+          "title": "KR Puram Bridge",
+          "node_class": "asset"
+        },
+        "target_node": {
+          "id": "zone-marathahalli-congestion",
+          "title": "Marathahalli Congestion Zone",
+          "node_class": "congestion_zone"
+        },
+        "suggested_edge_type": "OVERLAPS_WITH",
+        "semantic_similarity": 0.2105,
+        "co_occurrence": 3,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.724,
+        "category": "possible_semantic_cross_links"
+      },
+      {
+        "source_node": {
+          "id": "sensor-silk-board-cctv",
+          "title": "Silk Board CCTV Cluster",
+          "node_class": "sensor_system"
+        },
+        "target_node": {
+          "id": "zone-silk-board-underpass-flooding",
+          "title": "Silk Board Underpass Flooding Zone",
+          "node_class": "flooding_zone"
+        },
+        "suggested_edge_type": "MONITORS",
+        "semantic_similarity": 0.2857,
+        "co_occurrence": 4,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.72,
+        "category": "possible_semantic_cross_links"
+      },
+      {
+        "source_node": {
+          "id": "asset-blr-kr-puram-bridge",
+          "title": "KR Puram Bridge",
+          "node_class": "asset"
+        },
+        "target_node": {
+          "id": "zone-hebbal-congestion",
+          "title": "Hebbal Congestion Zone",
+          "node_class": "congestion_zone"
+        },
+        "suggested_edge_type": "OVERLAPS_WITH",
+        "semantic_similarity": 0.2,
+        "co_occurrence": 3,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.72,
+        "category": "possible_semantic_cross_links"
+      },
+      {
+        "source_node": {
+          "id": "pattern-peak-hour-it-commute",
+          "title": "Peak-hour IT Corridor Commute",
+          "node_class": "mobility_pattern"
+        },
+        "target_node": {
+          "id": "zone-hebbal-congestion",
+          "title": "Hebbal Congestion Zone",
+          "node_class": "congestion_zone"
+        },
+        "suggested_edge_type": "CORRELATES_WITH",
+        "semantic_similarity": 0.1739,
+        "co_occurrence": 5,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.711,
+        "category": "possible_semantic_cross_links"
+      },
+      {
+        "source_node": {
+          "id": "failure-silk-board-spillback",
+          "title": "Silk Board Spillback Failure",
+          "node_class": "infrastructure_failure"
+        },
+        "target_node": {
+          "id": "zone-silk-board-underpass-flooding",
+          "title": "Silk Board Underpass Flooding Zone",
+          "node_class": "flooding_zone"
+        },
+        "suggested_edge_type": "CAUSES",
+        "semantic_similarity": 0.2609,
+        "co_occurrence": 5,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.711,
+        "category": "possible_semantic_cross_links"
+      },
+      {
+        "source_node": {
+          "id": "asset-blr-silk-board-underpass",
+          "title": "Silk Board Underpass",
+          "node_class": "asset"
+        },
+        "target_node": {
+          "id": "zone-marathahalli-congestion",
+          "title": "Marathahalli Congestion Zone",
+          "node_class": "congestion_zone"
+        },
+        "suggested_edge_type": "OVERLAPS_WITH",
+        "semantic_similarity": 0.1667,
+        "co_occurrence": 5,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.708,
+        "category": "possible_semantic_cross_links"
+      },
+      {
+        "source_node": {
+          "id": "asset-blr-silk-board-junction",
+          "title": "Silk Board Junction",
+          "node_class": "asset"
+        },
+        "target_node": {
+          "id": "zone-marathahalli-congestion",
+          "title": "Marathahalli Congestion Zone",
+          "node_class": "congestion_zone"
+        },
+        "suggested_edge_type": "OVERLAPS_WITH",
+        "semantic_similarity": 0.16,
+        "co_occurrence": 5,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.706,
+        "category": "possible_semantic_cross_links"
+      },
+      {
+        "source_node": {
+          "id": "corridor-blr-old-madras-road",
+          "title": "Old Madras Road",
+          "node_class": "corridor"
+        },
+        "target_node": {
+          "id": "zone-hebbal-congestion",
+          "title": "Hebbal Congestion Zone",
+          "node_class": "congestion_zone"
+        },
+        "suggested_edge_type": "OVERLAPS_WITH",
+        "semantic_similarity": 0.16,
+        "co_occurrence": 4,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.706,
+        "category": "possible_semantic_cross_links"
+      },
+      {
+        "source_node": {
+          "id": "asset-blr-silk-board-underpass",
+          "title": "Silk Board Underpass",
+          "node_class": "asset"
+        },
+        "target_node": {
+          "id": "zone-hebbal-congestion",
+          "title": "Hebbal Congestion Zone",
+          "node_class": "congestion_zone"
+        },
+        "suggested_edge_type": "OVERLAPS_WITH",
+        "semantic_similarity": 0.1579,
+        "co_occurrence": 5,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.705,
+        "category": "possible_semantic_cross_links"
+      },
+      {
+        "source_node": {
+          "id": "asset-blr-silk-board-junction",
+          "title": "Silk Board Junction",
+          "node_class": "asset"
+        },
+        "target_node": {
+          "id": "zone-hebbal-congestion",
+          "title": "Hebbal Congestion Zone",
+          "node_class": "congestion_zone"
+        },
+        "suggested_edge_type": "OVERLAPS_WITH",
+        "semantic_similarity": 0.1538,
+        "co_occurrence": 5,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.704,
+        "category": "possible_semantic_cross_links"
+      },
+      {
+        "source_node": {
+          "id": "corridor-blr-orr",
+          "title": "Outer Ring Road",
+          "node_class": "corridor"
+        },
+        "target_node": {
+          "id": "zone-hebbal-congestion",
+          "title": "Hebbal Congestion Zone",
+          "node_class": "congestion_zone"
+        },
+        "suggested_edge_type": "OVERLAPS_WITH",
+        "semantic_similarity": 0.1538,
+        "co_occurrence": 3,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.704,
+        "category": "possible_semantic_cross_links"
+      },
+      {
+        "source_node": {
+          "id": "sensor-orr-anpr",
+          "title": "ORR ANPR Camera Network (Illustrative)",
+          "node_class": "sensor_system"
+        },
+        "target_node": {
+          "id": "zone-hebbal-congestion",
+          "title": "Hebbal Congestion Zone",
+          "node_class": "congestion_zone"
+        },
+        "suggested_edge_type": "MONITORS",
+        "semantic_similarity": 0.1364,
+        "co_occurrence": 3,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.698,
+        "category": "possible_semantic_cross_links"
+      },
+      {
+        "source_node": {
+          "id": "sensor-silk-board-cctv",
+          "title": "Silk Board CCTV Cluster",
+          "node_class": "sensor_system"
+        },
+        "target_node": {
+          "id": "zone-marathahalli-congestion",
+          "title": "Marathahalli Congestion Zone",
+          "node_class": "congestion_zone"
+        },
+        "suggested_edge_type": "MONITORS",
+        "semantic_similarity": 0.0952,
+        "co_occurrence": 3,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.683,
+        "category": "possible_semantic_cross_links"
+      },
+      {
+        "source_node": {
+          "id": "sensor-silk-board-cctv",
+          "title": "Silk Board CCTV Cluster",
+          "node_class": "sensor_system"
+        },
+        "target_node": {
+          "id": "zone-kr-puram-congestion",
+          "title": "KR Puram Congestion Zone",
+          "node_class": "congestion_zone"
+        },
+        "suggested_edge_type": "MONITORS",
+        "semantic_similarity": 0.0952,
+        "co_occurrence": 3,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.683,
+        "category": "possible_semantic_cross_links"
+      },
+      {
+        "source_node": {
+          "id": "sensor-silk-board-cctv",
+          "title": "Silk Board CCTV Cluster",
+          "node_class": "sensor_system"
+        },
+        "target_node": {
+          "id": "zone-hebbal-congestion",
+          "title": "Hebbal Congestion Zone",
+          "node_class": "congestion_zone"
+        },
+        "suggested_edge_type": "MONITORS",
+        "semantic_similarity": 0.0909,
+        "co_occurrence": 3,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.682,
+        "category": "possible_semantic_cross_links"
+      },
+      {
+        "source_node": {
+          "id": "sensor-orr-anpr",
+          "title": "ORR ANPR Camera Network (Illustrative)",
+          "node_class": "sensor_system"
+        },
+        "target_node": {
+          "id": "zone-kr-puram-congestion",
+          "title": "KR Puram Congestion Zone",
+          "node_class": "congestion_zone"
+        },
+        "suggested_edge_type": "MONITORS",
+        "semantic_similarity": 0.0909,
+        "co_occurrence": 3,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.682,
+        "category": "possible_semantic_cross_links"
+      },
+      {
+        "source_node": {
+          "id": "pattern-peak-hour-it-commute",
+          "title": "Peak-hour IT Corridor Commute",
+          "node_class": "mobility_pattern"
+        },
+        "target_node": {
+          "id": "zone-kr-puram-congestion",
+          "title": "KR Puram Congestion Zone",
+          "node_class": "congestion_zone"
+        },
+        "suggested_edge_type": "CORRELATES_WITH",
+        "semantic_similarity": 0.0833,
+        "co_occurrence": 5,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.679,
+        "category": "possible_semantic_cross_links"
+      },
+      {
+        "source_node": {
+          "id": "pattern-two-wheeler-last-mile",
+          "title": "Two-wheeler Dominant Last-mile",
+          "node_class": "mobility_pattern"
+        },
+        "target_node": {
+          "id": "corridor-blr-bannerghatta-road",
+          "title": "Bannerghatta Road",
+          "node_class": "corridor"
+        },
+        "suggested_edge_type": "DEPENDS_ON",
+        "semantic_similarity": 0.1481,
+        "co_occurrence": 3,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.672,
+        "category": "possible_semantic_cross_links"
+      },
+      {
+        "source_node": {
+          "id": "asset-blr-silk-board-junction",
+          "title": "Silk Board Junction",
+          "node_class": "asset"
+        },
+        "target_node": {
+          "id": "zone-orr-bellandur-flooding",
+          "title": "ORR-Bellandur Flooding Zone",
+          "node_class": "flooding_zone"
+        },
+        "suggested_edge_type": "OVERLAPS_WITH",
+        "semantic_similarity": 0.1481,
+        "co_occurrence": 3,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.672,
+        "category": "possible_semantic_cross_links"
+      },
+      {
+        "source_node": {
+          "id": "asset-blr-silk-board-underpass",
+          "title": "Silk Board Underpass",
+          "node_class": "asset"
+        },
+        "target_node": {
+          "id": "zone-orr-bellandur-flooding",
+          "title": "ORR-Bellandur Flooding Zone",
+          "node_class": "flooding_zone"
+        },
+        "suggested_edge_type": "OVERLAPS_WITH",
+        "semantic_similarity": 0.15,
+        "co_occurrence": 3,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.672,
+        "category": "possible_semantic_cross_links"
+      },
+      {
+        "source_node": {
+          "id": "zone-silk-board-congestion",
+          "title": "Silk Board Congestion Zone",
+          "node_class": "congestion_zone"
+        },
+        "target_node": {
+          "id": "stakeholder-informal-auto-drivers",
+          "title": "Informal Auto Drivers",
+          "node_class": "stakeholder"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.0455,
+        "co_occurrence": 3,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.666,
+        "category": "possible_semantic_cross_links"
+      },
+      {
+        "source_node": {
+          "id": "pattern-two-wheeler-last-mile",
+          "title": "Two-wheeler Dominant Last-mile",
+          "node_class": "mobility_pattern"
+        },
+        "target_node": {
+          "id": "zone-kr-puram-congestion",
+          "title": "KR Puram Congestion Zone",
+          "node_class": "congestion_zone"
+        },
+        "suggested_edge_type": "CORRELATES_WITH",
+        "semantic_similarity": 0.04,
+        "co_occurrence": 3,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.664,
+        "category": "possible_semantic_cross_links"
+      },
+      {
+        "source_node": {
+          "id": "pattern-peak-hour-it-commute",
+          "title": "Peak-hour IT Corridor Commute",
+          "node_class": "mobility_pattern"
+        },
+        "target_node": {
+          "id": "stakeholder-informal-auto-drivers",
+          "title": "Informal Auto Drivers",
+          "node_class": "stakeholder"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.037,
+        "co_occurrence": 3,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.663,
+        "category": "possible_semantic_cross_links"
+      },
+      {
+        "source_node": {
+          "id": "failure-silk-board-spillback",
+          "title": "Silk Board Spillback Failure",
+          "node_class": "infrastructure_failure"
+        },
+        "target_node": {
+          "id": "stakeholder-informal-auto-drivers",
+          "title": "Informal Auto Drivers",
+          "node_class": "stakeholder"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.0385,
+        "co_occurrence": 3,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.663,
+        "category": "possible_semantic_cross_links"
+      },
+      {
+        "source_node": {
+          "id": "pattern-two-wheeler-last-mile",
+          "title": "Two-wheeler Dominant Last-mile",
+          "node_class": "mobility_pattern"
+        },
+        "target_node": {
+          "id": "zone-hebbal-congestion",
+          "title": "Hebbal Congestion Zone",
+          "node_class": "congestion_zone"
+        },
+        "suggested_edge_type": "CORRELATES_WITH",
+        "semantic_similarity": 0.0385,
+        "co_occurrence": 3,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.663,
+        "category": "possible_semantic_cross_links"
+      }
+    ],
+    "generic_hub_reductions": [
+      {
+        "source_node": {
+          "id": "pattern-two-wheeler-last-mile",
+          "title": "Two-wheeler Dominant Last-mile",
+          "node_class": "mobility_pattern"
+        },
+        "target_node": {
+          "id": "agency-bbmp",
+          "title": "BBMP",
+          "node_class": "agency"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.1538,
+        "co_occurrence": 3,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.629,
+        "category": "generic_hub_reductions"
+      },
+      {
+        "source_node": {
+          "id": "asset-blr-silk-board-underpass",
+          "title": "Silk Board Underpass",
+          "node_class": "asset"
+        },
+        "target_node": {
+          "id": "agency-btp",
+          "title": "Bangalore Traffic Police",
+          "node_class": "agency"
+        },
+        "suggested_edge_type": "MAINTAINS",
+        "semantic_similarity": 0.15,
+        "co_occurrence": 10,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.627,
+        "category": "generic_hub_reductions"
+      },
+      {
+        "source_node": {
+          "id": "corridor-blr-old-madras-road",
+          "title": "Old Madras Road",
+          "node_class": "corridor"
+        },
+        "target_node": {
+          "id": "agency-bbmp",
+          "title": "BBMP",
+          "node_class": "agency"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.1429,
+        "co_occurrence": 3,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.625,
+        "category": "generic_hub_reductions"
+      },
+      {
+        "source_node": {
+          "id": "sensor-silk-board-cctv",
+          "title": "Silk Board CCTV Cluster",
+          "node_class": "sensor_system"
+        },
+        "target_node": {
+          "id": "agency-btp",
+          "title": "Bangalore Traffic Police",
+          "node_class": "agency"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.087,
+        "co_occurrence": 8,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.605,
+        "category": "generic_hub_reductions"
+      },
+      {
+        "source_node": {
+          "id": "pattern-peak-hour-it-commute",
+          "title": "Peak-hour IT Corridor Commute",
+          "node_class": "mobility_pattern"
+        },
+        "target_node": {
+          "id": "agency-btp",
+          "title": "Bangalore Traffic Police",
+          "node_class": "agency"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.0769,
+        "co_occurrence": 8,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.602,
+        "category": "generic_hub_reductions"
+      },
+      {
+        "source_node": {
+          "id": "sensor-orr-anpr",
+          "title": "ORR ANPR Camera Network (Illustrative)",
+          "node_class": "sensor_system"
+        },
+        "target_node": {
+          "id": "agency-bbmp",
+          "title": "BBMP",
+          "node_class": "agency"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.0769,
+        "co_occurrence": 7,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.602,
+        "category": "generic_hub_reductions"
+      },
+      {
+        "source_node": {
+          "id": "pattern-peak-hour-it-commute",
+          "title": "Peak-hour IT Corridor Commute",
+          "node_class": "mobility_pattern"
+        },
+        "target_node": {
+          "id": "agency-bbmp",
+          "title": "BBMP",
+          "node_class": "agency"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.0714,
+        "co_occurrence": 9,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.6,
+        "category": "generic_hub_reductions"
+      },
+      {
+        "source_node": {
+          "id": "zone-silk-board-congestion",
+          "title": "Silk Board Congestion Zone",
+          "node_class": "congestion_zone"
+        },
+        "target_node": {
+          "id": "agency-btp",
+          "title": "Bangalore Traffic Police",
+          "node_class": "agency"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.0455,
+        "co_occurrence": 10,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.591,
+        "category": "generic_hub_reductions"
+      },
+      {
+        "source_node": {
+          "id": "sensor-orr-anpr",
+          "title": "ORR ANPR Camera Network (Illustrative)",
+          "node_class": "sensor_system"
+        },
+        "target_node": {
+          "id": "agency-btp",
+          "title": "Bangalore Traffic Police",
+          "node_class": "agency"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.04,
+        "co_occurrence": 7,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.589,
+        "category": "generic_hub_reductions"
+      },
+      {
+        "source_node": {
+          "id": "zone-silk-board-underpass-flooding",
+          "title": "Silk Board Underpass Flooding Zone",
+          "node_class": "flooding_zone"
+        },
+        "target_node": {
+          "id": "agency-btp",
+          "title": "Bangalore Traffic Police",
+          "node_class": "agency"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.04,
+        "co_occurrence": 5,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.589,
+        "category": "generic_hub_reductions"
+      },
+      {
+        "source_node": {
+          "id": "failure-silk-board-spillback",
+          "title": "Silk Board Spillback Failure",
+          "node_class": "infrastructure_failure"
+        },
+        "target_node": {
+          "id": "agency-bbmp",
+          "title": "BBMP",
+          "node_class": "agency"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.0357,
+        "co_occurrence": 12,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.588,
+        "category": "generic_hub_reductions"
+      },
+      {
+        "source_node": {
+          "id": "failure-silk-board-spillback",
+          "title": "Silk Board Spillback Failure",
+          "node_class": "infrastructure_failure"
+        },
+        "target_node": {
+          "id": "agency-btp",
+          "title": "Bangalore Traffic Police",
+          "node_class": "agency"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.0385,
+        "co_occurrence": 9,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.588,
+        "category": "generic_hub_reductions"
+      },
+      {
+        "source_node": {
+          "id": "corridor-blr-old-madras-road",
+          "title": "Old Madras Road",
+          "node_class": "corridor"
+        },
+        "target_node": {
+          "id": "service-bmtc-hosur-road",
+          "title": "BMTC Hosur Road Corridor Service (Illustrative)",
+          "node_class": "transit_service"
+        },
+        "suggested_edge_type": "DEPENDS_ON",
+        "semantic_similarity": 0.2593,
+        "co_occurrence": 3,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.566,
+        "category": "generic_hub_reductions"
+      },
+      {
+        "source_node": {
+          "id": "corridor-blr-old-madras-road",
+          "title": "Old Madras Road",
+          "node_class": "corridor"
+        },
+        "target_node": {
+          "id": "service-bmtc-bannerghatta-road",
+          "title": "BMTC Bannerghatta Road Corridor Service (Illustrative)",
+          "node_class": "transit_service"
+        },
+        "suggested_edge_type": "DEPENDS_ON",
+        "semantic_similarity": 0.2593,
+        "co_occurrence": 3,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.566,
+        "category": "generic_hub_reductions"
+      },
+      {
+        "source_node": {
+          "id": "stakeholder-it-corridor-commuters",
+          "title": "IT Corridor Commuters",
+          "node_class": "stakeholder"
+        },
+        "target_node": {
+          "id": "agency-bbmp",
+          "title": "BBMP",
+          "node_class": "agency"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.08,
+        "co_occurrence": 2,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.536,
+        "category": "generic_hub_reductions"
+      },
+      {
+        "source_node": {
+          "id": "corridor-blr-orr",
+          "title": "Outer Ring Road",
+          "node_class": "corridor"
+        },
+        "target_node": {
+          "id": "service-bmtc-bannerghatta-road",
+          "title": "BMTC Bannerghatta Road Corridor Service (Illustrative)",
+          "node_class": "transit_service"
+        },
+        "suggested_edge_type": "DEPENDS_ON",
+        "semantic_similarity": 0.25,
+        "co_occurrence": 1,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.529,
+        "category": "generic_hub_reductions"
+      },
+      {
+        "source_node": {
+          "id": "asset-blr-silk-board-junction",
+          "title": "Silk Board Junction",
+          "node_class": "asset"
+        },
+        "target_node": {
+          "id": "agency-btp",
+          "title": "Bangalore Traffic Police",
+          "node_class": "agency"
+        },
+        "suggested_edge_type": "MAINTAINS",
+        "semantic_similarity": 0.1481,
+        "co_occurrence": 10,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.527,
+        "category": "generic_hub_reductions"
+      },
+      {
+        "source_node": {
+          "id": "corridor-blr-orr",
+          "title": "Outer Ring Road",
+          "node_class": "corridor"
+        },
+        "target_node": {
+          "id": "agency-bbmp",
+          "title": "BBMP",
+          "node_class": "agency"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.1379,
+        "co_occurrence": 3,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.523,
+        "category": "generic_hub_reductions"
+      },
+      {
+        "source_node": {
+          "id": "zone-orr-bellandur-flooding",
+          "title": "ORR-Bellandur Flooding Zone",
+          "node_class": "flooding_zone"
+        },
+        "target_node": {
+          "id": "agency-bbmp",
+          "title": "BBMP",
+          "node_class": "agency"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.04,
+        "co_occurrence": 2,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.522,
+        "category": "generic_hub_reductions"
+      },
+      {
+        "source_node": {
+          "id": "failure-koramangala-drainage-overload",
+          "title": "Koramangala Valley Drainage Overload",
+          "node_class": "infrastructure_failure"
+        },
+        "target_node": {
+          "id": "agency-bbmp",
+          "title": "BBMP",
+          "node_class": "agency"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.037,
+        "co_occurrence": 2,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.521,
+        "category": "generic_hub_reductions"
+      },
+      {
+        "source_node": {
+          "id": "asset-blr-mahadevapura-flyover",
+          "title": "Mahadevapura Flyover",
+          "node_class": "asset"
+        },
+        "target_node": {
+          "id": "service-bmtc-hosur-road",
+          "title": "BMTC Hosur Road Corridor Service (Illustrative)",
+          "node_class": "transit_service"
+        },
+        "suggested_edge_type": "DEPENDS_ON",
+        "semantic_similarity": 0.2174,
+        "co_occurrence": 1,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.518,
+        "category": "generic_hub_reductions"
+      },
+      {
+        "source_node": {
+          "id": "asset-blr-mahadevapura-flyover",
+          "title": "Mahadevapura Flyover",
+          "node_class": "asset"
+        },
+        "target_node": {
+          "id": "service-bmtc-bannerghatta-road",
+          "title": "BMTC Bannerghatta Road Corridor Service (Illustrative)",
+          "node_class": "transit_service"
+        },
+        "suggested_edge_type": "DEPENDS_ON",
+        "semantic_similarity": 0.2174,
+        "co_occurrence": 1,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.518,
+        "category": "generic_hub_reductions"
+      },
+      {
+        "source_node": {
+          "id": "sensor-orr-anpr",
+          "title": "ORR ANPR Camera Network (Illustrative)",
+          "node_class": "sensor_system"
+        },
+        "target_node": {
+          "id": "service-bmtc-hosur-road",
+          "title": "BMTC Hosur Road Corridor Service (Illustrative)",
+          "node_class": "transit_service"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.2,
+        "co_occurrence": 1,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.512,
+        "category": "generic_hub_reductions"
+      },
+      {
+        "source_node": {
+          "id": "sensor-orr-anpr",
+          "title": "ORR ANPR Camera Network (Illustrative)",
+          "node_class": "sensor_system"
+        },
+        "target_node": {
+          "id": "service-bmtc-bannerghatta-road",
+          "title": "BMTC Bannerghatta Road Corridor Service (Illustrative)",
+          "node_class": "transit_service"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.2,
+        "co_occurrence": 1,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.512,
+        "category": "generic_hub_reductions"
+      },
+      {
+        "source_node": {
+          "id": "zone-silk-board-congestion",
+          "title": "Silk Board Congestion Zone",
+          "node_class": "congestion_zone"
+        },
+        "target_node": {
+          "id": "agency-bbmp",
+          "title": "BBMP",
+          "node_class": "agency"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.0417,
+        "co_occurrence": 12,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.49,
+        "category": "generic_hub_reductions"
+      }
+    ],
+    "optional_enrichment": [
+      {
+        "source_node": {
+          "id": "corridor-blr-airport-road",
+          "title": "Airport Road (Bellary Road)",
+          "node_class": "corridor"
+        },
+        "target_node": {
+          "id": "corridor-blr-orr",
+          "title": "Outer Ring Road",
+          "node_class": "corridor"
+        },
+        "suggested_edge_type": "CONNECTS_TO",
+        "semantic_similarity": 0.3462,
+        "co_occurrence": 1,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.608,
+        "category": "optional_enrichment"
+      },
+      {
+        "source_node": {
+          "id": "corridor-blr-hosur-road",
+          "title": "Hosur Road",
+          "node_class": "corridor"
+        },
+        "target_node": {
+          "id": "corridor-blr-bannerghatta-road",
+          "title": "Bannerghatta Road",
+          "node_class": "corridor"
+        },
+        "suggested_edge_type": "CONNECTS_TO",
+        "semantic_similarity": 0.5,
+        "co_occurrence": 1,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.562,
+        "category": "optional_enrichment"
+      },
+      {
+        "source_node": {
+          "id": "corridor-blr-old-madras-road",
+          "title": "Old Madras Road",
+          "node_class": "corridor"
+        },
+        "target_node": {
+          "id": "corridor-blr-airport-road",
+          "title": "Airport Road (Bellary Road)",
+          "node_class": "corridor"
+        },
+        "suggested_edge_type": "CONNECTS_TO",
+        "semantic_similarity": 0.4783,
+        "co_occurrence": 1,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.554,
+        "category": "optional_enrichment"
+      },
+      {
+        "source_node": {
+          "id": "corridor-blr-airport-road",
+          "title": "Airport Road (Bellary Road)",
+          "node_class": "corridor"
+        },
+        "target_node": {
+          "id": "corridor-blr-hosur-road",
+          "title": "Hosur Road",
+          "node_class": "corridor"
+        },
+        "suggested_edge_type": "CONNECTS_TO",
+        "semantic_similarity": 0.4783,
+        "co_occurrence": 1,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.554,
+        "category": "optional_enrichment"
+      },
+      {
+        "source_node": {
+          "id": "corridor-blr-airport-road",
+          "title": "Airport Road (Bellary Road)",
+          "node_class": "corridor"
+        },
+        "target_node": {
+          "id": "corridor-blr-bannerghatta-road",
+          "title": "Bannerghatta Road",
+          "node_class": "corridor"
+        },
+        "suggested_edge_type": "CONNECTS_TO",
+        "semantic_similarity": 0.4762,
+        "co_occurrence": 1,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.553,
+        "category": "optional_enrichment"
+      },
+      {
+        "source_node": {
+          "id": "asset-blr-silk-board-underpass",
+          "title": "Silk Board Underpass",
+          "node_class": "asset"
+        },
+        "target_node": {
+          "id": "sensor-silk-board-cctv",
+          "title": "Silk Board CCTV Cluster",
+          "node_class": "sensor_system"
+        },
+        "suggested_edge_type": "MONITORS",
+        "semantic_similarity": 0.3333,
+        "co_occurrence": 1,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.528,
+        "category": "optional_enrichment"
+      },
+      {
+        "source_node": {
+          "id": "corridor-blr-old-madras-road",
+          "title": "Old Madras Road",
+          "node_class": "corridor"
+        },
+        "target_node": {
+          "id": "corridor-blr-hosur-road",
+          "title": "Hosur Road",
+          "node_class": "corridor"
+        },
+        "suggested_edge_type": "CONNECTS_TO",
+        "semantic_similarity": 0.3846,
+        "co_occurrence": 1,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.521,
+        "category": "optional_enrichment"
+      },
+      {
+        "source_node": {
+          "id": "asset-blr-silk-board-underpass",
+          "title": "Silk Board Underpass",
+          "node_class": "asset"
+        },
+        "target_node": {
+          "id": "zone-silk-board-congestion",
+          "title": "Silk Board Congestion Zone",
+          "node_class": "congestion_zone"
+        },
+        "suggested_edge_type": "OVERLAPS_WITH",
+        "semantic_similarity": 0.375,
+        "co_occurrence": 1,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.518,
+        "category": "optional_enrichment"
+      },
+      {
+        "source_node": {
+          "id": "corridor-blr-old-madras-road",
+          "title": "Old Madras Road",
+          "node_class": "corridor"
+        },
+        "target_node": {
+          "id": "corridor-blr-bannerghatta-road",
+          "title": "Bannerghatta Road",
+          "node_class": "corridor"
+        },
+        "suggested_edge_type": "CONNECTS_TO",
+        "semantic_similarity": 0.375,
+        "co_occurrence": 1,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.518,
+        "category": "optional_enrichment"
+      },
+      {
+        "source_node": {
+          "id": "corridor-blr-bannerghatta-road",
+          "title": "Bannerghatta Road",
+          "node_class": "corridor"
+        },
+        "target_node": {
+          "id": "corridor-blr-orr",
+          "title": "Outer Ring Road",
+          "node_class": "corridor"
+        },
+        "suggested_edge_type": "CONNECTS_TO",
+        "semantic_similarity": 0.36,
+        "co_occurrence": 1,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.513,
+        "category": "optional_enrichment"
+      },
+      {
+        "source_node": {
+          "id": "zone-orr-bellandur-flooding",
+          "title": "ORR-Bellandur Flooding Zone",
+          "node_class": "flooding_zone"
+        },
+        "target_node": {
+          "id": "asset-blr-mahadevapura-flyover",
+          "title": "Mahadevapura Flyover",
+          "node_class": "asset"
+        },
+        "suggested_edge_type": "OVERLAPS_WITH",
+        "semantic_similarity": 0.3333,
+        "co_occurrence": 1,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.503,
+        "category": "optional_enrichment"
+      },
+      {
+        "source_node": {
+          "id": "asset-blr-silk-board-junction",
+          "title": "Silk Board Junction",
+          "node_class": "asset"
+        },
+        "target_node": {
+          "id": "asset-blr-silk-board-underpass",
+          "title": "Silk Board Underpass",
+          "node_class": "asset"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.4286,
+        "co_occurrence": 1,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.462,
+        "category": "optional_enrichment"
+      },
+      {
+        "source_node": {
+          "id": "asset-blr-silk-board-underpass",
+          "title": "Silk Board Underpass",
+          "node_class": "asset"
+        },
+        "target_node": {
+          "id": "asset-blr-hebbal-flyover",
+          "title": "Hebbal Flyover",
+          "node_class": "asset"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.4118,
+        "co_occurrence": 1,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.456,
+        "category": "optional_enrichment"
+      },
+      {
+        "source_node": {
+          "id": "asset-blr-kr-puram-bridge",
+          "title": "KR Puram Bridge",
+          "node_class": "asset"
+        },
+        "target_node": {
+          "id": "asset-blr-mahadevapura-flyover",
+          "title": "Mahadevapura Flyover",
+          "node_class": "asset"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.3889,
+        "co_occurrence": 1,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.448,
+        "category": "optional_enrichment"
+      },
+      {
+        "source_node": {
+          "id": "asset-blr-hebbal-flyover",
+          "title": "Hebbal Flyover",
+          "node_class": "asset"
+        },
+        "target_node": {
+          "id": "asset-blr-mahadevapura-flyover",
+          "title": "Mahadevapura Flyover",
+          "node_class": "asset"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.3889,
+        "co_occurrence": 1,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.448,
+        "category": "optional_enrichment"
+      },
+      {
+        "source_node": {
+          "id": "asset-blr-silk-board-underpass",
+          "title": "Silk Board Underpass",
+          "node_class": "asset"
+        },
+        "target_node": {
+          "id": "asset-blr-mahadevapura-flyover",
+          "title": "Mahadevapura Flyover",
+          "node_class": "asset"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.3529,
+        "co_occurrence": 1,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.435,
+        "category": "optional_enrichment"
+      },
+      {
+        "source_node": {
+          "id": "corridor-blr-old-madras-road",
+          "title": "Old Madras Road",
+          "node_class": "corridor"
+        },
+        "target_node": {
+          "id": "asset-blr-kr-puram-bridge",
+          "title": "KR Puram Bridge",
+          "node_class": "asset"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.3478,
+        "co_occurrence": 1,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.433,
+        "category": "optional_enrichment"
+      },
+      {
+        "source_node": {
+          "id": "asset-blr-silk-board-underpass",
+          "title": "Silk Board Underpass",
+          "node_class": "asset"
+        },
+        "target_node": {
+          "id": "asset-blr-kr-puram-bridge",
+          "title": "KR Puram Bridge",
+          "node_class": "asset"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.3333,
+        "co_occurrence": 1,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.428,
+        "category": "optional_enrichment"
+      },
+      {
+        "source_node": {
+          "id": "maintenance-silk-board-signal-retiming",
+          "title": "Silk Board Signal Retiming (Illustrative)",
+          "node_class": "maintenance_event"
+        },
+        "target_node": {
+          "id": "sensor-silk-board-cctv",
+          "title": "Silk Board CCTV Cluster",
+          "node_class": "sensor_system"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.3,
+        "co_occurrence": 1,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.417,
+        "category": "optional_enrichment"
+      },
+      {
+        "source_node": {
+          "id": "asset-blr-kr-puram-bridge",
+          "title": "KR Puram Bridge",
+          "node_class": "asset"
+        },
+        "target_node": {
+          "id": "asset-blr-hebbal-flyover",
+          "title": "Hebbal Flyover",
+          "node_class": "asset"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.3,
+        "co_occurrence": 1,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.417,
+        "category": "optional_enrichment"
+      },
+      {
+        "source_node": {
+          "id": "asset-blr-silk-board-junction",
+          "title": "Silk Board Junction",
+          "node_class": "asset"
+        },
+        "target_node": {
+          "id": "asset-blr-mahadevapura-flyover",
+          "title": "Mahadevapura Flyover",
+          "node_class": "asset"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.2917,
+        "co_occurrence": 1,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.414,
+        "category": "optional_enrichment"
+      },
+      {
+        "source_node": {
+          "id": "asset-blr-silk-board-junction",
+          "title": "Silk Board Junction",
+          "node_class": "asset"
+        },
+        "target_node": {
+          "id": "corridor-blr-old-madras-road",
+          "title": "Old Madras Road",
+          "node_class": "corridor"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.2759,
+        "co_occurrence": 1,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.408,
+        "category": "optional_enrichment"
+      },
+      {
+        "source_node": {
+          "id": "asset-blr-silk-board-junction",
+          "title": "Silk Board Junction",
+          "node_class": "asset"
+        },
+        "target_node": {
+          "id": "corridor-blr-airport-road",
+          "title": "Airport Road (Bellary Road)",
+          "node_class": "corridor"
+        },
+        "suggested_edge_type": "IMPACTS",
+        "semantic_similarity": 0.25,
+        "co_occurrence": 1,
+        "semantic_rationale": "Shared semantic signals (tokens/tags/summary) and repeated co-occurrence across retrievals suggest a missing connective edge.",
+        "expected_effect": "Anchors expansion nodes to vector-retrieved semantics, increasing coherence and reducing generic expansion drift.",
+        "confidence": 0.399,
+        "category": "optional_enrichment"
+      }
+    ]
+  }
+}
