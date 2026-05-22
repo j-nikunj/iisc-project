@@ -1,0 +1,1202 @@
+trip_id,trip_property_id,value
+75179542,note,Does not run during school vacation
+75179542,trip_type,supplemental
+75179544,note,Does not run during school vacation
+75179544,trip_type,supplemental
+75179627,note,Does not run during school vacation
+75179627,trip_type,supplemental
+75179793,note,Does not run during school vacation
+75179793,trip_type,supplemental
+75179794,note,Does not run during school vacation
+75179794,trip_type,supplemental
+75179799,note,Does not run during school vacation
+75179799,trip_type,supplemental
+75179803,note,Does not run during school vacation
+75179803,trip_type,supplemental
+75179804,note,Does not run during school vacation
+75179804,trip_type,supplemental
+75179805,note,Does not run during school vacation
+75179805,trip_type,supplemental
+75179806,note,Does not run during school vacation
+75179806,trip_type,supplemental
+75179807,note,Does not run during school vacation
+75179807,trip_type,supplemental
+75179809,note,Does not run during school vacation
+75179809,trip_type,supplemental
+75179854,note,Does not run during school vacation
+75179854,trip_type,supplemental
+75179938,note,Does not run during school vacation
+75179938,trip_type,supplemental
+75180311,note,Does not run during school vacation
+75180311,trip_type,supplemental
+75180748,note,Does not run during school vacation
+75180748,trip_type,supplemental
+75180914,note,Does not run during school vacation
+75180914,trip_type,supplemental
+75180978,note,Does not run during school vacation
+75180978,trip_type,supplemental
+75180980,note,Does not run during school vacation
+75180980,trip_type,supplemental
+75181516,note,Does not run during school vacation
+75181516,trip_type,supplemental
+75181518,note,Does not run during school vacation
+75181518,trip_type,supplemental
+75181648,note,Does not run during school vacation
+75181648,trip_type,supplemental
+75181819,note,Does not run during school vacation
+75181819,trip_type,supplemental
+75181823,note,Does not run during school vacation
+75181823,trip_type,supplemental
+75182519,note,Does not run during school vacation
+75182519,trip_type,supplemental
+75204181,note,Does not run during school vacation
+75204181,trip_type,supplemental
+75204595,note,Does not run during school vacation
+75204595,trip_type,supplemental
+75204719,note,Waits at Harvard Sq @ Garden St - Dawes Island for last Red Line train
+75204719,trip_type,wait
+75204814,note,Does not run during school vacation
+75204814,trip_type,supplemental
+75204815,note,Does not run during school vacation
+75204815,trip_type,supplemental
+75204875,note,Does not run during school vacation
+75204875,trip_type,supplemental
+75204879,note,Does not run during school vacation
+75204879,trip_type,supplemental
+75204880,note,Does not run during school vacation
+75204880,trip_type,supplemental
+75204881,note,Does not run during school vacation
+75204881,trip_type,supplemental
+75204883,note,Does not run during school vacation
+75204883,trip_type,supplemental
+75204894,note,Does not run during school vacation
+75204894,trip_type,supplemental
+75204897,note,Does not run during school vacation
+75204897,trip_type,supplemental
+75205165,note,Does not run during school vacation
+75205165,trip_type,supplemental
+75205377,note,Does not run during school vacation
+75205377,trip_type,supplemental
+75205512,note,Does not run during school vacation
+75205512,trip_type,supplemental
+75205516,note,Does not run during school vacation
+75205516,trip_type,supplemental
+75205756,note,Waits at Boylston St @ Dartmouth St for last Green Line train
+75205756,trip_type,wait
+75205793,note,Does not run during school vacation
+75205793,trip_type,supplemental
+75205799,note,Does not run during school vacation
+75205799,trip_type,supplemental
+75205807,note,Does not run during school vacation
+75205807,trip_type,supplemental
+75205817,note,Does not run during school vacation
+75205817,trip_type,supplemental
+75205870,note,Does not run during school vacation
+75205870,trip_type,supplemental
+75205905,note,Does not run during school vacation
+75205905,trip_type,supplemental
+75206057,note,Does not run during school vacation
+75206057,trip_type,supplemental
+75206251,note,Does not run during school vacation
+75206251,trip_type,supplemental
+75206735,note,Does not run during school vacation
+75206735,trip_type,supplemental
+75206839,note,Waits at Ashmont for last Red Line train
+75206839,trip_type,wait
+75206847,note,Waits at Kenmore for last Green Line train
+75206847,trip_type,wait
+75240683,note,Waits at W Broadway @ Broadway Station for last Red Line train
+75240683,trip_type,wait
+75240784,note,Waits at W Broadway @ Broadway Station for last Red Line train
+75240784,trip_type,wait
+75242206,note,Waits at Nubian for last Silver Line bus
+75242206,trip_type,wait
+75242212,note,Waits at Ashmont for last Red Line train
+75242212,trip_type,wait
+75242213,note,Waits at Ruggles for last Orange Line train
+75242213,trip_type,wait
+75242217,note,Waits at Kenmore for last Green Line train
+75242217,trip_type,wait
+75242219,note,Waits at Nubian for last Silver Line bus
+75242219,trip_type,wait
+75242220,note,Waits at Harvard Sq @ Garden St - Dawes Island for last Red Line train
+75242220,trip_type,wait
+75246795,note,Waits at Ruggles for last Orange Line train
+75246795,trip_type,wait
+75247147,note,Waits at Nubian for last Silver Line bus
+75247147,trip_type,wait
+75247155,note,Waits at Harvard Sq @ Garden St - Dawes Island for last Red Line train
+75247155,trip_type,wait
+75247251,note,Waits at Boylston St @ Dartmouth St for last Green Line train
+75247251,trip_type,wait
+75247285,note,Waits at Andrew for last Red Line train
+75247285,trip_type,wait
+75248456,note,Waits at Nubian for last Silver Line bus
+75248456,trip_type,wait
+75255396,note,Does not run during school vacation
+75255396,trip_type,supplemental
+75255681,note,Does not run during school vacation
+75255681,trip_type,supplemental
+75255812,note,Does not run during school vacation
+75255812,trip_type,supplemental
+75255813,note,Does not run during school vacation
+75255813,trip_type,supplemental
+75255847,note,Does not run during school vacation
+75255847,trip_type,supplemental
+75255851,note,Does not run during school vacation
+75255851,trip_type,supplemental
+75255852,note,Does not run during school vacation
+75255852,trip_type,supplemental
+75255853,note,Does not run during school vacation
+75255853,trip_type,supplemental
+75255855,note,Does not run during school vacation
+75255855,trip_type,supplemental
+75255866,note,Does not run during school vacation
+75255866,trip_type,supplemental
+75255869,note,Does not run during school vacation
+75255869,trip_type,supplemental
+75256117,note,Does not run during school vacation
+75256117,trip_type,supplemental
+75256253,note,Does not run during school vacation
+75256253,trip_type,supplemental
+75256306,note,Does not run during school vacation
+75256306,trip_type,supplemental
+75256310,note,Does not run during school vacation
+75256310,trip_type,supplemental
+75256377,note,Waits at Boylston St @ Dartmouth St for last Green Line train
+75256377,trip_type,wait
+75256411,note,Does not run during school vacation
+75256411,trip_type,supplemental
+75256416,note,Does not run during school vacation
+75256416,trip_type,supplemental
+75256424,note,Does not run during school vacation
+75256424,trip_type,supplemental
+75256433,note,Does not run during school vacation
+75256433,trip_type,supplemental
+75256467,note,Does not run during school vacation
+75256467,trip_type,supplemental
+75256496,note,Does not run during school vacation
+75256496,trip_type,supplemental
+75256624,note,Does not run during school vacation
+75256624,trip_type,supplemental
+75256786,note,Does not run during school vacation
+75256786,trip_type,supplemental
+75257052,note,Does not run during school vacation
+75257052,trip_type,supplemental
+75257156,note,Waits at Ashmont for last Red Line train
+75257156,trip_type,wait
+75257164,note,Waits at Kenmore for last Green Line train
+75257164,trip_type,wait
+75257166,note,Waits at Nubian for last Silver Line bus
+75257166,trip_type,wait
+75257175,note,Waits at Harvard Sq @ Garden St - Dawes Island for last Red Line train
+75257175,trip_type,wait
+75315511,note,Waits at Ashmont for last Red Line train
+75315511,trip_type,wait
+75315518,note,Waits at Ashmont for last Red Line train
+75315518,trip_type,wait
+75315891,note,Waits at Ashmont for last Red Line train
+75315891,trip_type,wait
+75315933,note,Waits at Ashmont for last Red Line train
+75315933,trip_type,wait
+75316115,note,Waits at Ashmont for last Red Line train
+75316115,trip_type,wait
+75316290,note,Waits at Ashmont for last Red Line train
+75316290,trip_type,wait
+75353868,note,Waits at Ruggles for last Orange Line train
+75353868,trip_type,wait
+75354220,note,Waits at Nubian for last Silver Line bus
+75354220,trip_type,wait
+75354228,note,Waits at Harvard Sq @ Garden St - Dawes Island for last Red Line train
+75354228,trip_type,wait
+75354324,note,Waits at Boylston St @ Dartmouth St for last Green Line train
+75354324,trip_type,wait
+75354358,note,Waits at Andrew for last Red Line train
+75354358,trip_type,wait
+75355529,note,Waits at Nubian for last Silver Line bus
+75355529,trip_type,wait
+75450123,note,Waits at W Broadway @ Broadway Station for last Red Line train
+75450123,trip_type,wait
+75450224,note,Waits at W Broadway @ Broadway Station for last Red Line train
+75450224,trip_type,wait
+75451659,note,Waits at Nubian for last Silver Line bus
+75451659,trip_type,wait
+75521692,note,Waits at Lechmere for last Green Line train
+75521692,trip_type,wait
+75521726,note,Does not run during school vacation
+75521726,trip_type,supplemental
+75521924,note,Waits at Harvard for last Red Line train
+75521924,trip_type,wait
+75521932,note,Does not run during school vacation
+75521932,trip_type,supplemental
+75522081,note,Does not run during school vacation
+75522081,trip_type,supplemental
+75522380,note,Waits at Green St @ Magazine St for last Red Line train
+75522380,trip_type,wait
+75522517,note,Does not run during school vacation
+75522517,trip_type,supplemental
+75522575,note,Does not run during school vacation
+75522575,trip_type,supplemental
+75522622,note,Waits at Lechmere for last Green Line train
+75522622,trip_type,wait
+75522685,note,Does not run during school vacation
+75522685,trip_type,supplemental
+75522699,note,Waits at Main St @ Kendall Station - Red Line for last Red Line train
+75522699,trip_type,wait
+75522815,note,Waits at Western Ave @ Green St for last Red Line train
+75522815,trip_type,wait
+75522921,note,Waits at Harvard for last Red Line train
+75522921,trip_type,wait
+75523213,note,Waits at Harvard for last Red Line train
+75523213,trip_type,wait
+75523337,note,Waits at Lechmere for last Green Line train
+75523337,trip_type,wait
+75523445,note,Waits at Lechmere for last Green Line train
+75523445,trip_type,wait
+75523650,note,Waits at Harvard for last Red Line train
+75523650,trip_type,wait
+75523757,note,Does not run during school vacation
+75523757,trip_type,supplemental
+75524399,note,Does not run during school vacation
+75524399,trip_type,supplemental
+75524605,note,Does not run during school vacation
+75524605,trip_type,supplemental
+75524754,note,Does not run during school vacation
+75524754,trip_type,supplemental
+75525190,note,Does not run during school vacation
+75525190,trip_type,supplemental
+75525248,note,Does not run during school vacation
+75525248,trip_type,supplemental
+75525358,note,Does not run during school vacation
+75525358,trip_type,supplemental
+75526430,note,Does not run during school vacation
+75526430,trip_type,supplemental
+75529777,note,Waits at Green St @ Magazine St for last Red Line train
+75529777,trip_type,wait
+75530222,note,Waits at Western Ave @ Green St for last Red Line train
+75530222,trip_type,wait
+75530338,note,Waits at Harvard for last Red Line train
+75530338,trip_type,wait
+75530468,note,Waits at Western Ave @ Green St for last Red Line train
+75530468,trip_type,wait
+75530533,note,Waits at Lechmere for last Green Line train
+75530533,trip_type,wait
+75530694,note,Waits at Harvard for last Red Line train
+75530694,trip_type,wait
+75530734,note,Waits at Harvard for last Red Line train
+75530734,trip_type,wait
+75530930,note,Waits at Lechmere for last Green Line train
+75530930,trip_type,wait
+75530979,note,Waits at Lechmere for last Green Line train
+75530979,trip_type,wait
+75558501,note,Waits at Green St @ Magazine St for last Red Line train
+75558501,trip_type,wait
+75558946,note,Waits at Western Ave @ Green St for last Red Line train
+75558946,trip_type,wait
+75559062,note,Waits at Harvard for last Red Line train
+75559062,trip_type,wait
+75559192,note,Waits at Western Ave @ Green St for last Red Line train
+75559192,trip_type,wait
+75559257,note,Waits at Lechmere for last Green Line train
+75559257,trip_type,wait
+75559418,note,Waits at Harvard for last Red Line train
+75559418,trip_type,wait
+75559458,note,Waits at Harvard for last Red Line train
+75559458,trip_type,wait
+75559654,note,Waits at Lechmere for last Green Line train
+75559654,trip_type,wait
+75559703,note,Waits at Lechmere for last Green Line train
+75559703,trip_type,wait
+75584980,note,Waits at Surface Rd @ Hanover St for last Orange Line and Green Line trains
+75584980,trip_type,wait
+75585023,note,Waits at Wellington for last Orange Line train
+75585023,trip_type,wait
+75588739,note,Waits at Sullivan Square for last Orange Line train
+75588739,trip_type,wait
+75589109,note,Waits at Malden Center for last Orange Line train
+75589109,trip_type,wait
+75589117,note,Waits at Airport for last Blue Line train
+75589117,trip_type,wait
+75589504,note,Waits at Wellington for last Orange Line train
+75589504,trip_type,wait
+75589737,note,Waits at Wellington for last Orange Line train
+75589737,trip_type,wait
+75589767,note,Waits at Harvard for last Red Line train
+75589767,trip_type,wait
+75602615,note,Does not run during school vacation
+75602615,trip_type,supplemental
+75602646,note,Does not run during school vacation
+75602646,trip_type,supplemental
+75602647,note,Does not run during school vacation
+75602647,trip_type,supplemental
+75602659,note,Does not run during school vacation
+75602659,trip_type,supplemental
+75602675,note,Does not run during school vacation
+75602675,trip_type,supplemental
+75602696,note,Does not run during school vacation
+75602696,trip_type,supplemental
+75602840,note,Does not run during school vacation
+75602840,trip_type,supplemental
+75602923,note,Does not run during school vacation
+75602923,trip_type,supplemental
+75602924,note,Does not run during school vacation
+75602924,trip_type,supplemental
+75602925,note,Does not run during school vacation
+75602925,trip_type,supplemental
+75602926,note,Does not run during school vacation
+75602926,trip_type,supplemental
+75603416,note,Does not run during school vacation
+75603416,trip_type,supplemental
+75603417,note,Does not run during school vacation
+75603417,trip_type,supplemental
+75603418,note,Does not run during school vacation
+75603418,trip_type,supplemental
+75603419,note,Does not run during school vacation
+75603419,trip_type,supplemental
+75603420,note,Does not run during school vacation
+75603420,trip_type,supplemental
+75603421,note,Does not run during school vacation
+75603421,trip_type,supplemental
+75603422,note,Does not run during school vacation
+75603422,trip_type,supplemental
+75603434,note,Does not run during school vacation
+75603434,trip_type,supplemental
+75603435,note,Does not run during school vacation
+75603435,trip_type,supplemental
+75603436,note,Does not run during school vacation
+75603436,trip_type,supplemental
+75603437,note,Does not run during school vacation
+75603437,trip_type,supplemental
+75603491,note,Does not run during school vacation
+75603491,trip_type,supplemental
+75603608,note,Does not run during school vacation
+75603608,trip_type,supplemental
+75603639,note,Does not run during school vacation
+75603639,trip_type,supplemental
+75604806,note,Does not run during school vacation
+75604806,trip_type,supplemental
+75607558,note,Waits at Wellington for last Orange Line train
+75607558,trip_type,wait
+75609063,note,Waits at Wellington for last Orange Line train
+75609063,trip_type,wait
+75609973,note,Waits at Airport for last Blue Line train
+75609973,trip_type,wait
+75609985,note,Waits at Malden Center for last Orange Line train
+75609985,trip_type,wait
+75610156,note,Waits at Wellington for last Orange Line train
+75610156,trip_type,wait
+75610589,note,Waits at Harvard for last Red Line train
+75610589,trip_type,wait
+75624004,note,Does not run during school vacation
+75624004,trip_type,supplemental
+75624070,note,Waits at Ruggles for last Orange Line train
+75624070,trip_type,wait
+75624141,note,Does not run during school vacation
+75624141,trip_type,supplemental
+75624984,note,Does not run during school vacation
+75624984,trip_type,supplemental
+75625057,note,Does not run during school vacation
+75625057,trip_type,supplemental
+75625604,note,Waits at Temple Pl @ Washington St for last Red Line and Orange Line trains
+75625604,trip_type,wait
+75625657,note,Waits at South Station for last Red Line train
+75625657,trip_type,wait
+75625710,note,Waits at Back Bay for last Orange Line train
+75625710,trip_type,wait
+75625730,note,Waits at South Station for last Red Line train
+75625730,trip_type,wait
+75626169,note,Does not run during school vacation
+75626169,trip_type,supplemental
+75626235,note,Waits at Ruggles for last Orange Line train
+75626235,trip_type,wait
+75626306,note,Does not run during school vacation
+75626306,trip_type,supplemental
+75627149,note,Does not run during school vacation
+75627149,trip_type,supplemental
+75627221,note,Does not run during school vacation
+75627221,trip_type,supplemental
+75627520,note,Waits at Temple Pl @ Washington St for last Red Line and Orange Line trains
+75627520,trip_type,wait
+75627570,note,Waits at South Station for last Red Line train
+75627570,trip_type,wait
+75627622,note,Waits at Back Bay for last Orange Line train
+75627622,trip_type,wait
+75627640,note,Waits at South Station for last Red Line train
+75627640,trip_type,wait
+75632318,note,Waits at South Station for last Red Line train
+75632318,trip_type,wait
+75632352,note,Waits at Ruggles for last Orange Line train
+75632352,trip_type,wait
+75632377,note,Waits at Back Bay for last Orange Line train
+75632377,trip_type,wait
+75632415,note,Waits at South Station for last Red Line train
+75632415,trip_type,wait
+75632435,note,Waits at Temple Pl @ Washington St for last Red Line and Orange Line trains
+75632435,trip_type,wait
+75632825,note,Waits at Temple Pl @ Washington St for last Red Line and Orange Line trains
+75632825,trip_type,wait
+75633335,note,Waits at Ruggles for last Orange Line train
+75633335,trip_type,wait
+75633728,note,Waits at South Station for last Red Line train
+75633728,trip_type,wait
+75633946,note,Waits at Back Bay for last Orange Line train
+75633946,trip_type,wait
+75634397,note,Waits at South Station for last Red Line train
+75634397,trip_type,wait
+75641542,note,Waits at Temple Pl @ Washington St for last Red Line and Orange Line trains
+75641542,trip_type,wait
+75641814,note,Waits at South Station for last Red Line train
+75641814,trip_type,wait
+75642074,note,Waits at South Station for last Red Line train
+75642074,trip_type,wait
+75642334,note,Waits at Back Bay for last Orange Line train
+75642334,trip_type,wait
+75643285,note,Waits at Temple Pl @ Washington St for last Red Line and Orange Line trains
+75643285,trip_type,wait
+75643558,note,Waits at South Station for last Red Line train
+75643558,trip_type,wait
+75643814,note,Waits at South Station for last Red Line train
+75643814,trip_type,wait
+75644077,note,Waits at Back Bay for last Orange Line train
+75644077,trip_type,wait
+75644815,note,Does not run during school vacation
+75644815,trip_type,supplemental
+75644952,note,Does not run during school vacation
+75644952,trip_type,supplemental
+75645079,note,Waits at South Station for last Red Line train
+75645079,trip_type,wait
+75645408,note,Waits at Temple Pl @ Washington St for last Red Line and Orange Line trains
+75645408,trip_type,wait
+75645589,note,Waits at Back Bay for last Orange Line train
+75645589,trip_type,wait
+75645704,note,Does not run during school vacation
+75645704,trip_type,supplemental
+75645721,note,Does not run during school vacation
+75645721,trip_type,supplemental
+75646445,note,Waits at South Station for last Red Line train
+75646445,trip_type,wait
+75647164,note,Does not run during school vacation
+75647164,trip_type,supplemental
+75647301,note,Does not run during school vacation
+75647301,trip_type,supplemental
+75647428,note,Waits at South Station for last Red Line train
+75647428,trip_type,wait
+75647757,note,Waits at Temple Pl @ Washington St for last Red Line and Orange Line trains
+75647757,trip_type,wait
+75647938,note,Waits at Back Bay for last Orange Line train
+75647938,trip_type,wait
+75648053,note,Does not run during school vacation
+75648053,trip_type,supplemental
+75648070,note,Does not run during school vacation
+75648070,trip_type,supplemental
+75648896,note,Waits at South Station for last Red Line train
+75648896,trip_type,wait
+75690448,note,Waits at Sullivan Square for last Orange Line train
+75690448,trip_type,wait
+75690818,note,Waits at Malden Center for last Orange Line train
+75690818,trip_type,wait
+75690826,note,Waits at Airport for last Blue Line train
+75690826,trip_type,wait
+75691213,note,Waits at Wellington for last Orange Line train
+75691213,trip_type,wait
+75691446,note,Waits at Wellington for last Orange Line train
+75691446,trip_type,wait
+75691476,note,Waits at Harvard for last Red Line train
+75691476,trip_type,wait
+75722032,note,Waits at Forest Hills for last Orange Line train
+75722032,trip_type,wait
+75722258,note,Waits at Forest Hills for last Orange Line train
+75722258,trip_type,wait
+75722443,note,Waits at Forest Hills for last Orange Line train
+75722443,trip_type,wait
+75726922,note,Waits at Forest Hills for last Orange Line train
+75726922,trip_type,wait
+75727148,note,Waits at Forest Hills for last Orange Line train
+75727148,trip_type,wait
+75727333,note,Waits at Forest Hills for last Orange Line train
+75727333,trip_type,wait
+75754108,note,Waits at Surface Rd @ Hanover St for last Orange Line and Green Line trains
+75754108,trip_type,wait
+75754151,note,Waits at Wellington for last Orange Line train
+75754151,trip_type,wait
+75761303,note,Waits at Ashmont for last Red Line train
+75761303,note,Waits at Mattapan for last Mattapan Line train
+75761303,trip_type,wait
+75761509,note,Waits at Forest Hills for last Orange Line train
+75761509,trip_type,wait
+75761989,note,Waits at Ashmont for last Red Line train
+75761989,trip_type,wait
+75762010,note,Does not run during school vacation
+75762010,trip_type,supplemental
+75762013,note,Does not run during school vacation
+75762013,trip_type,supplemental
+75762015,note,Does not run during school vacation
+75762015,trip_type,supplemental
+75762021,note,Does not run during school vacation
+75762021,trip_type,supplemental
+75762022,note,Does not run during school vacation
+75762022,trip_type,supplemental
+75762024,note,Does not run during school vacation
+75762024,trip_type,supplemental
+75762091,note,Waits at Forest Hills for last Orange Line train
+75762091,trip_type,wait
+75762303,note,Does not run during school vacation
+75762303,trip_type,supplemental
+75762393,note,Waits at Forest Hills for last Orange Line train
+75762393,trip_type,wait
+75762495,note,Does not run during school vacation
+75762495,trip_type,supplemental
+75762524,note,Does not run during school vacation
+75762524,trip_type,supplemental
+75762540,note,Does not run during school vacation
+75762540,trip_type,supplemental
+75762547,note,Does not run during school vacation
+75762547,trip_type,supplemental
+75762551,note,Does not run during school vacation
+75762551,trip_type,supplemental
+75762558,note,Does not run during school vacation
+75762558,trip_type,supplemental
+75762560,note,Does not run during school vacation
+75762560,trip_type,supplemental
+75762600,note,Does not run during school vacation
+75762600,trip_type,supplemental
+75762626,note,Does not run during school vacation
+75762626,trip_type,supplemental
+75762913,note,Waits at Forest Hills for last Orange Line train
+75762913,trip_type,wait
+75762993,note,Does not run during school vacation
+75762993,trip_type,supplemental
+75763052,note,Does not run during school vacation
+75763052,trip_type,supplemental
+75774869,note,Does not run during school vacation
+75774869,trip_type,supplemental
+75774872,note,Does not run during school vacation
+75774872,trip_type,supplemental
+75774874,note,Does not run during school vacation
+75774874,trip_type,supplemental
+75774880,note,Does not run during school vacation
+75774880,trip_type,supplemental
+75774881,note,Does not run during school vacation
+75774881,trip_type,supplemental
+75774883,note,Does not run during school vacation
+75774883,trip_type,supplemental
+75775163,note,Does not run during school vacation
+75775163,trip_type,supplemental
+75775355,note,Does not run during school vacation
+75775355,trip_type,supplemental
+75775384,note,Does not run during school vacation
+75775384,trip_type,supplemental
+75775400,note,Does not run during school vacation
+75775400,trip_type,supplemental
+75775407,note,Does not run during school vacation
+75775407,trip_type,supplemental
+75775411,note,Does not run during school vacation
+75775411,trip_type,supplemental
+75775418,note,Does not run during school vacation
+75775418,trip_type,supplemental
+75775420,note,Does not run during school vacation
+75775420,trip_type,supplemental
+75775460,note,Does not run during school vacation
+75775460,trip_type,supplemental
+75775486,note,Does not run during school vacation
+75775486,trip_type,supplemental
+75775853,note,Does not run during school vacation
+75775853,trip_type,supplemental
+75775912,note,Does not run during school vacation
+75775912,trip_type,supplemental
+75779184,note,Waits at Orient Heights for last Blue Line train
+75779184,trip_type,wait
+75779283,note,Waits at Orient Heights for last Blue Line train
+75779283,trip_type,wait
+75791309,note,Waits at Maverick for last Blue Line train
+75791309,trip_type,wait
+75791358,note,Does not run during school vacation
+75791358,trip_type,supplemental
+75791561,note,Does not run during school vacation
+75791561,trip_type,supplemental
+75791564,note,Does not run during school vacation
+75791564,trip_type,supplemental
+75791574,note,Waits at Wonderland for last Blue Line train
+75791574,trip_type,wait
+75791583,note,Waits at Congress St @ Haymarket Sta for last Orange Line and Green Line trains
+75791583,trip_type,wait
+75791609,note,Does not run during school vacation
+75791609,trip_type,supplemental
+75791613,note,Does not run during school vacation
+75791613,trip_type,supplemental
+75791922,note,Does not run during school vacation
+75791922,trip_type,supplemental
+75791923,note,Does not run during school vacation
+75791923,trip_type,supplemental
+75791925,note,Does not run during school vacation
+75791925,trip_type,supplemental
+75791926,note,Does not run during school vacation
+75791926,trip_type,supplemental
+75791927,note,Does not run during school vacation
+75791927,trip_type,supplemental
+75791945,note,Does not run during school vacation
+75791945,trip_type,supplemental
+75791946,note,Does not run during school vacation
+75791946,trip_type,supplemental
+75791947,note,Does not run during school vacation
+75791947,trip_type,supplemental
+75791966,note,Does not run during school vacation
+75791966,trip_type,supplemental
+75791967,note,Does not run during school vacation
+75791967,trip_type,supplemental
+75791968,note,Does not run during school vacation
+75791968,trip_type,supplemental
+75791972,note,Does not run during school vacation
+75791972,trip_type,supplemental
+75791996,note,Does not run during school vacation
+75791996,trip_type,supplemental
+75796861,note,Does not run during school vacation
+75796861,trip_type,supplemental
+75797064,note,Does not run during school vacation
+75797064,trip_type,supplemental
+75797067,note,Does not run during school vacation
+75797067,trip_type,supplemental
+75797112,note,Does not run during school vacation
+75797112,trip_type,supplemental
+75797116,note,Does not run during school vacation
+75797116,trip_type,supplemental
+75797425,note,Does not run during school vacation
+75797425,trip_type,supplemental
+75797426,note,Does not run during school vacation
+75797426,trip_type,supplemental
+75797428,note,Does not run during school vacation
+75797428,trip_type,supplemental
+75797429,note,Does not run during school vacation
+75797429,trip_type,supplemental
+75797430,note,Does not run during school vacation
+75797430,trip_type,supplemental
+75797448,note,Does not run during school vacation
+75797448,trip_type,supplemental
+75797449,note,Does not run during school vacation
+75797449,trip_type,supplemental
+75797450,note,Does not run during school vacation
+75797450,trip_type,supplemental
+75797469,note,Does not run during school vacation
+75797469,trip_type,supplemental
+75797470,note,Does not run during school vacation
+75797470,trip_type,supplemental
+75797471,note,Does not run during school vacation
+75797471,trip_type,supplemental
+75797475,note,Does not run during school vacation
+75797475,trip_type,supplemental
+75797499,note,Does not run during school vacation
+75797499,trip_type,supplemental
+75809042,note,Waits at Maverick for last Blue Line train
+75809042,trip_type,wait
+75809108,note,Waits at Wonderland for last Blue Line train
+75809108,trip_type,wait
+75811586,note,Does not run during school vacation
+75811586,trip_type,supplemental
+75811588,note,Does not run during school vacation
+75811588,trip_type,supplemental
+75811687,note,Does not run during school vacation
+75811687,trip_type,supplemental
+75811692,note,Does not run during school vacation
+75811692,trip_type,supplemental
+75811726,note,Does not run during school vacation
+75811726,trip_type,supplemental
+75811729,note,Does not run during school vacation
+75811729,trip_type,supplemental
+75811732,note,Does not run during school vacation
+75811732,trip_type,supplemental
+75811782,note,Does not run during school vacation
+75811782,trip_type,supplemental
+75811866,note,Does not run during school vacation
+75811866,trip_type,supplemental
+75811977,note,Waits at Quincy Center for last Red Line train
+75811977,trip_type,wait
+75811997,note,Does not run during school vacation
+75811997,trip_type,supplemental
+75811998,note,Does not run during school vacation
+75811998,trip_type,supplemental
+75812075,note,Does not run during school vacation
+75812075,trip_type,supplemental
+75812103,note,Waits at Fields Corner for last Red Line train
+75812103,trip_type,wait
+75812147,note,Does not run during school vacation
+75812147,trip_type,supplemental
+75812273,note,Waits at Ashmont for last Red Line train
+75812273,trip_type,wait
+75812462,note,Does not run during school vacation
+75812462,trip_type,supplemental
+75812464,note,Does not run during school vacation
+75812464,trip_type,supplemental
+75814008,note,Does not run during school vacation
+75814008,trip_type,supplemental
+75814010,note,Does not run during school vacation
+75814010,trip_type,supplemental
+75816614,note,Does not run during school vacation
+75816614,trip_type,supplemental
+75816619,note,Does not run during school vacation
+75816619,trip_type,supplemental
+75816653,note,Does not run during school vacation
+75816653,trip_type,supplemental
+75816656,note,Does not run during school vacation
+75816656,trip_type,supplemental
+75816659,note,Does not run during school vacation
+75816659,trip_type,supplemental
+75816709,note,Does not run during school vacation
+75816709,trip_type,supplemental
+75816793,note,Does not run during school vacation
+75816793,trip_type,supplemental
+75816924,note,Does not run during school vacation
+75816924,trip_type,supplemental
+75816925,note,Does not run during school vacation
+75816925,trip_type,supplemental
+75817002,note,Does not run during school vacation
+75817002,trip_type,supplemental
+75817074,note,Does not run during school vacation
+75817074,trip_type,supplemental
+75817389,note,Does not run during school vacation
+75817389,trip_type,supplemental
+75817391,note,Does not run during school vacation
+75817391,trip_type,supplemental
+75821116,note,Waits at Fields Corner for last Red Line train
+75821116,trip_type,wait
+75821354,note,Waits at Quincy Center for last Red Line train
+75821354,trip_type,wait
+75827060,note,Waits at Maverick for last Blue Line train
+75827060,trip_type,wait
+75827743,note,Waits at Wonderland for last Blue Line train
+75827743,trip_type,wait
+75833163,note,Waits at Fields Corner for last Red Line train
+75833163,trip_type,wait
+75834804,note,Waits at Quincy Center for last Red Line train
+75834804,trip_type,wait
+75881716,note,Waits at Orient Heights for last Blue Line train
+75881716,trip_type,wait
+75882098,note,Waits at Orient Heights for last Blue Line train
+75882098,trip_type,wait
+FoxboroPlatform-833367-874,note,Waits at Readville for Train 776
+FoxboroPlatform-833367-874,trip_type,wait
+FoxboroPlatform-833378-908,note,Waits at Readville for Train 1708
+FoxboroPlatform-833378-908,trip_type,wait
+FoxboroPlatform-833406-984,note,Waits at Readville for Train 784
+FoxboroPlatform-833406-984,trip_type,wait
+FoxboroPlatform-833374-892,note,Waits at Readville for Train 792
+FoxboroPlatform-833374-892,trip_type,wait
+FoxboroPlatform-833360-856,note,Waits at Readville for Train 1756
+FoxboroPlatform-833360-856,trip_type,wait
+FoxboroPlatform-833199-1047,note,Waits at Braintree for Train 2047
+FoxboroPlatform-833199-1047,trip_type,wait
+FoxboroPlatform-833281-2055,note,Waits at East Taunton for Train 1905
+FoxboroPlatform-833281-2055,trip_type,wait
+FoxboroPlatform-833282-2059,note,Waits at East Taunton for Train 1909
+FoxboroPlatform-833282-2059,trip_type,wait
+FoxboroPlatform-833283-2061,note,Waits at East Taunton for Train 1911
+FoxboroPlatform-833283-2061,trip_type,wait
+FoxboroPlatform-833285-2065,note,Waits at East Taunton for Train 1915
+FoxboroPlatform-833285-2065,trip_type,wait
+FoxboroPlatform-833286-2067,note,Waits at East Taunton for Train 1917
+FoxboroPlatform-833286-2067,trip_type,wait
+FoxboroPlatform-833287-2069,note,Waits at East Taunton for Train 1919
+FoxboroPlatform-833287-2069,trip_type,wait
+FoxboroPlatform-833288-2075,note,Waits at East Taunton for Train 1925
+FoxboroPlatform-833288-2075,trip_type,wait
+FoxboroPlatform-833290-2089,note,Waits at East Taunton for Train 1939
+FoxboroPlatform-833290-2089,trip_type,wait
+FoxboroPlatform-833252-1971,note,Waits at East Taunton for Train 2021
+FoxboroPlatform-833252-1971,trip_type,wait
+FoxboroPlatform-833258-1983,note,Waits at East Taunton for Train 2033
+FoxboroPlatform-833258-1983,trip_type,wait
+FoxboroPlatform-833260-1987,note,Waits at East Taunton for Train 2037
+FoxboroPlatform-833260-1987,trip_type,wait
+FoxboroPlatform-833262-1991,note,Waits at East Taunton for Train 2041
+FoxboroPlatform-833262-1991,trip_type,wait
+FoxboroPlatform-833265-2010,note,Waits at East Taunton for Train 1960
+FoxboroPlatform-833265-2010,trip_type,wait
+FoxboroPlatform-833266-2016,note,Waits at East Taunton for Train 1966
+FoxboroPlatform-833266-2016,trip_type,wait
+FoxboroPlatform-833268-2022,note,Waits at East Taunton for Train 1972
+FoxboroPlatform-833268-2022,trip_type,wait
+FoxboroPlatform-833269-2024,note,Waits at East Taunton for Train 1974
+FoxboroPlatform-833269-2024,trip_type,wait
+FoxboroPlatform-833270-2026,note,Waits at East Taunton for Train 1976
+FoxboroPlatform-833270-2026,trip_type,wait
+FoxboroPlatform-833271-2028,note,Waits at East Taunton for Train 1978
+FoxboroPlatform-833271-2028,trip_type,wait
+FoxboroPlatform-833273-2030,note,Waits at East Taunton for Train 1980
+FoxboroPlatform-833273-2030,trip_type,wait
+FoxboroPlatform-833275-2034,note,Waits at East Taunton for Train 1984
+FoxboroPlatform-833275-2034,trip_type,wait
+FoxboroPlatform-833277-2038,note,Waits at East Taunton for Train 1988
+FoxboroPlatform-833277-2038,trip_type,wait
+FoxboroPlatform-833279-2044,note,Waits at East Taunton for Train 1994
+FoxboroPlatform-833279-2044,trip_type,wait
+FoxboroPlatform-833240-1912,note,Waits at East Taunton for Train 2062
+FoxboroPlatform-833240-1912,trip_type,wait
+FoxboroPlatform-833246-1936,note,Waits at East Taunton for Train 2086
+FoxboroPlatform-833246-1936,trip_type,wait
+FoxboroPlatform-833248-1942,note,Waits at East Taunton for Train 2092
+FoxboroPlatform-833248-1942,trip_type,wait
+FoxboroPlatform-833607-1785,note,Waits at Readville for Train 885
+FoxboroPlatform-833607-1785,trip_type,wait
+FoxboroPlatform-833654-793,note,Waits at Readville for Train 893
+FoxboroPlatform-833654-793,trip_type,wait
+FoxboroPlatform-833648-689,note,Waits at Forest Hills for Train 889
+FoxboroPlatform-833648-689,trip_type,wait
+FoxboroPlatform-833645-693,note,Waits at Forest Hills for Train 893
+FoxboroPlatform-833645-693,trip_type,wait
+FoxboroPlatform-833324-571,note,Waits at West Natick for Train 1567
+FoxboroPlatform-833324-571,trip_type,wait
+FoxboroPlatform-833322-565,note,Waits at West Natick for Train 1561
+FoxboroPlatform-833322-565,trip_type,wait
+FoxboroPlatform-833317-553,note,Waits at West Natick for Train 1551
+FoxboroPlatform-833317-553,trip_type,wait
+FoxboroPlatform-833320-559,note,Waits at West Natick for Train 1555
+FoxboroPlatform-833320-559,trip_type,wait
+FoxboroPlatform-833225-1512,note,Waits at West Natick for Train 510
+FoxboroPlatform-833225-1512,trip_type,wait
+FoxboroPlatform-833226-1516,note,Waits at West Natick for Train 514
+FoxboroPlatform-833226-1516,trip_type,wait
+FoxboroPlatform-833228-1522,note,Waits at West Natick for Train 518
+FoxboroPlatform-833228-1522,trip_type,wait
+FoxboroPlatform-833299-515,note,Waits at Framingham for Train 1511
+FoxboroPlatform-833299-515,trip_type,wait
+FoxboroPlatform-833301-519,note,Waits at Framingham for Train 1517
+FoxboroPlatform-833301-519,trip_type,wait
+FoxboroPlatform-833228-1522,note,Waits at Framingham for Train 520
+FoxboroPlatform-833228-1522,trip_type,wait
+FoxboroPlatform-833231-1558,note,Waits at Framingham for Train 556
+FoxboroPlatform-833231-1558,trip_type,wait
+FoxboroPlatform-833233-1562,note,Waits at Framingham for Train 560
+FoxboroPlatform-833233-1562,trip_type,wait
+FoxboroPlatform-833368-875,note,Waits at Readville for Train 1775
+FoxboroPlatform-833368-875,trip_type,wait
+FoxboroPlatform-833591-1775,note,Waits at Readville for Train 875
+FoxboroPlatform-833591-1775,trip_type,wait
+CP44andJFK-829796-5806,note,Waits at Readville for Train 5706
+CP44andJFK-829796-5806,trip_type,wait
+CP44andJFK-829799-5824,note,Waits at Readville for Train 5724
+CP44andJFK-829799-5824,trip_type,wait
+CP44andJFK-829800-5830,note,Waits at Readville for Train 5730
+CP44andJFK-829800-5830,trip_type,wait
+CP44andJFK-829802-5838,note,Waits at Readville for Train 5738
+CP44andJFK-829802-5838,trip_type,wait
+CP44andJFK-829804-5846,note,Waits at Readville for Train 5746
+CP44andJFK-829804-5846,trip_type,wait
+CP44andJFK-829807-5856,note,Waits at Readville for Train 5754
+CP44andJFK-829807-5856,trip_type,wait
+CP44andJFK-829809-5868,note,Waits at Readville for Train 5768
+CP44andJFK-829809-5868,trip_type,wait
+CP44andJFK-829811-5878,note,Waits at Readville for Train 5778
+CP44andJFK-829811-5878,trip_type,wait
+CP44andJFK-829812-5884,note,Waits at Readville for Train 5784
+CP44andJFK-829812-5884,trip_type,wait
+CP44andJFK-829814-5892,note,Waits at Readville for Train 5792
+CP44andJFK-829814-5892,trip_type,wait
+CP44andJFK-834803-6047,note,Waits at Braintree for Train 7047
+CP44andJFK-834803-6047,trip_type,wait
+CP44andJFK-834751-6979,note,Waits at East Taunton for Train 7029
+CP44andJFK-834751-6979,trip_type,wait
+CP44andJFK-829777-5715,note,Waits at Readville for Train 5815
+CP44andJFK-829777-5715,trip_type,wait
+CP44andJFK-829778-5721,note,Waits at Readville for Train 5821
+CP44andJFK-829778-5721,trip_type,wait
+CP44andJFK-829781-5731,note,Waits at Readville for Train 5831
+CP44andJFK-829781-5731,trip_type,wait
+CP44andJFK-829783-5739,note,Waits at Readville for Train 5839
+CP44andJFK-829783-5739,trip_type,wait
+CP44andJFK-829785-5747,note,Waits at Readville for Train 5847
+CP44andJFK-829785-5747,trip_type,wait
+CP44andJFK-829787-5755,note,Waits at Readville for Train 5855
+CP44andJFK-829787-5755,trip_type,wait
+CP44andJFK-829788-5767,note,Waits at Readville for Train 5867
+CP44andJFK-829788-5767,trip_type,wait
+CP44andJFK-829790-5777,note,Waits at Readville for Train 5877
+CP44andJFK-829790-5777,trip_type,wait
+CP44andJFK-829793-5785,note,Waits at Readville for Train 5885
+CP44andJFK-829793-5785,trip_type,wait
+CP44andJFK-829795-5793,note,Waits at Readville for Train 5893
+CP44andJFK-829795-5793,trip_type,wait
+ERMLTieJob-819593-429,note,Waits at Littleton/Route 495 for Train 1427
+ERMLTieJob-819593-429,trip_type,wait
+ERMLTieJob-819623-1408,note,Waits at Littleton/Route 495 for Train 406
+ERMLTieJob-819623-1408,trip_type,wait
+SWKDYWCPeriod-816704-892,note,Waits at Readville for Train 792
+SWKDYWCPeriod-816704-892,trip_type,wait
+SWKDYWCPeriod-816736-984,note,Waits at Readville for Train 784
+SWKDYWCPeriod-816736-984,trip_type,wait
+SWKDYWCPeriod-816697-874,note,Waits at Readville for Train 776
+SWKDYWCPeriod-816697-874,trip_type,wait
+SWKDYWCPeriod-816708-908,note,Waits at Readville for Train 1708
+SWKDYWCPeriod-816708-908,trip_type,wait
+SWKDYWCPeriod-816690-856,note,Waits at Readville for Train 1756
+SWKDYWCPeriod-816690-856,trip_type,wait
+SWKDYWCPeriod-816479-1047,note,Waits at Braintree for Train 2047
+SWKDYWCPeriod-816479-1047,trip_type,wait
+SWKDYWCPeriod-816552-1987,note,Waits at East Taunton for Train 2037
+SWKDYWCPeriod-816552-1987,trip_type,wait
+SWKDYWCPeriod-831443-1775,note,Waits at Readville for Train 875
+SWKDYWCPeriod-831443-1775,trip_type,wait
+SWKDYWCPeriod-831439-1785,note,Waits at Readville for Train 885
+SWKDYWCPeriod-831439-1785,trip_type,wait
+SWKDYWCPeriod-831402-689,note,Waits at Forest Hills for Train 889
+SWKDYWCPeriod-831402-689,trip_type,wait
+SWKDYWCPeriod-831465-693,note,Waits at Forest Hills for Train 893
+SWKDYWCPeriod-831465-693,trip_type,wait
+SWKDYWCPeriod-831451-793,note,Waits at Readville for Train 893
+SWKDYWCPeriod-831451-793,trip_type,wait
+SWKDYWCPeriod-816598-565,note,Waits at West Natick for Train 1561
+SWKDYWCPeriod-816598-565,trip_type,wait
+SWKDYWCPeriod-816593-553,note,Waits at West Natick for Train 1551
+SWKDYWCPeriod-816593-553,trip_type,wait
+SWKDYWCPeriod-816596-559,note,Waits at West Natick for Train 1555
+SWKDYWCPeriod-816596-559,trip_type,wait
+SWKDYWCPeriod-816600-571,note,Waits at West Natick for Train 1567
+SWKDYWCPeriod-816600-571,trip_type,wait
+SWKDYWCPeriod-816505-1512,note,Waits at West Natick for Train 510
+SWKDYWCPeriod-816505-1512,trip_type,wait
+SWKDYWCPeriod-816506-1516,note,Waits at West Natick for Train 514
+SWKDYWCPeriod-816506-1516,trip_type,wait
+SWKDYWCPeriod-816508-1522,note,Waits at West Natick for Train 518
+SWKDYWCPeriod-816508-1522,trip_type,wait
+SWKDYWCPeriod-816576-515,note,Waits at Framingham for Train 1511
+SWKDYWCPeriod-816576-515,trip_type,wait
+SWKDYWCPeriod-816578-519,note,Waits at Framingham for Train 1517
+SWKDYWCPeriod-816578-519,trip_type,wait
+SWKDYWCPeriod-816511-1558,note,Waits at Framingham for Train 556
+SWKDYWCPeriod-816511-1558,trip_type,wait
+SWKDYWCPeriod-816513-1562,note,Waits at Framingham for Train 560
+SWKDYWCPeriod-816513-1562,trip_type,wait
+JFKStops-834885-5806,note,Waits at Readville for Train 5706
+JFKStops-834885-5806,trip_type,wait
+JFKStops-834903-5892,note,Waits at Readville for Train 5792
+JFKStops-834903-5892,trip_type,wait
+JFKStops-834888-5824,note,Waits at Readville for Train 5724
+JFKStops-834888-5824,trip_type,wait
+JFKStops-834901-5884,note,Waits at Readville for Train 5784
+JFKStops-834901-5884,trip_type,wait
+JFKStops-834898-5868,note,Waits at Readville for Train 5768
+JFKStops-834898-5868,trip_type,wait
+JFKStops-834900-5878,note,Waits at Readville for Train 5778
+JFKStops-834900-5878,trip_type,wait
+JFKStops-834896-5856,note,Waits at Readville for Train 5754
+JFKStops-834896-5856,trip_type,wait
+JFKStops-834889-5830,note,Waits at Readville for Train 5730
+JFKStops-834889-5830,trip_type,wait
+JFKStops-834891-5838,note,Waits at Readville for Train 5738
+JFKStops-834891-5838,trip_type,wait
+JFKStops-834893-5846,note,Waits at Readville for Train 5746
+JFKStops-834893-5846,trip_type,wait
+JFKStops-835156-6047,note,Waits at Braintree for Train 7047
+JFKStops-835156-6047,trip_type,wait
+JFKStops-835187-6979,note,Waits at East Taunton for Train 7029
+JFKStops-835187-6979,trip_type,wait
+JFKStops-835042-5715,note,Waits at Readville for Train 5815
+JFKStops-835042-5715,trip_type,wait
+JFKStops-835094-5721,note,Waits at Readville for Train 5821
+JFKStops-835094-5721,trip_type,wait
+JFKStops-835118-5731,note,Waits at Readville for Train 5831
+JFKStops-835118-5731,trip_type,wait
+JFKStops-835120-5739,note,Waits at Readville for Train 5839
+JFKStops-835120-5739,trip_type,wait
+JFKStops-835123-5747,note,Waits at Readville for Train 5847
+JFKStops-835123-5747,trip_type,wait
+JFKStops-835116-5755,note,Waits at Readville for Train 5855
+JFKStops-835116-5755,trip_type,wait
+JFKStops-835114-5767,note,Waits at Readville for Train 5867
+JFKStops-835114-5767,trip_type,wait
+JFKStops-835122-5777,note,Waits at Readville for Train 5877
+JFKStops-835122-5777,trip_type,wait
+JFKStops-835111-5785,note,Waits at Readville for Train 5885
+JFKStops-835111-5785,trip_type,wait
+JFKStops-835091-5793,note,Waits at Readville for Train 5893
+JFKStops-835091-5793,trip_type,wait
+BasewUpdatedWalpoleTurns-772785-874,note,Waits at Readville for Train 776
+BasewUpdatedWalpoleTurns-772785-874,trip_type,wait
+BasewUpdatedWalpoleTurns-772824-984,note,Waits at Readville for Train 784
+BasewUpdatedWalpoleTurns-772824-984,trip_type,wait
+BasewUpdatedWalpoleTurns-772792-892,note,Waits at Readville for Train 792
+BasewUpdatedWalpoleTurns-772792-892,trip_type,wait
+BasewUpdatedWalpoleTurns-772796-908,note,Waits at Readville for Train 1708
+BasewUpdatedWalpoleTurns-772796-908,trip_type,wait
+BasewUpdatedWalpoleTurns-772778-856,note,Waits at Readville for Train 1756
+BasewUpdatedWalpoleTurns-772778-856,trip_type,wait
+BasewUpdatedWalpoleTurns-774196-1047,note,Waits at Braintree for Train 2047
+BasewUpdatedWalpoleTurns-774196-1047,trip_type,wait
+BasewUpdatedWalpoleTurns-772993-2002,note,Waits at Braintree for Train 1002
+BasewUpdatedWalpoleTurns-772993-2002,trip_type,wait
+BasewUpdatedWalpoleTurns-773011-2055,note,Waits at East Taunton for Train 1905
+BasewUpdatedWalpoleTurns-773011-2055,trip_type,wait
+BasewUpdatedWalpoleTurns-773013-2061,note,Waits at East Taunton for Train 1911
+BasewUpdatedWalpoleTurns-773013-2061,trip_type,wait
+BasewUpdatedWalpoleTurns-773015-2065,note,Waits at East Taunton for Train 1915
+BasewUpdatedWalpoleTurns-773015-2065,trip_type,wait
+BasewUpdatedWalpoleTurns-773016-2067,note,Waits at East Taunton for Train 1917
+BasewUpdatedWalpoleTurns-773016-2067,trip_type,wait
+BasewUpdatedWalpoleTurns-773018-2075,note,Waits at East Taunton for Train 1925
+BasewUpdatedWalpoleTurns-773018-2075,trip_type,wait
+BasewUpdatedWalpoleTurns-773020-2089,note,Waits at East Taunton for Train 1939
+BasewUpdatedWalpoleTurns-773020-2089,trip_type,wait
+BasewUpdatedWalpoleTurns-772981-1971,note,Waits at East Taunton for Train 2021
+BasewUpdatedWalpoleTurns-772981-1971,trip_type,wait
+BasewUpdatedWalpoleTurns-772987-1983,note,Waits at East Taunton for Train 2033
+BasewUpdatedWalpoleTurns-772987-1983,trip_type,wait
+BasewUpdatedWalpoleTurns-772989-1987,note,Waits at East Taunton for Train 2037
+BasewUpdatedWalpoleTurns-772989-1987,trip_type,wait
+BasewUpdatedWalpoleTurns-772991-1991,note,Waits at East Taunton for Train 2041
+BasewUpdatedWalpoleTurns-772991-1991,trip_type,wait
+BasewUpdatedWalpoleTurns-773017-2069,note,Waits at East Taunton for Train 1919
+BasewUpdatedWalpoleTurns-773017-2069,trip_type,wait
+BasewUpdatedWalpoleTurns-773012-2059,note,Waits at East Taunton for Train 1909
+BasewUpdatedWalpoleTurns-773012-2059,trip_type,wait
+BasewUpdatedWalpoleTurns-772994-2010,note,Waits at East Taunton for Train 1960
+BasewUpdatedWalpoleTurns-772994-2010,trip_type,wait
+BasewUpdatedWalpoleTurns-772995-2016,note,Waits at East Taunton for Train 1966
+BasewUpdatedWalpoleTurns-772995-2016,trip_type,wait
+BasewUpdatedWalpoleTurns-772998-2022,note,Waits at East Taunton for Train 1972
+BasewUpdatedWalpoleTurns-772998-2022,trip_type,wait
+BasewUpdatedWalpoleTurns-772999-2024,note,Waits at East Taunton for Train 1974
+BasewUpdatedWalpoleTurns-772999-2024,trip_type,wait
+BasewUpdatedWalpoleTurns-773000-2026,note,Waits at East Taunton for Train 1976
+BasewUpdatedWalpoleTurns-773000-2026,trip_type,wait
+BasewUpdatedWalpoleTurns-773001-2028,note,Waits at East Taunton for Train 1978
+BasewUpdatedWalpoleTurns-773001-2028,trip_type,wait
+BasewUpdatedWalpoleTurns-773003-2030,note,Waits at East Taunton for Train 1980
+BasewUpdatedWalpoleTurns-773003-2030,trip_type,wait
+BasewUpdatedWalpoleTurns-773005-2034,note,Waits at East Taunton for Train 1984
+BasewUpdatedWalpoleTurns-773005-2034,trip_type,wait
+BasewUpdatedWalpoleTurns-773007-2038,note,Waits at East Taunton for Train 1988
+BasewUpdatedWalpoleTurns-773007-2038,trip_type,wait
+BasewUpdatedWalpoleTurns-773009-2044,note,Waits at East Taunton for Train 1994
+BasewUpdatedWalpoleTurns-773009-2044,trip_type,wait
+BasewUpdatedWalpoleTurns-772969-1912,note,Waits at East Taunton for Train 2062
+BasewUpdatedWalpoleTurns-772969-1912,trip_type,wait
+BasewUpdatedWalpoleTurns-772975-1936,note,Waits at East Taunton for Train 2086
+BasewUpdatedWalpoleTurns-772975-1936,trip_type,wait
+BasewUpdatedWalpoleTurns-772977-1942,note,Waits at East Taunton for Train 2092
+BasewUpdatedWalpoleTurns-772977-1942,trip_type,wait
+BasewUpdatedWalpoleTurns-772961-1775,note,Waits at Readville for Train 875
+BasewUpdatedWalpoleTurns-772961-1775,trip_type,wait
+BasewUpdatedWalpoleTurns-772963-1785,note,Waits at Readville for Train 885
+BasewUpdatedWalpoleTurns-772963-1785,trip_type,wait
+BasewUpdatedWalpoleTurns-772751-793,note,Waits at Readville for Train 893
+BasewUpdatedWalpoleTurns-772751-793,trip_type,wait
+BasewUpdatedWalpoleTurns-772724-689,note,Waits at Forest Hills for Train 889
+BasewUpdatedWalpoleTurns-772724-689,trip_type,wait
+BasewUpdatedWalpoleTurns-772725-693,note,Waits at Forest Hills for Train 893
+BasewUpdatedWalpoleTurns-772725-693,trip_type,wait
+BasewUpdatedWalpoleTurns-772680-565,note,Waits at West Natick for Train 1561
+BasewUpdatedWalpoleTurns-772680-565,trip_type,wait
+BasewUpdatedWalpoleTurns-772876-1512,note,Waits at West Natick for Train 510
+BasewUpdatedWalpoleTurns-772876-1512,trip_type,wait
+BasewUpdatedWalpoleTurns-772877-1516,note,Waits at West Natick for Train 514
+BasewUpdatedWalpoleTurns-772877-1516,trip_type,wait
+BasewUpdatedWalpoleTurns-772879-1522,note,Waits at West Natick for Train 518
+BasewUpdatedWalpoleTurns-772879-1522,trip_type,wait
+BasewUpdatedWalpoleTurns-772675-553,note,Waits at West Natick for Train 1551
+BasewUpdatedWalpoleTurns-772675-553,trip_type,wait
+BasewUpdatedWalpoleTurns-772678-559,note,Waits at West Natick for Train 1555
+BasewUpdatedWalpoleTurns-772678-559,trip_type,wait
+BasewUpdatedWalpoleTurns-772682-571,note,Waits at West Natick for Train 1567
+BasewUpdatedWalpoleTurns-772682-571,trip_type,wait
+BasewUpdatedWalpoleTurns-772654-515,note,Waits at Framingham for Train 1511
+BasewUpdatedWalpoleTurns-772654-515,trip_type,wait
+BasewUpdatedWalpoleTurns-772659-519,note,Waits at Framingham for Train 1517
+BasewUpdatedWalpoleTurns-772659-519,trip_type,wait
+BasewUpdatedWalpoleTurns-772879-1522,note,Waits at Framingham for Train 520
+BasewUpdatedWalpoleTurns-772879-1522,trip_type,wait
+BasewUpdatedWalpoleTurns-772882-1558,note,Waits at Framingham for Train 556
+BasewUpdatedWalpoleTurns-772882-1558,trip_type,wait
+BasewUpdatedWalpoleTurns-772884-1562,note,Waits at Framingham for Train 560
+BasewUpdatedWalpoleTurns-772884-1562,trip_type,wait
+SouthWKNDBase25-772528-5806,note,Waits at Readville for Train 5706
+SouthWKNDBase25-772528-5806,trip_type,wait
+SouthWKNDBase25-772531-5824,note,Waits at Readville for Train 5724
+SouthWKNDBase25-772531-5824,trip_type,wait
+SouthWKNDBase25-772532-5830,note,Waits at Readville for Train 5730
+SouthWKNDBase25-772532-5830,trip_type,wait
+SouthWKNDBase25-772534-5838,note,Waits at Readville for Train 5738
+SouthWKNDBase25-772534-5838,trip_type,wait
+SouthWKNDBase25-772536-5846,note,Waits at Readville for Train 5746
+SouthWKNDBase25-772536-5846,trip_type,wait
+SouthWKNDBase25-772539-5856,note,Waits at Readville for Train 5754
+SouthWKNDBase25-772539-5856,trip_type,wait
+SouthWKNDBase25-772541-5868,note,Waits at Readville for Train 5768
+SouthWKNDBase25-772541-5868,trip_type,wait
+SouthWKNDBase25-772543-5878,note,Waits at Readville for Train 5778
+SouthWKNDBase25-772543-5878,trip_type,wait
+SouthWKNDBase25-772544-5884,note,Waits at Readville for Train 5784
+SouthWKNDBase25-772544-5884,trip_type,wait
+SouthWKNDBase25-772546-5892,note,Waits at Readville for Train 5792
+SouthWKNDBase25-772546-5892,trip_type,wait
+SouthWKNDBase25-772565-6047,note,Waits at Braintree for Train 7047
+SouthWKNDBase25-772565-6047,trip_type,wait
+SouthWKNDBase25-772626-6979,note,Waits at East Taunton for Train 7029
+SouthWKNDBase25-772626-6979,trip_type,wait
+SouthWKNDBase25-772509-5715,note,Waits at Readville for Train 5815
+SouthWKNDBase25-772509-5715,trip_type,wait
+SouthWKNDBase25-772510-5721,note,Waits at Readville for Train 5821
+SouthWKNDBase25-772510-5721,trip_type,wait
+SouthWKNDBase25-772513-5731,note,Waits at Readville for Train 5831
+SouthWKNDBase25-772513-5731,trip_type,wait
+SouthWKNDBase25-772515-5739,note,Waits at Readville for Train 5839
+SouthWKNDBase25-772515-5739,trip_type,wait
+SouthWKNDBase25-772517-5747,note,Waits at Readville for Train 5847
+SouthWKNDBase25-772517-5747,trip_type,wait
+SouthWKNDBase25-772519-5755,note,Waits at Readville for Train 5855
+SouthWKNDBase25-772519-5755,trip_type,wait
+SouthWKNDBase25-772520-5767,note,Waits at Readville for Train 5867
+SouthWKNDBase25-772520-5767,trip_type,wait
+SouthWKNDBase25-772522-5777,note,Waits at Readville for Train 5877
+SouthWKNDBase25-772522-5777,trip_type,wait
+SouthWKNDBase25-772525-5785,note,Waits at Readville for Train 5885
+SouthWKNDBase25-772525-5785,trip_type,wait
+SouthWKNDBase25-772527-5793,note,Waits at Readville for Train 5893
+SouthWKNDBase25-772527-5793,trip_type,wait
+NorthBase-825779-429,note,Waits at Littleton/Route 495 for Train 1427
+NorthBase-825779-429,trip_type,wait
+NorthBase-825657-1408,note,Waits at Littleton/Route 495 for Train 406
+NorthBase-825657-1408,trip_type,wait
+June13-821098-6979,note,Waits at East Taunton for Train 7029
+June13-821098-6979,trip_type,wait
+SouthBase-793087-5806,note,Waits at Readville for Train 5706
+SouthBase-793087-5806,trip_type,wait
+SouthBase-793105-5892,note,Waits at Readville for Train 5792
+SouthBase-793105-5892,trip_type,wait
+SouthBase-793090-5824,note,Waits at Readville for Train 5724
+SouthBase-793090-5824,trip_type,wait
+SouthBase-793103-5884,note,Waits at Readville for Train 5784
+SouthBase-793103-5884,trip_type,wait
+SouthBase-793100-5868,note,Waits at Readville for Train 5768
+SouthBase-793100-5868,trip_type,wait
+SouthBase-793102-5878,note,Waits at Readville for Train 5778
+SouthBase-793102-5878,trip_type,wait
+SouthBase-793098-5856,note,Waits at Readville for Train 5754
+SouthBase-793098-5856,trip_type,wait
+SouthBase-793091-5830,note,Waits at Readville for Train 5730
+SouthBase-793091-5830,trip_type,wait
+SouthBase-793093-5838,note,Waits at Readville for Train 5738
+SouthBase-793093-5838,trip_type,wait
+SouthBase-793095-5846,note,Waits at Readville for Train 5746
+SouthBase-793095-5846,trip_type,wait
+SouthBase-793124-6047,note,Waits at Braintree for Train 7047
+SouthBase-793124-6047,trip_type,wait
+SouthBase-793169-6979,note,Waits at East Taunton for Train 7029
+SouthBase-793169-6979,trip_type,wait
+SouthBase-830380-5715,note,Waits at Readville for Train 5815
+SouthBase-830380-5715,trip_type,wait
+SouthBase-830432-5721,note,Waits at Readville for Train 5821
+SouthBase-830432-5721,trip_type,wait
+SouthBase-830456-5731,note,Waits at Readville for Train 5831
+SouthBase-830456-5731,trip_type,wait
+SouthBase-830458-5739,note,Waits at Readville for Train 5839
+SouthBase-830458-5739,trip_type,wait
+SouthBase-830461-5747,note,Waits at Readville for Train 5847
+SouthBase-830461-5747,trip_type,wait
+SouthBase-830454-5755,note,Waits at Readville for Train 5855
+SouthBase-830454-5755,trip_type,wait
+SouthBase-830452-5767,note,Waits at Readville for Train 5867
+SouthBase-830452-5767,trip_type,wait
+SouthBase-830460-5777,note,Waits at Readville for Train 5877
+SouthBase-830460-5777,trip_type,wait
+SouthBase-830449-5785,note,Waits at Readville for Train 5885
+SouthBase-830449-5785,trip_type,wait
+SouthBase-830429-5793,note,Waits at Readville for Train 5893
+SouthBase-830429-5793,trip_type,wait

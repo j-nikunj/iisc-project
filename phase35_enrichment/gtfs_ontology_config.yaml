@@ -1,0 +1,87 @@
+node_classes:
+
+  transit_stop:
+    source: stops.txt
+    id_field: stop_id
+    label_field: stop_name
+
+  transit_route:
+    source: routes.txt
+    id_field: route_id
+    label_field: route_long_name
+
+  transit_trip_pattern:
+    source: trips.txt
+    id_field: trip_id
+    label_field: trip_headsign
+
+  transit_transfer:
+    source: transfers.txt
+    id_field: from_stop_id
+
+  transit_pathway:
+    source: pathways.txt
+    id_field: pathway_id
+
+  transit_area:
+    source: areas.txt
+    id_field: area_id
+
+  transit_facility:
+    source: facilities.txt
+    id_field: facility_id
+
+
+relations:
+
+  route_serves_stop:
+    source: stop_times.txt
+    from: route_id
+    to: stop_id
+
+  trip_visits_stop:
+    source: stop_times.txt
+    from: trip_id
+    to: stop_id
+
+  transfer_connects_stop:
+    source: transfers.txt
+    from: from_stop_id
+    to: to_stop_id
+
+  pathway_connects_stop:
+    source: pathways.txt
+    from: from_stop_id
+    to: to_stop_id
+
+  trip_uses_route:
+    source: trips.txt
+    from: trip_id
+    to: route_id
+
+
+temporal_semantics:
+
+  service_schedule:
+    source: calendar.txt
+
+  stop_sequence:
+    source: stop_times.txt
+
+  operational_time_dependence:
+    enabled: true
+
+
+semantic_bridges:
+
+  congestion_propagation:
+    enabled: true
+
+  flooding_connectivity:
+    enabled: true
+
+  multimodal_transfer_stress:
+    enabled: true
+
+  corridor_pressure:
+    enabled: true

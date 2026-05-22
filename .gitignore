@@ -1,1 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+
 .obsidian/workspace.json
+.obsidian/graph.json
+.obsidian/hotkeys.json
+
+phase35_enrichment/output/*.json
+phase35_enrichment/output/*.gml
+
+phase3_graphrag/output/*.json
+phase3_graphrag/output/*.md
+
+.vscode/
