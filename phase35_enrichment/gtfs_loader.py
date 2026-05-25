@@ -5,6 +5,10 @@ import yaml
 from gtfs_normalizer import GTFSNormalizer
 from graph_builder import GraphBuilder
 from graph_exporter import GraphExporter
+from semantic_serializer import SemanticSerializer
+from operational_semantic_enrichment import (
+    OperationalSemanticEnrichment
+)
 
 PROJECT_ROOT = Path(__file__).resolve().parent
 
@@ -165,11 +169,25 @@ def main():
 
     graph_builder.run()
 
+    enrichment = (
+        OperationalSemanticEnrichment(
+            graph_builder.graph
+        )
+    )
+
+    enrichment.run()
+
     graph_exporter = GraphExporter(
     graph_builder.graph
     )
 
     graph_exporter.run()
+
+    serializer = SemanticSerializer(
+    graph_builder.graph
+    )
+
+    serializer.run()
 
 if __name__ == "__main__":
     main()
