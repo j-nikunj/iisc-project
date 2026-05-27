@@ -1,0 +1,65 @@
+[
+  {
+    "query_id": "Q1",
+    "category": "flooding_impact",
+    "query_text": "Analyze cascading flooding risks originating from the Bellandur area on the Outer Ring Road.",
+    "expected_vulnerable_nodes": [
+      "flood-bellandur",
+      "congestion-orr",
+      "flood-ecospace-underpass"
+    ]
+  },
+  {
+    "query_id": "Q2",
+    "category": "congestion_propagation",
+    "query_text": "What are the primary spillback effects from congestion at Silk Board junction?",
+    "expected_vulnerable_nodes": [
+      "congestion-silk-board",
+      "spillback-hsr-orr",
+      "flood-silk-board-underpass"
+    ]
+  },
+  {
+    "query_id": "Q3",
+    "category": "intermodal_stress",
+    "query_text": "Evaluate the transfer stress and related congestion at the KR Puram interchange.",
+    "expected_vulnerable_nodes": [
+      "congestion-kr-puram",
+      "transfer-kr-puram-metro"
+    ]
+  },
+  {
+    "query_id": "Q4",
+    "category": "infrastructure_bottleneck",
+    "query_text": "Assess the impact of the Hebbal flyover bottleneck on airport access.",
+    "expected_vulnerable_nodes": [
+      "congestion-hebbal",
+      "bottleneck-airport-road"
+    ]
+  },
+  {
+    "query_id": "Q5",
+    "category": "multimodal_propagation",
+    "query_text": "How does congestion on the KR Puram road network impact the adjacent metro transfer station?",
+    "expected_vulnerable_nodes": [
+      "congestion-kr-puram",
+      "transfer-kr-puram-metro"
+    ]
+  },
+  {
+    "query_id": "Q6",
+    "category": "long_chain_spillback",
+    "query_text": "Trace the propagation of traffic spillback from HSR Layout to the Silk Board junction and ORR.",
+    "expected_vulnerable_nodes": [
+      "spillback-hsr-orr",
+      "congestion-orr",
+      "congestion-silk-board"
+    ]
+  },
+  {
+    "query_id": "Q7",
+    "category": "negative_rejection",
+    "query_text": "Analyze marine cargo disruptions and seaport delays near Bengaluru harbor.",
+    "expected_vulnerable_nodes": []
+  }
+]

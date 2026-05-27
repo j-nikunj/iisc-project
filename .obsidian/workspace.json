@@ -11,10 +11,14 @@
             "id": "699f2761c84e43aa",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "phase1/ontology_validation_rules.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ontology_validation_rules"
             }
           }
         ]
@@ -74,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "a347564a22cd2b1b",
@@ -183,6 +186,12 @@
   },
   "active": "699f2761c84e43aa",
   "lastOpenFiles": [
+    "phase1_parser/README.md",
+    "phase35_enrichment/__pycache__/neighborhood_expander.cpython-314.pyc",
+    "phase35_enrichment/__pycache__/semantic_retriever.cpython-314.pyc",
+    "phase35_enrichment/hybrid_retriever.py",
+    "phase35_enrichment/neighborhood_expander.py",
+    "phase35_enrichment/traversal_strategies.md",
     "phase35_enrichment/__pycache__/operational_semantic_enrichment.cpython-314.pyc",
     "phase35_enrichment/operational_semantic_bridges.md",
     "phase35_enrichment/operational_semantic_enrichment.py",
@@ -190,11 +199,6 @@
     "phase35_enrichment/qdrant_indexer.py",
     "phase35_enrichment/output/embeddings.jsonl",
     "phase35_enrichment/embedding_pipeline.py",
-    "phase35_enrichment/output/semantic_documents.json",
-    "phase35_enrichment/__pycache__/semantic_serializer.cpython-314.pyc",
-    "phase35_enrichment/semantic_serializer.py",
-    "phase35_enrichment/__pycache__/gtfs_normalizer.cpython-314.pyc",
-    "phase35_enrichment/__pycache__",
     "seed_graph/bengaluru_bridge_experiment_v1/mobility_patterns/Peak-hour IT Corridor Commute.md",
     "seed_graph/bengaluru/congestion_zones/Silk Board Congestion Zone.md",
     "phase1/edge_taxonomy.md",

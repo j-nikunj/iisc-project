@@ -1,0 +1,326 @@
+[
+  {
+    "node_id": "congestion-silk-board",
+    "node_class": "congestion_corridor",
+    "semantic_role": "traffic_stress_region",
+    "name": "Silk Board Junction Congestion",
+    "description": "Infamous multimodal congestion point where Outer Ring Road and Hosur Road intersect, causing gridlock that propagates for kilometers.",
+    "operational_tags": ["junction_bottleneck", "peak_hour_gridlock", "spillback_source"],
+    "risk_level": "critical",
+    "severity_score": 0.95,
+    "latitude": 12.9177,
+    "longitude": 77.6237,
+    "mobility_modes": ["road", "bus", "metro"],
+    "relations": [
+      { "target_id": "spillback-hsr-orr", "relation_type": "PROPAGATES_TO", "weight": 0.95 },
+      { "target_id": "flood-silk-board-underpass", "relation_type": "IMPACTS", "weight": 0.8 }
+    ]
+  },
+  {
+    "node_id": "congestion-hebbal",
+    "node_class": "congestion_corridor",
+    "semantic_role": "traffic_stress_region",
+    "name": "Hebbal Flyover Corridor",
+    "description": "Primary airport access corridor with persistent spillback from the flyover loop, affecting both ORR and Bellary Road.",
+    "operational_tags": ["airport_access", "flyover_bottleneck", "signal_inefficiency"],
+    "risk_level": "high",
+    "severity_score": 0.85,
+    "latitude": 13.0359,
+    "longitude": 77.5970,
+    "mobility_modes": ["road", "bus", "car"],
+    "relations": [
+      { "target_id": "bottleneck-airport-road", "relation_type": "PROPAGATES_TO", "weight": 0.9 },
+      { "target_id": "congestion-orr", "relation_type": "IMPACTS", "weight": 0.7 }
+    ]
+  },
+  {
+    "node_id": "congestion-marathahalli",
+    "node_class": "congestion_corridor",
+    "semantic_role": "traffic_stress_region",
+    "name": "Marathahalli Bridge & Underpass",
+    "description": "A major bottleneck on the Outer Ring Road due to a narrow bridge, underpass, and high commercial density.",
+    "operational_tags": ["bridge_bottleneck", "commercial_density", "pedestrian_conflict"],
+    "risk_level": "high",
+    "severity_score": 0.8,
+    "latitude": 12.9592,
+    "longitude": 77.7012,
+    "mobility_modes": ["road", "bus"],
+    "relations": [
+      { "target_id": "congestion-orr", "relation_type": "PROPAGATES_TO", "weight": 0.85 }
+    ]
+  },
+  {
+    "node_id": "congestion-kr-puram",
+    "node_class": "congestion_corridor",
+    "semantic_role": "traffic_stress_region",
+    "name": "KR Puram T. C. Palya Junction",
+    "description": "Chaotic junction with a hanging bridge, railway line, and metro station creating a perfect storm of traffic.",
+    "operational_tags": ["railway_crossing", "intermodal_conflict", "hanging_bridge"],
+    "risk_level": "critical",
+    "severity_score": 0.9,
+    "latitude": 12.9964,
+    "longitude": 77.6848,
+    "mobility_modes": ["road", "bus", "rail", "metro"],
+    "relations": [
+      { "target_id": "transfer-kr-puram-metro", "relation_type": "CREATES_TRANSFER_STRESS", "weight": 0.9 }
+    ]
+  },
+  {
+    "node_id": "congestion-orr",
+    "node_class": "congestion_corridor",
+    "semantic_role": "systemic_stress_corridor",
+    "name": "Outer Ring Road (ORR)",
+    "description": "The arterial IT corridor of Bengaluru, subject to systemic congestion influenced by multiple local bottlenecks.",
+    "operational_tags": ["it_corridor", "arterial_road", "systemic_congestion"],
+    "risk_level": "high",
+    "severity_score": 0.85,
+    "latitude": 12.94,
+    "longitude": 77.69,
+    "mobility_modes": ["road", "bus", "metro"],
+    "relations": [
+      { "target_id": "congestion-silk-board", "relation_type": "IMPACTS", "weight": 0.8 },
+      { "target_id": "congestion-marathahalli", "relation_type": "IMPACTS", "weight": 0.75 }
+    ]
+  },
+  {
+    "node_id": "flood-bellandur",
+    "node_class": "flood_vulnerability_region",
+    "semantic_role": "mobility_disruption_region",
+    "name": "Bellandur Lake Catchment Area",
+    "description": "Low-lying area around Bellandur Lake on the ORR, highly susceptible to flooding during monsoons, halting traffic.",
+    "operational_tags": ["monsoon_flooding", "lake_overflow", "drainage_failure"],
+    "risk_level": "critical",
+    "severity_score": 0.95,
+    "latitude": 12.9300,
+    "longitude": 77.6750,
+    "mobility_modes": ["road", "bus"],
+    "relations": [
+      { "target_id": "congestion-orr", "relation_type": "IMPACTS", "weight": 0.9 },
+      { "target_id": "flood-ecospace-underpass", "relation_type": "PROPAGATES_TO", "weight": 0.8 }
+    ]
+  },
+  {
+    "node_id": "flood-koramangala",
+    "node_class": "flood_vulnerability_region",
+    "semantic_role": "mobility_disruption_region",
+    "name": "Koramangala Valley",
+    "description": "The valley topography of Koramangala makes its intermediate ring road and internal roads prone to severe waterlogging.",
+    "operational_tags": ["valley_topography", "waterlogging", "urban_flooding"],
+    "risk_level": "high",
+    "severity_score": 0.8,
+    "latitude": 12.9352,
+    "longitude": 77.6245,
+    "mobility_modes": ["road", "car"],
+    "relations": [
+      { "target_id": "spillback-hsr-orr", "relation_type": "IMPACTS", "weight": 0.6 }
+    ]
+  },
+  {
+    "node_id": "flood-hsr-layout",
+    "node_class": "flood_vulnerability_region",
+    "semantic_role": "mobility_disruption_region",
+    "name": "HSR Layout Sector 2 & 3",
+    "description": "Poor drainage infrastructure in parts of HSR Layout leads to localized but intense flooding, disrupting access to the ORR.",
+    "operational_tags": ["poor_drainage", "localized_flooding", "access_disruption"],
+    "risk_level": "medium",
+    "severity_score": 0.6,
+    "latitude": 12.9123,
+    "longitude": 77.6484,
+    "mobility_modes": ["road"],
+    "relations": [
+      { "target_id": "spillback-hsr-orr", "relation_type": "PROPAGATES_TO", "weight": 0.7 }
+    ]
+  },
+  {
+    "node_id": "flood-ecospace-underpass",
+    "node_class": "flood_vulnerability_region",
+    "semantic_role": "infrastructure_failure_point",
+    "name": "EcoSpace Business Park Underpass",
+    "description": "Critical underpass on ORR that floods reliably every monsoon, creating a complete traffic blockade.",
+    "operational_tags": ["underpass_flooding", "traffic_blockade", "critical_failure"],
+    "risk_level": "critical",
+    "severity_score": 0.9,
+    "latitude": 12.9360,
+    "longitude": 77.6910,
+    "mobility_modes": ["road", "bus"],
+    "relations": [
+      { "target_id": "congestion-orr", "relation_type": "IMPACTS", "weight": 0.95 }
+    ]
+  },
+  {
+    "node_id": "flood-silk-board-underpass",
+    "node_class": "flood_vulnerability_region",
+    "semantic_role": "infrastructure_failure_point",
+    "name": "Silk Board Underpass",
+    "description": "Waterlogging in the underpass at Silk Board junction exacerbates already critical congestion during rains.",
+    "operational_tags": ["underpass_flooding", "congestion_multiplier"],
+    "risk_level": "high",
+    "severity_score": 0.8,
+    "latitude": 12.9170,
+    "longitude": 77.6240,
+    "mobility_modes": ["road"],
+    "relations": [
+      { "target_id": "congestion-silk-board", "relation_type": "IMPACTS", "weight": 0.85 }
+    ]
+  },
+  {
+    "node_id": "transfer-majestic",
+    "node_class": "transfer_stress_zone",
+    "semantic_role": "multimodal_interchange_hub",
+    "name": "Majestic (Kempegowda Bus Station)",
+    "description": "The primary city and state bus terminus, integrated with a metro station. Experiences extreme pedestrian and vehicle transfer stress.",
+    "operational_tags": ["central_hub", "pedestrian_congestion", "intermodal_stress"],
+    "risk_level": "critical",
+    "severity_score": 0.95,
+    "latitude": 12.9767,
+    "longitude": 77.5713,
+    "mobility_modes": ["bus", "metro", "rail", "auto"],
+    "relations": [
+      { "target_id": "bottleneck-majestic-entry", "relation_type": "CREATES_TRANSFER_STRESS", "weight": 0.9 }
+    ]
+  },
+  {
+    "node_id": "transfer-baiyappanahalli",
+    "node_class": "transfer_stress_zone",
+    "semantic_role": "multimodal_interchange_hub",
+    "name": "Baiyappanahalli Metro & Rail Hub",
+    "description": "Key interchange between the Purple Line metro and Indian Railways, with poor last-mile connectivity causing transfer friction.",
+    "operational_tags": ["metro_rail_interchange", "last_mile_gap", "transfer_friction"],
+    "risk_level": "high",
+    "severity_score": 0.8,
+    "latitude": 12.9901,
+    "longitude": 77.6589,
+    "mobility_modes": ["metro", "rail", "bus"],
+    "relations": [
+      { "target_id": "congestion-kr-puram", "relation_type": "IMPACTS", "weight": 0.7 }
+    ]
+  },
+  {
+    "node_id": "transfer-kr-puram-metro",
+    "node_class": "transfer_stress_zone",
+    "semantic_role": "multimodal_interchange_hub",
+    "name": "KR Puram Metro Station Area",
+    "description": "High-stress transfer point between the new Blue Line metro, buses, and the chaotic KR Puram junction.",
+    "operational_tags": ["intermodal_conflict", "station_accessibility", "pedestrian_risk"],
+    "risk_level": "high",
+    "severity_score": 0.85,
+    "latitude": 12.9959,
+    "longitude": 77.6825,
+    "mobility_modes": ["metro", "bus", "road"],
+    "relations": [
+      { "target_id": "congestion-kr-puram", "relation_type": "CREATES_TRANSFER_STRESS", "weight": 0.95 }
+    ]
+  },
+  {
+    "node_id": "transfer-central-silk-board",
+    "node_class": "transfer_stress_zone",
+    "semantic_role": "future_interchange_hub",
+    "name": "Central Silk Board Metro Interchange",
+    "description": "Future critical interchange for Yellow and Blue metro lines, projected to have massive transfer volumes and stress.",
+    "operational_tags": ["future_hub", "interchange_design", "volume_projection"],
+    "risk_level": "high",
+    "severity_score": 0.8,
+    "latitude": 12.9180,
+    "longitude": 77.6250,
+    "mobility_modes": ["metro", "bus", "road"],
+    "relations": [
+      { "target_id": "congestion-silk-board", "relation_type": "CREATES_TRANSFER_STRESS", "weight": 0.8 }
+    ]
+  },
+  {
+    "node_id": "transfer-tin-factory",
+    "node_class": "transfer_stress_zone",
+    "semantic_role": "multimodal_interchange_hub",
+    "name": "Tin Factory Junction",
+    "description": "A notoriously difficult transfer point between buses and other modes on Old Madras Road, with high pedestrian risk.",
+    "operational_tags": ["pedestrian_risk", "informal_transit", "transfer_delay"],
+    "risk_level": "high",
+    "severity_score": 0.75,
+    "latitude": 12.9929,
+    "longitude": 77.6696,
+    "mobility_modes": ["bus", "road"],
+    "relations": [
+      { "target_id": "congestion-kr-puram", "relation_type": "IMPACTS", "weight": 0.6 }
+    ]
+  },
+  {
+    "node_id": "bottleneck-airport-road",
+    "node_class": "infrastructure_bottleneck",
+    "semantic_role": "access_chokepoint",
+    "name": "BIAL Trumpet Interchange",
+    "description": "The main trumpet interchange providing access to Kempegowda International Airport, a single point of failure for airport access.",
+    "operational_tags": ["single_point_of_failure", "airport_access", "interchange_design"],
+    "risk_level": "critical",
+    "severity_score": 0.9,
+    "latitude": 13.1989,
+    "longitude": 77.7068,
+    "mobility_modes": ["road", "bus", "car"],
+    "relations": [
+      { "target_id": "congestion-hebbal", "relation_type": "IMPACTS", "weight": 0.8 }
+    ]
+  },
+  {
+    "node_id": "spillback-hsr-orr",
+    "node_class": "infrastructure_bottleneck",
+    "semantic_role": "congestion_propagation_region",
+    "name": "HSR Layout to ORR Spillback",
+    "description": "Congestion originating within HSR Layout frequently spills back onto the Outer Ring Road service lane, impacting arterial flow.",
+    "operational_tags": ["spillback_propagation", "service_lane_congestion", "access_bottleneck"],
+    "risk_level": "medium",
+    "severity_score": 0.65,
+    "latitude": 12.9150,
+    "longitude": 77.6500,
+    "mobility_modes": ["road"],
+    "relations": [
+      { "target_id": "congestion-orr", "relation_type": "IMPACTS", "weight": 0.7 }
+    ]
+  },
+  {
+    "node_id": "bottleneck-majestic-entry",
+    "node_class": "infrastructure_bottleneck",
+    "semantic_role": "access_chokepoint",
+    "name": "Majestic Bus Station Entry/Exit",
+    "description": "Narrow entry and exit points for hundreds of buses at Majestic cause significant internal and external congestion.",
+    "operational_tags": ["entry_exit_bottleneck", "bus_congestion", "terminal_design_flaw"],
+    "risk_level": "high",
+    "severity_score": 0.85,
+    "latitude": 12.9770,
+    "longitude": 77.5700,
+    "mobility_modes": ["bus", "road"],
+    "relations": [
+      { "target_id": "transfer-majestic", "relation_type": "IMPACTS", "weight": 0.95 }
+    ]
+  },
+  {
+    "node_id": "bottleneck-dairy-circle-underpass",
+    "node_class": "infrastructure_bottleneck",
+    "semantic_role": "underpass_chokepoint",
+    "name": "Dairy Circle Underpass",
+    "description": "A narrow and often poorly maintained underpass that forms a significant bottleneck for traffic moving towards Hosur Road.",
+    "operational_tags": ["underpass_bottleneck", "maintenance_issue", "traffic_funnel"],
+    "risk_level": "medium",
+    "severity_score": 0.6,
+    "latitude": 12.9452,
+    "longitude": 77.5998,
+    "mobility_modes": ["road"],
+    "relations": [
+      { "target_id": "congestion-silk-board", "relation_type": "IMPACTS", "weight": 0.5 }
+    ]
+  },
+  {
+    "node_id": "bottleneck-goraguntepalya",
+    "node_class": "infrastructure_bottleneck",
+    "semantic_role": "junction_bottleneck",
+    "name": "Goraguntepalya Junction",
+    "description": "A complex junction of ORR and Tumkur Road with a metro line overhead, creating a severe and complex traffic bottleneck.",
+    "operational_tags": ["complex_junction", "intermodal_conflict", "flyover_congestion"],
+    "risk_level": "high",
+    "severity_score": 0.8,
+    "latitude": 13.0229,
+    "longitude": 77.5402,
+    "mobility_modes": ["road", "bus", "metro"],
+    "relations": [
+      { "target_id": "congestion-orr", "relation_type": "IMPACTS", "weight": 0.6 }
+    ]
+  }
+]
