@@ -4,58 +4,41 @@ from pathlib import Path
 
 # --- Configuration ---
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-RESULTS_DIR = PROJECT_ROOT / "evaluation" / "results"
+EVAL_DIR = PROJECT_ROOT / "evaluation"
+RESULTS_DIR = EVAL_DIR / "results"
 EVAL_RESULTS_FILE = RESULTS_DIR / "evaluation_results.json"
+BENCHMARK_QUERIES_FILE = EVAL_DIR / "benchmark_queries.json"
 REPORT_FILE = RESULTS_DIR / "llm_reasoning_report.md"
 
 LM_STUDIO_ENDPOINT = "http://localhost:1234/v1/chat/completions"
 
-def format_trace_as_narrative(trace: dict) -> str:
-    """Formats the GraphRAG trace object into a structured Markdown string."""
-    narrative = ["# GraphRAG Operational Context\n"]
+def format_trace_to_markdown(trace_data: dict) -> str:
+    """Parses the trace dictionary and returns a clean, compact markdown string."""
+    markdown_lines = []
 
-    # 1. Seed Nodes
-    narrative.append("## 1. Seed Nodes")
-    seed_nodes = trace.get('seed_nodes', [])
-    if not seed_nodes:
-        narrative.append("- No seed nodes found.")
+    # Format neighborhood_context
+    markdown_lines.append("Context Nodes:")
+    context_nodes = trace_data.get("neighborhood_context", [])
+    if not context_nodes:
+        markdown_lines.append("- No context nodes found.")
     else:
-        for node in seed_nodes:
-            narrative.append(
-                f"- **{node.get('node_id', 'N/A')}** ({node.get('node_class', 'N/A')}): "
-                f"{node.get('description', 'No description.')} "
-                f"(Role: {node.get('semantic_role', 'N/A')}, Score: {node.get('traversal_score', 0.0)})"
-            )
-    narrative.append("")
+        for node in context_nodes:
+            node_id = node.get("node_id", "N/A")
+            description = node.get("description", "No description.")
+            markdown_lines.append(f"- [{node_id}]: {description}")
 
-    # 2. Neighborhood Context
-    narrative.append("## 2. Neighborhood Context")
-    neighborhood = trace.get('neighborhood_context', [])
-    if not neighborhood:
-        narrative.append("- No neighborhood context found.")
+    markdown_lines.append("\nCausal Chains:")
+    # Format causal_chains
+    causal_chains = trace_data.get("causal_chains", [])
+    if not causal_chains:
+        markdown_lines.append("- No causal chains found.")
     else:
-        for node in neighborhood:
-            narrative.append(
-                f"- **{node.get('node_id', 'N/A')}** ({node.get('node_class', 'N/A')}): "
-                f"{node.get('description', 'No description.')} "
-                f"(Source: {node.get('source_node', 'N/A')}, Score: {node.get('traversal_score', 0.0)})"
-            )
-    narrative.append("")
+        for i, chain in enumerate(causal_chains):
+            path_ids = [p.get("node_id", "N/A") for p in chain.get("path", [])]
+            path_str = " -> ".join(path_ids)
+            markdown_lines.append(f"- Chain {i+1}: {path_str}")
 
-    # 3. Operational Reasoning Chains
-    narrative.append("## 3. Operational Reasoning Chains")
-    chains = trace.get('causal_chains', [])
-    if not chains:
-        narrative.append("- No operational chains were assembled.")
-    else:
-        for i, chain in enumerate(chains):
-            path_str = " -> ".join([p.get('node_id', 'N/A') for p in chain.get('path', [])])
-            narrative.append(
-                f"- **Chain {i+1}** (Score: {chain.get('chain_score', 0.0)})\n"
-                f"  Path: {path_str}"
-            )
-    
-    return "\n".join(narrative)
+    return "\n".join(markdown_lines)
 
 def query_local_llm(query_text: str, trace_data: dict):
     """Sends the formatted context and query to the local LLM and returns the response."""
@@ -68,13 +51,14 @@ def query_local_llm(query_text: str, trace_data: dict):
         "you must explicitly refuse to answer to avoid hallucination."
     )
 
+    # Use the new markdown serialization function
     user_content = (
         f"QUERY:\n{query_text}\n\n"
-        f"GRAPHRAG CONTEXT:\n{json.dumps(trace_data, indent=2)}"
+        f"GRAPHRAG CONTEXT:\n{format_trace_to_markdown(trace_data)}"
     )
 
     api_payload = {
-        "model": "loaded_model",
+        "model": "qwen/qwen2.5-coder-14b",
         "messages": [
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_content}
@@ -104,14 +88,25 @@ def main():
     """
     print("--- Starting LLM Batch Reasoning Runner ---")
 
-    # --- Load Evaluation Results ---
+    # --- Load Evaluation Results and Benchmark Queries ---
     try:
         with open(EVAL_RESULTS_FILE, 'r') as f:
             eval_results = json.load(f)
         print(f"Loaded {len(eval_results)} evaluation results to process.")
-    except FileNotFoundError:
-        print(f"[ERROR] Evaluation results file not found at: {EVAL_RESULTS_FILE}")
+
+        with open(BENCHMARK_QUERIES_FILE, 'r') as f:
+            benchmark_queries = json.load(f)
+        # Create a mapping from query_id to query_text
+        query_map = {q["query_id"]: q["query_text"] for q in benchmark_queries}
+        print("Successfully created query ID to query text map.")
+
+    except FileNotFoundError as e:
+        print(f"[ERROR] Required file not found: {e.filename}")
         return
+    except json.JSONDecodeError as e:
+        print(f"[ERROR] Failed to decode JSON from a file: {e}")
+        return
+
 
     # --- Clear/Start Report File ---
     with open(REPORT_FILE, 'w') as f:
@@ -121,8 +116,9 @@ def main():
     # --- Run Batch Loop ---
     for result in eval_results:
         query_id = result["query_id"]
-        # Correctly get query_text from the top-level of the result object
-        query_text = result.get("query_text", "Query text not found in result")
+        
+        # Fetch the query text from the map
+        query_text = query_map.get(query_id, "Unknown Query: ID not found in benchmark file.")
 
         print(f"\nProcessing Query ID: {query_id}...")
 
