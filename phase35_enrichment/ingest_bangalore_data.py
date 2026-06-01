@@ -3,6 +3,7 @@ import networkx as nx
 from pathlib import Path
 from sentence_transformers import SentenceTransformer
 from qdrant_client import QdrantClient, models
+from qdrant_client.http.models import VectorParams, Distance
 import uuid
 import os
 
@@ -31,10 +32,30 @@ def main():
     print(f"Connecting to Qdrant at {QDRANT_HOST}:{QDRANT_PORT}...")
     qdrant_client = QdrantClient(host=QDRANT_HOST, port=QDRANT_PORT)
 
+    # Check if collection exists, create if it doesn't
+    try:
+        collections_response = qdrant_client.get_collections()
+        collection_names = [c.name for c in collections_response.collections]
+        
+        if QDRANT_COLLECTION not in collection_names:
+            print(f"Collection '{QDRANT_COLLECTION}' not found. Creating a new one...")
+            qdrant_client.create_collection(
+                collection_name=QDRANT_COLLECTION,
+                vectors_config=VectorParams(size=384, distance=Distance.COSINE) # 384 is the dimension size for all-MiniLM-L6-v2
+            )
+            print(f"[SUCCESS] Created collection '{QDRANT_COLLECTION}'.")
+    except Exception as e:
+        print(f"Warning: Failed to verify or create Qdrant collection: {e}")
+
+
     # --- Load Existing Graph or Create New ---
     if os.path.exists(GRAPH_PATH):
         print(f"Loading existing graph from: {GRAPH_PATH}")
-        graph = nx.read_gml(GRAPH_PATH)
+        try:
+            graph = nx.read_gml(GRAPH_PATH)
+        except Exception as e:
+            print(f"[WARNING] Graph file is corrupted or unreadable ({e}). Initializing a new nx.MultiDiGraph().")
+            graph = nx.MultiDiGraph()
     else:
         print("No existing graph found. Initializing a new nx.MultiDiGraph().")
         graph = nx.MultiDiGraph()
@@ -47,71 +68,79 @@ def main():
     print(f"Loading data from: {DATA_PATH}")
     try:
         with open(DATA_PATH, 'r') as f:
-            entities = json.load(f)
+            data = json.load(f)
     except FileNotFoundError:
         print(f"[ERROR] Data file not found at {DATA_PATH}. Exiting.")
         return
-    print(f"Loaded {len(entities)} operational entities from JSON.")
+    print(f"Loaded {len(data)} operational entities from JSON.")
 
     # --- Ghost Node Prevention ---
-    valid_node_ids = {e["node_id"] for e in entities}
+    valid_node_ids = {e["node_id"] for e in data}
     print(f"Created a set of {len(valid_node_ids)} valid node IDs for edge validation.")
 
-    # --- Ingestion Process ---
-    contexts_to_embed = []
-    qdrant_payloads = []
-    
-    for entity in entities:
-        node_id = entity["node_id"]
+    # --- Process Entities (Nodes and Edges) ---
+    for entity in data:
+        source_id = entity.get("node_id")
+        if not source_id:
+            continue
 
-        # 1. Graph Ingestion: Add Node with new attributes
-        graph.add_node(
-            node_id,
-            node_class=entity.get("node_class"),
-            semantic_role=entity.get("semantic_role"),
-            name=entity.get("name"),
-            description=entity.get("description"),
-            operational_tags=str(entity.get("operational_tags", [])),
-            risk_level=entity.get("risk_level"),
-            mobility_modes=str(entity.get("mobility_modes", [])),
-            latitude=entity.get("latitude"),
-            longitude=entity.get("longitude"),
-            severity_score=entity.get("severity_score")
-        )
+        # --- NODE SANITIZATION ---
+        raw_node_attrs = {
+            "node_class": entity.get("node_class"),
+            "semantic_role": entity.get("semantic_role"),
+            "name": entity.get("name"),
+            "description": entity.get("description"),
+            "risk_level": entity.get("risk_level"),
+            "severity_score": entity.get("severity_score"),
+            "latitude": entity.get("latitude"),
+            "longitude": entity.get("longitude")
+        }
 
-        # 2. Graph Ingestion: Add Edges with validation
-        for relation in entity.get("relations", []):
-            target_id = relation["target_id"]
-            if target_id in valid_node_ids:
-                graph.add_edge(
-                    node_id,
-                    target_id,
-                    relation=relation["relation_type"],
-                    weight=relation.get("weight")
-                )
-            else:
-                print(f"[WARNING] Skipping edge from '{node_id}' to ghost node '{target_id}'.")
+        # Convert lists to strings for GML compatibility
+        if entity.get("mobility_modes"):
+            raw_node_attrs["mobility_modes"] = ",".join(entity["mobility_modes"])
+        if entity.get("operational_tags"):
+            raw_node_attrs["operational_tags"] = ",".join(entity["operational_tags"])
 
-        # 3. Vector DB Ingestion: Prepare data for batching
-        tags_str = ", ".join(entity.get("operational_tags", []))
-        semantic_context = (
-            f"Node: {entity.get('name', '')}. "
-            f"Class: {entity.get('node_class', '')}. "
-            f"Role: {entity.get('semantic_role', '')}. "
-            f"Description: {entity.get('description', '')}. "
-            f"Tags: {tags_str}"
-        )
-        contexts_to_embed.append(semantic_context)
-        qdrant_payloads.append(entity)
+        # Filter out all None values
+        clean_node_attrs = {k: v for k, v in raw_node_attrs.items() if v is not None}
+        graph.add_node(source_id, **clean_node_attrs)
+
+        # --- EDGE SANITIZATION ---
+        for rel in entity.get("relations", []):
+            target_id = rel.get("target_id")
+            if target_id and target_id in valid_node_ids:
+                raw_edge_attrs = {
+                    "relation_type": rel.get("relation_type", "connected_to"),
+                    "weight": rel.get("weight", 1.0)
+                }
+                # Filter out None values just in case
+                clean_edge_attrs = {k: v for k, v in raw_edge_attrs.items() if v is not None}
+                graph.add_edge(source_id, target_id, **clean_edge_attrs)
+            elif target_id:
+                 print(f"[WARNING] Skipping edge from '{source_id}' to ghost node '{target_id}'.")
+
 
     # --- Batch Embedding Generation ---
-    print(f"Generating embeddings for {len(contexts_to_embed)} contexts in a single batch...")
-    embeddings = model.encode(contexts_to_embed, show_progress_bar=True)
+    print("Preparing text for batch embedding generation...")
+
+    # 1. Extract text strings for the embedding model
+    texts_to_embed = []
+    for entity in data:
+        node_name = entity.get("name", entity.get("node_id", "Unknown Node"))
+        description = entity.get("description", "")
+        # Combine name and description for rich semantic search
+        semantic_text = f"{node_name}: {description}"
+        texts_to_embed.append(semantic_text)
+
+    print(f"Generating embeddings for {len(texts_to_embed)} contexts in a single batch...")
+    # 2. Encode the strings, NOT the dictionaries
+    embeddings = model.encode(texts_to_embed, show_progress_bar=True)
     print("[SUCCESS] Batch embedding complete.")
 
     # --- Prepare Qdrant points ---
     points_to_upsert = []
-    for i, payload in enumerate(qdrant_payloads):
+    for i, payload in enumerate(data):
         node_id = payload["node_id"]
         point_id = str(uuid.uuid5(uuid.NAMESPACE_DNS, node_id))
         points_to_upsert.append(

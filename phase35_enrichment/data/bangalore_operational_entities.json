@@ -13,7 +13,8 @@
     "mobility_modes": ["road", "bus", "metro"],
     "relations": [
       { "target_id": "spillback-hsr-orr", "relation_type": "PROPAGATES_TO", "weight": 0.95 },
-      { "target_id": "flood-silk-board-underpass", "relation_type": "IMPACTS", "weight": 0.8 }
+      { "target_id": "flood-silk-board-underpass", "relation_type": "IMPACTS", "weight": 0.8 },
+      { "target_id": "bottleneck-bellandur-lake-road", "relation_type": "traffic_diversion_overload", "weight": 0.85 }
     ]
   },
   {
@@ -96,7 +97,8 @@
     "mobility_modes": ["road", "bus"],
     "relations": [
       { "target_id": "congestion-orr", "relation_type": "IMPACTS", "weight": 0.9 },
-      { "target_id": "flood-ecospace-underpass", "relation_type": "PROPAGATES_TO", "weight": 0.8 }
+      { "target_id": "flood-ecospace-underpass", "relation_type": "PROPAGATES_TO", "weight": 0.8 },
+      { "target_id": "bottleneck-bellandur-lake-road", "relation_type": "traffic_diversion_overload", "weight": 0.85 }
     ]
   },
   {
@@ -322,5 +324,127 @@
     "relations": [
       { "target_id": "congestion-orr", "relation_type": "IMPACTS", "weight": 0.6 }
     ]
+  },
+  {
+    "node_id": "bottleneck-bellandur-lake-road",
+    "node_class": "infrastructure_bottleneck",
+    "semantic_role": "local_arterial_chokepoint",
+    "name": "Bellandur Lake Road",
+    "description": "Narrow arterial connector near Bellandur prone to stagnant vehicle queues when main ORR carriage channels overflow.",
+    "operational_tags": ["arterial_connector", "overflow_route", "queue_stagnation"],
+    "risk_level": "medium",
+    "severity_score": 0.85,
+    "latitude": 12.933,
+    "longitude": 77.682,
+    "mobility_modes": ["road"],
+    "relations": [
+      { "target_id": "congestion-orr", "relation_type": "upstream_propagation", "weight": 0.7 }
+    ]
+  },
+  {
+    "node_id": "flood-manyata-tech-park",
+    "node_class": "flood_vulnerability_region",
+    "description": "Severe waterlogging inside and outside Manyata Tech Park during monsoons, trapping thousands of tech workers.",
+    "latitude": 13.0450,
+    "longitude": 77.6200,
+    "severity_score": 0.95,
+    "relations": [
+      {
+        "target_id": "congestion-nagavara-junction",
+        "relation_type": "exit_blockade"
+      }
+    ]
+  },
+  {
+    "node_id": "congestion-nagavara-junction",
+    "node_class": "congestion_corridor",
+    "description": "Massive gridlock at Nagavara junction exacerbated by ongoing metro construction and tech park exit traffic.",
+    "latitude": 13.0300,
+    "longitude": 77.6150,
+    "severity_score": 0.85,
+    "relations": [
+      {
+        "target_id": "congestion-hebbal",
+        "relation_type": "western_spillback"
+      }
+    ]
+  },
+  {
+    "node_id": "bottleneck-tin-factory",
+    "node_class": "infrastructure_bottleneck",
+    "description": "The notorious Tin Factory interchange where ORR, Old Madras Road, and metro pillars converge into a massive multi-modal chokepoint.",
+    "latitude": 12.9940,
+    "longitude": 77.6610,
+    "severity_score": 0.90,
+    "relations": [
+      {
+        "target_id": "congestion-whitefield-main-road",
+        "relation_type": "eastward_propagation"
+      },
+      {
+        "target_id": "congestion-kr-puram",
+        "relation_type": "corridor_collapse"
+      }
+    ]
+  },
+  {
+    "node_id": "service-disruption-purple-line",
+    "node_class": "transit_failure",
+    "description": "Sudden technical halts or signaling failures on the Namma Metro Purple Line during peak hours.",
+    "latitude": 12.9850,
+    "longitude": 77.6450,
+    "severity_score": 0.80,
+    "relations": [
+      {
+        "target_id": "spillback-byappanahalli",
+        "relation_type": "commuter_overflow"
+      }
+    ]
+  },
+  {
+    "node_id": "spillback-byappanahalli",
+    "node_class": "spillback_failure_zone",
+    "description": "Commuter spillback from the Byappanahalli metro terminal onto Old Madras Road when train frequencies drop.",
+    "latitude": 12.9900,
+    "longitude": 77.6520,
+    "severity_score": 0.85,
+    "relations": [
+      {
+        "target_id": "bottleneck-tin-factory",
+        "relation_type": "modal_shift_gridlock"
+      }
+    ]
+  },
+  {
+    "node_id": "congestion-whitefield-main-road",
+    "node_class": "congestion_corridor",
+    "description": "Primary IT corridor in East Bengaluru suffering from chronic vehicular stagnation.",
+    "latitude": 12.9690,
+    "longitude": 77.7490,
+    "severity_score": 0.90,
+    "relations": []
+  },
+  {
+    "node_id": "bottleneck-majestic-bus-stand",
+    "node_class": "infrastructure_bottleneck",
+    "description": "Kempegowda Bus Station (Majestic) entry/exit choke points causing regional delays for both KSRTC and BMTC fleets.",
+    "latitude": 12.9770,
+    "longitude": 77.5710,
+    "severity_score": 0.95,
+    "relations": [
+      {
+        "target_id": "congestion-corporation-circle",
+        "relation_type": "cbd_arterial_spillback"
+      }
+    ]
+  },
+  {
+    "node_id": "congestion-corporation-circle",
+    "node_class": "congestion_corridor",
+    "description": "Central Business District (CBD) gridlock point heavily impacted by VIP movement and Majestic spillback.",
+    "latitude": 12.9650,
+    "longitude": 77.5860,
+    "severity_score": 0.85,
+    "relations": []
   }
 ]

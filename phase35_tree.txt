@@ -1,0 +1,100 @@
+Folder PATH listing
+Volume serial number is 88B6-5C87
+C:\PROJECTS\IISC PROJECT\IISC-PROJECT\PHASE35_ENRICHMENT
+¦   app.py
+¦   config.yaml
+¦   context_assembler.py
+¦   context_chain_builder.py
+¦   embedding_pipeline.py
+¦   enrichment_strategy.md
+¦   graph_builder.py
+¦   graph_exporter.py
+¦   gtfs_ingestion.py
+¦   gtfs_loader.py
+¦   gtfs_normalizer.py
+¦   gtfs_ontology_config.yaml
+¦   gtfs_pipeline_design.md
+¦   hybrid_retriever.py
+¦   ingest_bangalore_data.py
+¦   inspect_gtfs.py
+¦   local_llm_reasoner.py
+¦   neighborhood_expander.py
+¦   ontology_mapping.md
+¦   operational_event_ontology.md
+¦   operational_semantic_bridges.md
+¦   operational_semantic_enrichment.py
+¦   qdrant_indexer.py
+¦   README.md
+¦   run_gtfs_pipeline.py
+¦   sample_gtfs_structure.md
+¦   semantic_retriever.py
+¦   semantic_serializer.py
+¦   temporal_semantics.py
+¦   traversal_strategies.md
+¦   
++---data
+¦       agency.txt
+¦       areas.txt
+¦       bangalore_operational_entities.json
+¦       calendar.txt
+¦       calendar_attributes.txt
+¦       calendar_dates.txt
+¦       checkpoints.txt
+¦       directions.txt
+¦       facilities.txt
+¦       facilities_properties.txt
+¦       facilities_properties_definitions.txt
+¦       fare_leg_join_rules.txt
+¦       fare_leg_rules.txt
+¦       fare_media.txt
+¦       fare_products.txt
+¦       fare_transfer_rules.txt
+¦       feed_info.txt
+¦       levels.txt
+¦       lines.txt
+¦       linked_datasets.txt
+¦       multi_route_trips.txt
+¦       pathways.txt
+¦       routes.txt
+¦       route_patterns.txt
+¦       shapes.txt
+¦       stops.txt
+¦       stop_areas.txt
+¦       stop_times.txt
+¦       timeframes.txt
+¦       transfers.txt
+¦       trips.txt
+¦       trips_properties.txt
+¦       trips_properties_definitions.txt
+¦       
++---evaluation
+¦   ¦   benchmark_queries.json
+¦   ¦   evaluator.py
+¦   ¦   llm_batch_runner.py
+¦   ¦   
+¦   +---results
+¦           evaluation_results.json
+¦           llm_reasoning_report.md
+¦           
++---output
+¦       embeddings.jsonl
+¦       graphrag_payload.json
+¦       semantic_documents.json
+¦       semantic_transport_graph.json
+¦       semantic_transport_graph_corrupted.gml
+¦       
++---utils
+¦       file_utils.py
+¦       
++---__pycache__
+        context_assembler.cpython-314.pyc
+        context_chain_builder.cpython-314.pyc
+        graph_builder.cpython-314.pyc
+        graph_exporter.cpython-314.pyc
+        gtfs_normalizer.cpython-314.pyc
+        hybrid_retriever.cpython-314.pyc
+        neighborhood_expander.cpython-314.pyc
+        operational_semantic_enrichment.cpython-314.pyc
+        semantic_retriever.cpython-314.pyc
+        semantic_serializer.cpython-314.pyc
+        
