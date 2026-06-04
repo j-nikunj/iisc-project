@@ -91,6 +91,8 @@ Standard RAG architectures rely on pure semantic similarity, which fails in high
 * **Air-Gapped Inference:** Fully local reasoning pipeline utilizing LM Studio and Qwen2.5-14B, ensuring data privacy and zero API dependency.
 
 ## System Architecture
+
+```mermaid
 graph TD
     %% Styling Definitions
     classDef input fill:#2b3137,stroke:#fff,stroke-width:1px,color:#fff;
