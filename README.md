@@ -134,6 +134,7 @@ graph TD
     %% Link Subgraphs structurally
     F -.->|Vector Matches| H
     D -.->|Topology Data| J
+```
 
 ## Pipeline Deep-Dive
 
